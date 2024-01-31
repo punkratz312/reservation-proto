@@ -1,16 +1,15 @@
 package de.db.vendo.prototype.buchung.reservation.divers.test.e2e.resource.submit
 
+import de.db.vendo.prototype.buchung.BDD
 import io.quarkus.test.junit.QuarkusTest
 import io.restassured.RestAssured.given
 import org.hamcrest.CoreMatchers.equalTo
-import org.junit.jupiter.api.Test
 
 @QuarkusTest
-class SubmitUseCaseResourceTest {
-    @Test
-    fun testHelloEndpoint() {
+class SubmitUseCaseResourceTest : BDD() {
+    override fun then_() {
         given()
-                .`when`().get("/hello")
+                .`when`().get("submit")
                 .then()
                 .statusCode(200)
                 .body(equalTo("Hello from RESTEasy Reactive"))

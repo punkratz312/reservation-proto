@@ -16,14 +16,8 @@ class SubmitReservationResource {
     @field: Default
     lateinit var resourceAdapter: SubmitReservationResourceAdapter
 
-//    @Funq
-//    override fun serve(reference: UUID): UUID {
-//        return resourceAdapter.serve(reference)
-//    }
-
     @GET
     fun serve(): String {
-//        return UUID.randomUUID().toString()
         return resourceAdapter.serve(UUID.randomUUID()).toString()
     }
 }
