@@ -1,11 +1,19 @@
 package de.db.vendo.prototype.buchung.reservation.divers.adapters.persistence.boundary
 
+import de.db.vendo.prototype.buchung.reservation.divers.adapters.persistence.boundary.bridge.ReservationRepositoryAdapterBridge
 import de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.persistence.boundary.ReservationRepositoryUseCaseBridge
+import jakarta.enterprise.inject.Default
+import jakarta.inject.Inject
 import java.util.*
 
 class ReservationRepositoryAdapter : ReservationRepositoryUseCaseBridge {
+
+    @Inject
+    @field: Default
+    lateinit var reservationRepositoryAdapterBridge: ReservationRepositoryAdapterBridge
+
     override fun findBy(id: UUID): String {
-        TODO("Not yet implemented")
+        return reservationRepositoryAdapterBridge.findBy(id)
     }
 
     override fun save(reservation: String) {
