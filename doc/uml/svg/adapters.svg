@@ -1,0 +1,1118 @@
+<?xml version="1.0" encoding="us-ascii" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     contentStyleType="text/css" height="1927px" preserveAspectRatio="none"
+     style="width:2832px;height:1927px;background:#FFFFFF;" version="1.1" viewBox="0 0 2832 1927"
+     width="2832px" zoomAndPan="magnify">
+  <defs/>
+  <g><!--cluster adapters-->
+    <g id="cluster_adapters">
+      <path
+          d="M8.5,6 L496.5,6 A3.75,3.75 0 0 1 499,8.5 L506,28.2969 L2822.5,28.2969 A2.5,2.5 0 0 1 2825,30.7969 L2825,1917.5 A2.5,2.5 0 0 1 2822.5,1920 L8.5,1920 A2.5,2.5 0 0 1 6,1917.5 L6,8.5 A2.5,2.5 0 0 1 8.5,6 "
+          fill="none" style="stroke:#000000;stroke-width:1.5;"/>
+      <line style="stroke:#000000;stroke-width:1.5;" x1="6" x2="506" y1="28.2969" y2="28.2969"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold"
+            lengthAdjust="spacing" textLength="487" x="10" y="20.9951">
+        de.db.vendo.prototype.buchung.reservation.divers.adapters
+      </text>
+    </g><!--cluster boundary-->
+    <g id="cluster_boundary">
+      <path
+          d="M962.5,73.5 L1107.5,73.5 A3.75,3.75 0 0 1 1110,76 L1117,95.7969 L1291.5,95.7969 A2.5,2.5 0 0 1 1294,98.2969 L1294,186 A2.5,2.5 0 0 1 1291.5,188.5 L962.5,188.5 A2.5,2.5 0 0 1 960,186 L960,76 A2.5,2.5 0 0 1 962.5,73.5 "
+          fill="none" style="stroke:#000000;stroke-width:1.5;"/>
+      <line style="stroke:#000000;stroke-width:1.5;" x1="960" x2="1117" y1="95.7969" y2="95.7969"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold"
+            lengthAdjust="spacing" textLength="144" x="964" y="88.4951">confirm.boundary
+      </text>
+    </g><!--cluster boundary-->
+    <g id="cluster_boundary">
+      <path
+          d="M2515.5,998.5 L2691.5,998.5 A3.75,3.75 0 0 1 2694,1001 L2701,1020.7969 L2798.5,1020.7969 A2.5,2.5 0 0 1 2801,1023.2969 L2801,1095 A2.5,2.5 0 0 1 2798.5,1097.5 L2515.5,1097.5 A2.5,2.5 0 0 1 2513,1095 L2513,1001 A2.5,2.5 0 0 1 2515.5,998.5 "
+          fill="none" style="stroke:#000000;stroke-width:1.5;"/>
+      <line style="stroke:#000000;stroke-width:1.5;" x1="2513" x2="2701" y1="1020.7969"
+            y2="1020.7969"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold"
+            lengthAdjust="spacing" textLength="175" x="2517" y="1013.4951">persistence.boundary
+      </text>
+    </g><!--cluster boundary-->
+    <g id="cluster_boundary">
+      <path
+          d="M612.5,73.5 L736.5,73.5 A3.75,3.75 0 0 1 739,76 L746,95.7969 L925.5,95.7969 A2.5,2.5 0 0 1 928,98.2969 L928,186 A2.5,2.5 0 0 1 925.5,188.5 L612.5,188.5 A2.5,2.5 0 0 1 610,186 L610,76 A2.5,2.5 0 0 1 612.5,73.5 "
+          fill="none" style="stroke:#000000;stroke-width:1.5;"/>
+      <line style="stroke:#000000;stroke-width:1.5;" x1="610" x2="746" y1="95.7969" y2="95.7969"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold"
+            lengthAdjust="spacing" textLength="123" x="614" y="88.4951">reset.boundary
+      </text>
+    </g><!--cluster boundary-->
+    <g id="cluster_boundary">
+      <path
+          d="M168.5,49 L307.5,49 A3.75,3.75 0 0 1 310,51.5 L317,71.2969 L491.5,71.2969 A2.5,2.5 0 0 1 494,73.7969 L494,210.5 A2.5,2.5 0 0 1 491.5,213 L168.5,213 A2.5,2.5 0 0 1 166,210.5 L166,51.5 A2.5,2.5 0 0 1 168.5,49 "
+          fill="none" style="stroke:#000000;stroke-width:1.5;"/>
+      <line style="stroke:#000000;stroke-width:1.5;" x1="166" x2="317" y1="71.2969" y2="71.2969"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold"
+            lengthAdjust="spacing" textLength="138" x="170" y="63.9951">submit.boundary
+      </text>
+    </g><!--cluster use_cases-->
+    <g id="cluster_use_cases">
+      <path
+          d="M32.5,237 L114.5,237 A3.75,3.75 0 0 1 117,239.5 L124,259.2969 L2486.5,259.2969 A2.5,2.5 0 0 1 2489,261.7969 L2489,1893.5 A2.5,2.5 0 0 1 2486.5,1896 L32.5,1896 A2.5,2.5 0 0 1 30,1893.5 L30,239.5 A2.5,2.5 0 0 1 32.5,237 "
+          fill="none" style="stroke:#000000;stroke-width:1.5;"/>
+      <line style="stroke:#000000;stroke-width:1.5;" x1="30" x2="124" y1="259.2969" y2="259.2969"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold"
+            lengthAdjust="spacing" textLength="81" x="34" y="251.9951">use_cases
+      </text>
+    </g><!--cluster boundary-->
+    <g id="cluster_boundary">
+      <path
+          d="M1038.5,304.5 L1183.5,304.5 A3.75,3.75 0 0 1 1186,307 L1193,326.7969 L1215.5,326.7969 A2.5,2.5 0 0 1 1218,329.2969 L1218,417 A2.5,2.5 0 0 1 1215.5,419.5 L1038.5,419.5 A2.5,2.5 0 0 1 1036,417 L1036,307 A2.5,2.5 0 0 1 1038.5,304.5 "
+          fill="none" style="stroke:#000000;stroke-width:1.5;"/>
+      <line style="stroke:#000000;stroke-width:1.5;" x1="1036" x2="1193" y1="326.7969"
+            y2="326.7969"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold"
+            lengthAdjust="spacing" textLength="144" x="1040" y="319.4951">confirm.boundary
+      </text>
+    </g><!--cluster entities-->
+    <g id="cluster_entities">
+      <path
+          d="M56.5,468 L120.5,468 A3.75,3.75 0 0 1 123,470.5 L130,490.2969 L2152.5,490.2969 A2.5,2.5 0 0 1 2155,492.7969 L2155,1869.5 A2.5,2.5 0 0 1 2152.5,1872 L56.5,1872 A2.5,2.5 0 0 1 54,1869.5 L54,470.5 A2.5,2.5 0 0 1 56.5,468 "
+          fill="none" style="stroke:#000000;stroke-width:1.5;"/>
+      <line style="stroke:#000000;stroke-width:1.5;" x1="54" x2="130" y1="490.2969" y2="490.2969"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold"
+            lengthAdjust="spacing" textLength="63" x="58" y="482.9951">entities
+      </text>
+    </g><!--cluster boundary-->
+    <g id="cluster_boundary">
+      <path
+          d="M958.5,535.5 L1103.5,535.5 A3.75,3.75 0 0 1 1106,538 L1113,557.7969 L1295.5,557.7969 A2.5,2.5 0 0 1 1298,560.2969 L1298,845 A2.5,2.5 0 0 1 1295.5,847.5 L958.5,847.5 A2.5,2.5 0 0 1 956,845 L956,538 A2.5,2.5 0 0 1 958.5,535.5 "
+          fill="none" style="stroke:#000000;stroke-width:1.5;"/>
+      <line style="stroke:#000000;stroke-width:1.5;" x1="956" x2="1113" y1="557.7969"
+            y2="557.7969"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold"
+            lengthAdjust="spacing" textLength="144" x="960" y="550.4951">confirm.boundary
+      </text>
+    </g><!--cluster control-->
+    <g id="cluster_control">
+      <path
+          d="M982.5,708.5 L1042.5,708.5 A3.75,3.75 0 0 1 1045,711 L1052,730.7969 L1271.5,730.7969 A2.5,2.5 0 0 1 1274,733.2969 L1274,821 A2.5,2.5 0 0 1 1271.5,823.5 L982.5,823.5 A2.5,2.5 0 0 1 980,821 L980,711 A2.5,2.5 0 0 1 982.5,708.5 "
+          fill="none" style="stroke:#000000;stroke-width:1.5;"/>
+      <line style="stroke:#000000;stroke-width:1.5;" x1="980" x2="1052" y1="730.7969"
+            y2="730.7969"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold"
+            lengthAdjust="spacing" textLength="59" x="984" y="723.4951">control
+      </text>
+    </g><!--cluster reservation-->
+    <g id="cluster_reservation">
+      <path
+          d="M80.5,896 L174.5,896 A3.75,3.75 0 0 1 177,898.5 L184,918.2969 L2128.5,918.2969 A2.5,2.5 0 0 1 2131,920.7969 L2131,1845.5 A2.5,2.5 0 0 1 2128.5,1848 L80.5,1848 A2.5,2.5 0 0 1 78,1845.5 L78,898.5 A2.5,2.5 0 0 1 80.5,896 "
+          fill="none" style="stroke:#000000;stroke-width:1.5;"/>
+      <line style="stroke:#000000;stroke-width:1.5;" x1="78" x2="184" y1="918.2969" y2="918.2969"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold"
+            lengthAdjust="spacing" textLength="93" x="82" y="910.9951">reservation
+      </text>
+    </g><!--cluster control-->
+    <g id="cluster_control">
+      <path
+          d="M104.5,939 L245.5,939 A3.75,3.75 0 0 1 248,941.5 L255,961.2969 L636.5,961.2969 A2.5,2.5 0 0 1 639,963.7969 L639,1366.5 A2.5,2.5 0 0 1 636.5,1369 L104.5,1369 A2.5,2.5 0 0 1 102,1366.5 L102,941.5 A2.5,2.5 0 0 1 104.5,939 "
+          fill="none" style="stroke:#000000;stroke-width:1.5;"/>
+      <line style="stroke:#000000;stroke-width:1.5;" x1="102" x2="255" y1="961.2969" y2="961.2969"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold"
+            lengthAdjust="spacing" textLength="140" x="106" y="953.9951">boundary.control
+      </text>
+    </g><!--cluster entity-->
+    <g id="cluster_entity">
+      <path
+          d="M128.5,982 L178.5,982 A3.75,3.75 0 0 1 181,984.5 L188,1004.2969 L333.5,1004.2969 A2.5,2.5 0 0 1 336,1006.7969 L336,1342.5 A2.5,2.5 0 0 1 333.5,1345 L128.5,1345 A2.5,2.5 0 0 1 126,1342.5 L126,984.5 A2.5,2.5 0 0 1 128.5,982 "
+          fill="none" style="stroke:#000000;stroke-width:1.5;"/>
+      <line style="stroke:#000000;stroke-width:1.5;" x1="126" x2="188" y1="1004.2969"
+            y2="1004.2969"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold"
+            lengthAdjust="spacing" textLength="49" x="130" y="996.9951">entity
+      </text>
+    </g><!--cluster trip-->
+    <g id="cluster_trip">
+      <path
+          d="M665.5,1138 L696.5,1138 A3.75,3.75 0 0 1 699,1140.5 L706,1160.2969 L2104.5,1160.2969 A2.5,2.5 0 0 1 2107,1162.7969 L2107,1821.5 A2.5,2.5 0 0 1 2104.5,1824 L665.5,1824 A2.5,2.5 0 0 1 663,1821.5 L663,1140.5 A2.5,2.5 0 0 1 665.5,1138 "
+          fill="none" style="stroke:#000000;stroke-width:1.5;"/>
+      <line style="stroke:#000000;stroke-width:1.5;" x1="663" x2="706" y1="1160.2969"
+            y2="1160.2969"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold"
+            lengthAdjust="spacing" textLength="30" x="667" y="1152.9951">trip
+      </text>
+    </g><!--cluster entity-->
+    <g id="cluster_entity">
+      <path
+          d="M689.5,1181 L884.5,1181 A3.75,3.75 0 0 1 887,1183.5 L894,1203.2969 L942.5,1203.2969 A2.5,2.5 0 0 1 945,1205.7969 L945,1609 A2.5,2.5 0 0 1 942.5,1611.5 L689.5,1611.5 A2.5,2.5 0 0 1 687,1609 L687,1183.5 A2.5,2.5 0 0 1 689.5,1181 "
+          fill="none" style="stroke:#000000;stroke-width:1.5;"/>
+      <line style="stroke:#000000;stroke-width:1.5;" x1="687" x2="894" y1="1203.2969"
+            y2="1203.2969"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold"
+            lengthAdjust="spacing" textLength="194" x="691" y="1195.9951">boundary.control.entity
+      </text>
+    </g><!--cluster entity-->
+    <g id="cluster_entity">
+      <path
+          d="M971.5,1488 L1231.5,1488 A3.75,3.75 0 0 1 1234,1490.5 L1241,1510.2969 L1241.5,1510.2969 A2.5,2.5 0 0 1 1244,1512.7969 L1244,1749.5 A2.5,2.5 0 0 1 1241.5,1752 L971.5,1752 A2.5,2.5 0 0 1 969,1749.5 L969,1490.5 A2.5,2.5 0 0 1 971.5,1488 "
+          fill="none" style="stroke:#000000;stroke-width:1.5;"/>
+      <line style="stroke:#000000;stroke-width:1.5;" x1="969" x2="1241" y1="1510.2969"
+            y2="1510.2969"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold"
+            lengthAdjust="spacing" textLength="259" x="973" y="1502.9951">
+        station.boundary.control.entity
+      </text>
+    </g><!--cluster train-->
+    <g id="cluster_train">
+      <path
+          d="M1270.5,1394 L1311.5,1394 A3.75,3.75 0 0 1 1314,1396.5 L1321,1416.2969 L2080.5,1416.2969 A2.5,2.5 0 0 1 2083,1418.7969 L2083,1797.5 A2.5,2.5 0 0 1 2080.5,1800 L1270.5,1800 A2.5,2.5 0 0 1 1268,1797.5 L1268,1396.5 A2.5,2.5 0 0 1 1270.5,1394 "
+          fill="none" style="stroke:#000000;stroke-width:1.5;"/>
+      <line style="stroke:#000000;stroke-width:1.5;" x1="1268" x2="1321" y1="1416.2969"
+            y2="1416.2969"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold"
+            lengthAdjust="spacing" textLength="40" x="1272" y="1408.9951">train
+      </text>
+    </g><!--cluster entity-->
+    <g id="cluster_entity">
+      <path
+          d="M1851.5,1488 L2046.5,1488 A3.75,3.75 0 0 1 2049,1490.5 L2056,1510.2969 L2056.5,1510.2969 A2.5,2.5 0 0 1 2059,1512.7969 L2059,1749.5 A2.5,2.5 0 0 1 2056.5,1752 L1851.5,1752 A2.5,2.5 0 0 1 1849,1749.5 L1849,1490.5 A2.5,2.5 0 0 1 1851.5,1488 "
+          fill="none" style="stroke:#000000;stroke-width:1.5;"/>
+      <line style="stroke:#000000;stroke-width:1.5;" x1="1849" x2="2056" y1="1510.2969"
+            y2="1510.2969"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold"
+            lengthAdjust="spacing" textLength="194" x="1853" y="1502.9951">boundary.control.entity
+      </text>
+    </g><!--cluster wagon-->
+    <g id="cluster_wagon">
+      <path
+          d="M1294.5,1437 L1348.5,1437 A3.75,3.75 0 0 1 1351,1439.5 L1358,1459.2969 L1822.5,1459.2969 A2.5,2.5 0 0 1 1825,1461.7969 L1825,1773.5 A2.5,2.5 0 0 1 1822.5,1776 L1294.5,1776 A2.5,2.5 0 0 1 1292,1773.5 L1292,1439.5 A2.5,2.5 0 0 1 1294.5,1437 "
+          fill="none" style="stroke:#000000;stroke-width:1.5;"/>
+      <line style="stroke:#000000;stroke-width:1.5;" x1="1292" x2="1358" y1="1459.2969"
+            y2="1459.2969"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold"
+            lengthAdjust="spacing" textLength="53" x="1296" y="1451.9951">wagon
+      </text>
+    </g><!--cluster entity-->
+    <g id="cluster_entity">
+      <path
+          d="M1593.5,1480 L1788.5,1480 A3.75,3.75 0 0 1 1791,1482.5 L1798,1502.2969 L1798.5,1502.2969 A2.5,2.5 0 0 1 1801,1504.7969 L1801,1749.5 A2.5,2.5 0 0 1 1798.5,1752 L1593.5,1752 A2.5,2.5 0 0 1 1591,1749.5 L1591,1482.5 A2.5,2.5 0 0 1 1593.5,1480 "
+          fill="none" style="stroke:#000000;stroke-width:1.5;"/>
+      <line style="stroke:#000000;stroke-width:1.5;" x1="1591" x2="1798" y1="1502.2969"
+            y2="1502.2969"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold"
+            lengthAdjust="spacing" textLength="194" x="1595" y="1494.9951">boundary.control.entity
+      </text>
+    </g><!--cluster entity-->
+    <g id="cluster_entity">
+      <path
+          d="M1318.5,1488 L1554.5,1488 A3.75,3.75 0 0 1 1557,1490.5 L1564,1510.2969 L1564.5,1510.2969 A2.5,2.5 0 0 1 1567,1512.7969 L1567,1749.5 A2.5,2.5 0 0 1 1564.5,1752 L1318.5,1752 A2.5,2.5 0 0 1 1316,1749.5 L1316,1490.5 A2.5,2.5 0 0 1 1318.5,1488 "
+          fill="none" style="stroke:#000000;stroke-width:1.5;"/>
+      <line style="stroke:#000000;stroke-width:1.5;" x1="1316" x2="1564" y1="1510.2969"
+            y2="1510.2969"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold"
+            lengthAdjust="spacing" textLength="235" x="1320" y="1502.9951">
+        seat.boundary.control.entity
+      </text>
+    </g><!--cluster boundary-->
+    <g id="cluster_boundary">
+      <path
+          d="M608.5,535.5 L732.5,535.5 A3.75,3.75 0 0 1 735,538 L742,557.7969 L929.5,557.7969 A2.5,2.5 0 0 1 932,560.2969 L932,845 A2.5,2.5 0 0 1 929.5,847.5 L608.5,847.5 A2.5,2.5 0 0 1 606,845 L606,538 A2.5,2.5 0 0 1 608.5,535.5 "
+          fill="none" style="stroke:#000000;stroke-width:1.5;"/>
+      <line style="stroke:#000000;stroke-width:1.5;" x1="606" x2="742" y1="557.7969" y2="557.7969"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold"
+            lengthAdjust="spacing" textLength="123" x="610" y="550.4951">reset.boundary
+      </text>
+    </g><!--cluster control-->
+    <g id="cluster_control">
+      <path
+          d="M632.5,708.5 L692.5,708.5 A3.75,3.75 0 0 1 695,711 L702,730.7969 L905.5,730.7969 A2.5,2.5 0 0 1 908,733.2969 L908,821 A2.5,2.5 0 0 1 905.5,823.5 L632.5,823.5 A2.5,2.5 0 0 1 630,821 L630,711 A2.5,2.5 0 0 1 632.5,708.5 "
+          fill="none" style="stroke:#000000;stroke-width:1.5;"/>
+      <line style="stroke:#000000;stroke-width:1.5;" x1="630" x2="702" y1="730.7969" y2="730.7969"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold"
+            lengthAdjust="spacing" textLength="59" x="634" y="723.4951">control
+      </text>
+    </g><!--cluster boundary-->
+    <g id="cluster_boundary">
+      <path
+          d="M80.5,511 L219.5,511 A3.75,3.75 0 0 1 222,513.5 L229,533.2969 L579.5,533.2969 A2.5,2.5 0 0 1 582,535.7969 L582,869.5 A2.5,2.5 0 0 1 579.5,872 L80.5,872 A2.5,2.5 0 0 1 78,869.5 L78,513.5 A2.5,2.5 0 0 1 80.5,511 "
+          fill="none" style="stroke:#000000;stroke-width:1.5;"/>
+      <line style="stroke:#000000;stroke-width:1.5;" x1="78" x2="229" y1="533.2969" y2="533.2969"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold"
+            lengthAdjust="spacing" textLength="138" x="82" y="525.9951">submit.boundary
+      </text>
+    </g><!--cluster control-->
+    <g id="cluster_control">
+      <path
+          d="M104.5,684 L164.5,684 A3.75,3.75 0 0 1 167,686.5 L174,706.2969 L555.5,706.2969 A2.5,2.5 0 0 1 558,708.7969 L558,845.5 A2.5,2.5 0 0 1 555.5,848 L104.5,848 A2.5,2.5 0 0 1 102,845.5 L102,686.5 A2.5,2.5 0 0 1 104.5,684 "
+          fill="none" style="stroke:#000000;stroke-width:1.5;"/>
+      <line style="stroke:#000000;stroke-width:1.5;" x1="102" x2="174" y1="706.2969" y2="706.2969"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold"
+            lengthAdjust="spacing" textLength="59" x="106" y="698.9951">control
+      </text>
+    </g><!--cluster boundary-->
+    <g id="cluster_boundary">
+      <path
+          d="M2181.5,1238 L2357.5,1238 A3.75,3.75 0 0 1 2360,1240.5 L2367,1260.2969 L2462.5,1260.2969 A2.5,2.5 0 0 1 2465,1262.7969 L2465,1334.5 A2.5,2.5 0 0 1 2462.5,1337 L2181.5,1337 A2.5,2.5 0 0 1 2179,1334.5 L2179,1240.5 A2.5,2.5 0 0 1 2181.5,1238 "
+          fill="none" style="stroke:#000000;stroke-width:1.5;"/>
+      <line style="stroke:#000000;stroke-width:1.5;" x1="2179" x2="2367" y1="1260.2969"
+            y2="1260.2969"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold"
+            lengthAdjust="spacing" textLength="175" x="2183" y="1252.9951">persistence.boundary
+      </text>
+    </g><!--cluster boundary-->
+    <g id="cluster_boundary">
+      <path
+          d="M681.5,304.5 L805.5,304.5 A3.75,3.75 0 0 1 808,307 L815,326.7969 L856.5,326.7969 A2.5,2.5 0 0 1 859,329.2969 L859,417 A2.5,2.5 0 0 1 856.5,419.5 L681.5,419.5 A2.5,2.5 0 0 1 679,417 L679,307 A2.5,2.5 0 0 1 681.5,304.5 "
+          fill="none" style="stroke:#000000;stroke-width:1.5;"/>
+      <line style="stroke:#000000;stroke-width:1.5;" x1="679" x2="815" y1="326.7969" y2="326.7969"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold"
+            lengthAdjust="spacing" textLength="123" x="683" y="319.4951">reset.boundary
+      </text>
+    </g><!--cluster boundary-->
+    <g id="cluster_boundary">
+      <path
+          d="M105.5,280 L244.5,280 A3.75,3.75 0 0 1 247,282.5 L254,302.2969 L554.5,302.2969 A2.5,2.5 0 0 1 557,304.7969 L557,441.5 A2.5,2.5 0 0 1 554.5,444 L105.5,444 A2.5,2.5 0 0 1 103,441.5 L103,282.5 A2.5,2.5 0 0 1 105.5,280 "
+          fill="none" style="stroke:#000000;stroke-width:1.5;"/>
+      <line style="stroke:#000000;stroke-width:1.5;" x1="103" x2="254" y1="302.2969" y2="302.2969"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold"
+            lengthAdjust="spacing" textLength="138" x="107" y="294.9951">submit.boundary
+      </text>
+    </g><!--class ConfirmReservationResourceAdapter-->
+    <g id="elem_ConfirmReservationResourceAdapter">
+      <rect codeLine="5" fill="#F1F1F1" height="64.2969" id="ConfirmReservationResourceAdapter"
+            rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="301" x="976.5"
+            y="108.5"/>
+      <ellipse cx="991.5" cy="124.5" fill="#ADD1B2" rx="11" ry="11"
+               style="stroke:#181818;stroke-width:1.0;"/>
+      <path
+          d="M993.8438,120.1719 C992.9063,119.7344 992.3125,119.5938 991.4375,119.5938 C988.8125,119.5938 986.8125,121.6719 986.8125,124.3906 L986.8125,125.5156 C986.8125,128.0938 988.9219,129.9844 991.8125,129.9844 C993.0313,129.9844 994.1875,129.6875 994.9375,129.1406 C995.5156,128.7344 995.8438,128.2813 995.8438,127.8906 C995.8438,127.4375 995.4531,127.0469 994.9844,127.0469 C994.7656,127.0469 994.5625,127.125 994.375,127.3125 C993.9219,127.7969 993.9219,127.7969 993.7344,127.8906 C993.3125,128.1563 992.625,128.2813 991.8594,128.2813 C989.8125,128.2813 988.5156,127.1875 988.5156,125.4844 L988.5156,124.3906 C988.5156,122.6094 989.7656,121.2969 991.5,121.2969 C992.0781,121.2969 992.6875,121.4531 993.1563,121.7031 C993.6406,121.9844 993.8125,122.2031 993.9063,122.6094 C993.9688,123.0156 994,123.1406 994.1406,123.2656 C994.2813,123.4063 994.5156,123.5156 994.7344,123.5156 C995,123.5156 995.2656,123.375 995.4375,123.1563 C995.5469,123 995.5781,122.8125 995.5781,122.3906 L995.5781,120.9688 C995.5781,120.5313 995.5625,120.4063 995.4688,120.25 C995.3125,119.9844 995.0313,119.8438 994.7344,119.8438 C994.4375,119.8438 994.2344,119.9375 994.0156,120.25 L993.8438,120.1719 Z "
+          fill="#000000"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+            textLength="269" x="1005.5" y="129.3467">ConfirmReservationResourceAdapter
+      </text>
+      <line style="stroke:#181818;stroke-width:0.5;" x1="977.5" x2="1276.5" y1="140.5" y2="140.5"/>
+      <line style="stroke:#181818;stroke-width:0.5;" x1="977.5" x2="1276.5" y1="148.5" y2="148.5"/>
+      <ellipse cx="987.5" cy="162.1484" fill="#84BE84" rx="3" ry="3"
+               style="stroke:#038048;stroke-width:1.0;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+            textLength="116" x="996.5" y="165.4951">void serve(UUID)
+      </text>
+    </g><!--class ReservationRepositoryAdapter-->
+    <g id="elem_ReservationRepositoryAdapter">
+      <rect codeLine="8" fill="#F1F1F1" height="48" id="ReservationRepositoryAdapter" rx="2.5"
+            ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="256" x="2529" y="1033.5"/>
+      <ellipse cx="2544" cy="1049.5" fill="#ADD1B2" rx="11" ry="11"
+               style="stroke:#181818;stroke-width:1.0;"/>
+      <path
+          d="M2546.3438,1045.1719 C2545.4063,1044.7344 2544.8125,1044.5938 2543.9375,1044.5938 C2541.3125,1044.5938 2539.3125,1046.6719 2539.3125,1049.3906 L2539.3125,1050.5156 C2539.3125,1053.0938 2541.4219,1054.9844 2544.3125,1054.9844 C2545.5313,1054.9844 2546.6875,1054.6875 2547.4375,1054.1406 C2548.0156,1053.7344 2548.3438,1053.2813 2548.3438,1052.8906 C2548.3438,1052.4375 2547.9531,1052.0469 2547.4844,1052.0469 C2547.2656,1052.0469 2547.0625,1052.125 2546.875,1052.3125 C2546.4219,1052.7969 2546.4219,1052.7969 2546.2344,1052.8906 C2545.8125,1053.1563 2545.125,1053.2813 2544.3594,1053.2813 C2542.3125,1053.2813 2541.0156,1052.1875 2541.0156,1050.4844 L2541.0156,1049.3906 C2541.0156,1047.6094 2542.2656,1046.2969 2544,1046.2969 C2544.5781,1046.2969 2545.1875,1046.4531 2545.6563,1046.7031 C2546.1406,1046.9844 2546.3125,1047.2031 2546.4063,1047.6094 C2546.4688,1048.0156 2546.5,1048.1406 2546.6406,1048.2656 C2546.7813,1048.4063 2547.0156,1048.5156 2547.2344,1048.5156 C2547.5,1048.5156 2547.7656,1048.375 2547.9375,1048.1563 C2548.0469,1048 2548.0781,1047.8125 2548.0781,1047.3906 L2548.0781,1045.9688 C2548.0781,1045.5313 2548.0625,1045.4063 2547.9688,1045.25 C2547.8125,1044.9844 2547.5313,1044.8438 2547.2344,1044.8438 C2546.9375,1044.8438 2546.7344,1044.9375 2546.5156,1045.25 L2546.3438,1045.1719 Z "
+          fill="#000000"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+            textLength="224" x="2558" y="1054.3467">ReservationRepositoryAdapter
+      </text>
+      <line style="stroke:#181818;stroke-width:0.5;" x1="2530" x2="2784" y1="1065.5" y2="1065.5"/>
+      <line style="stroke:#181818;stroke-width:0.5;" x1="2530" x2="2784" y1="1073.5" y2="1073.5"/>
+    </g><!--class ResetReservationResourceAdapter-->
+    <g id="elem_ResetReservationResourceAdapter">
+      <rect codeLine="10" fill="#F1F1F1" height="64.2969" id="ResetReservationResourceAdapter"
+            rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="285" x="626.5"
+            y="108.5"/>
+      <ellipse cx="641.5" cy="124.5" fill="#ADD1B2" rx="11" ry="11"
+               style="stroke:#181818;stroke-width:1.0;"/>
+      <path
+          d="M643.8438,120.1719 C642.9063,119.7344 642.3125,119.5938 641.4375,119.5938 C638.8125,119.5938 636.8125,121.6719 636.8125,124.3906 L636.8125,125.5156 C636.8125,128.0938 638.9219,129.9844 641.8125,129.9844 C643.0313,129.9844 644.1875,129.6875 644.9375,129.1406 C645.5156,128.7344 645.8438,128.2813 645.8438,127.8906 C645.8438,127.4375 645.4531,127.0469 644.9844,127.0469 C644.7656,127.0469 644.5625,127.125 644.375,127.3125 C643.9219,127.7969 643.9219,127.7969 643.7344,127.8906 C643.3125,128.1563 642.625,128.2813 641.8594,128.2813 C639.8125,128.2813 638.5156,127.1875 638.5156,125.4844 L638.5156,124.3906 C638.5156,122.6094 639.7656,121.2969 641.5,121.2969 C642.0781,121.2969 642.6875,121.4531 643.1563,121.7031 C643.6406,121.9844 643.8125,122.2031 643.9063,122.6094 C643.9688,123.0156 644,123.1406 644.1406,123.2656 C644.2813,123.4063 644.5156,123.5156 644.7344,123.5156 C645,123.5156 645.2656,123.375 645.4375,123.1563 C645.5469,123 645.5781,122.8125 645.5781,122.3906 L645.5781,120.9688 C645.5781,120.5313 645.5625,120.4063 645.4688,120.25 C645.3125,119.9844 645.0313,119.8438 644.7344,119.8438 C644.4375,119.8438 644.2344,119.9375 644.0156,120.25 L643.8438,120.1719 Z "
+          fill="#000000"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+            textLength="253" x="655.5" y="129.3467">ResetReservationResourceAdapter
+      </text>
+      <line style="stroke:#181818;stroke-width:0.5;" x1="627.5" x2="910.5" y1="140.5" y2="140.5"/>
+      <line style="stroke:#181818;stroke-width:0.5;" x1="627.5" x2="910.5" y1="148.5" y2="148.5"/>
+      <ellipse cx="637.5" cy="162.1484" fill="#84BE84" rx="3" ry="3"
+               style="stroke:#038048;stroke-width:1.0;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+            textLength="116" x="646.5" y="165.4951">void serve(UUID)
+      </text>
+    </g><!--class SubmitReservationResourceAdapter-->
+    <g id="elem_SubmitReservationResourceAdapter">
+      <rect codeLine="13" fill="#F1F1F1" height="113.1875" id="SubmitReservationResourceAdapter"
+            rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="295" x="182.5"
+            y="84"/>
+      <ellipse cx="197.5" cy="100" fill="#ADD1B2" rx="11" ry="11"
+               style="stroke:#181818;stroke-width:1.0;"/>
+      <path
+          d="M199.8438,95.6719 C198.9063,95.2344 198.3125,95.0938 197.4375,95.0938 C194.8125,95.0938 192.8125,97.1719 192.8125,99.8906 L192.8125,101.0156 C192.8125,103.5938 194.9219,105.4844 197.8125,105.4844 C199.0313,105.4844 200.1875,105.1875 200.9375,104.6406 C201.5156,104.2344 201.8438,103.7813 201.8438,103.3906 C201.8438,102.9375 201.4531,102.5469 200.9844,102.5469 C200.7656,102.5469 200.5625,102.625 200.375,102.8125 C199.9219,103.2969 199.9219,103.2969 199.7344,103.3906 C199.3125,103.6563 198.625,103.7813 197.8594,103.7813 C195.8125,103.7813 194.5156,102.6875 194.5156,100.9844 L194.5156,99.8906 C194.5156,98.1094 195.7656,96.7969 197.5,96.7969 C198.0781,96.7969 198.6875,96.9531 199.1563,97.2031 C199.6406,97.4844 199.8125,97.7031 199.9063,98.1094 C199.9688,98.5156 200,98.6406 200.1406,98.7656 C200.2813,98.9063 200.5156,99.0156 200.7344,99.0156 C201,99.0156 201.2656,98.875 201.4375,98.6563 C201.5469,98.5 201.5781,98.3125 201.5781,97.8906 L201.5781,96.4688 C201.5781,96.0313 201.5625,95.9063 201.4688,95.75 C201.3125,95.4844 201.0313,95.3438 200.7344,95.3438 C200.4375,95.3438 200.2344,95.4375 200.0156,95.75 L199.8438,95.6719 Z "
+          fill="#000000"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+            textLength="263" x="211.5" y="104.8467">SubmitReservationResourceAdapter
+      </text>
+      <line style="stroke:#181818;stroke-width:0.5;" x1="183.5" x2="476.5" y1="116" y2="116"/>
+      <ellipse cx="193.5" cy="129.6484" fill="none" rx="3" ry="3"
+               style="stroke:#038048;stroke-width:1.0;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+            textLength="165" x="202.5" y="132.9951">SubmitUseCase submit
+      </text>
+      <line style="stroke:#181818;stroke-width:0.5;" x1="183.5" x2="476.5" y1="140.2969"
+            y2="140.2969"/>
+      <ellipse cx="193.5" cy="153.9453" fill="#84BE84" rx="3" ry="3"
+               style="stroke:#038048;stroke-width:1.0;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+            textLength="202" x="202.5" y="157.292">SubmitUseCase getSubmit()
+      </text>
+      <ellipse cx="193.5" cy="170.2422" fill="#84BE84" rx="3" ry="3"
+               style="stroke:#038048;stroke-width:1.0;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+            textLength="230" x="202.5" y="173.5889">void setSubmit(SubmitUseCase)
+      </text>
+      <ellipse cx="193.5" cy="186.5391" fill="#84BE84" rx="3" ry="3"
+               style="stroke:#038048;stroke-width:1.0;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+            textLength="119" x="202.5" y="189.8857">UUID serve(UUID)
+      </text>
+    </g><!--class ConfirmUseCase-->
+    <g id="elem_ConfirmUseCase">
+      <rect codeLine="20" fill="#F1F1F1" height="64.2969" id="ConfirmUseCase" rx="2.5" ry="2.5"
+            style="stroke:#181818;stroke-width:0.5;" width="149" x="1052.5" y="339.5"/>
+      <ellipse cx="1067.5" cy="355.5" fill="#ADD1B2" rx="11" ry="11"
+               style="stroke:#181818;stroke-width:1.0;"/>
+      <path
+          d="M1069.8438,351.1719 C1068.9063,350.7344 1068.3125,350.5938 1067.4375,350.5938 C1064.8125,350.5938 1062.8125,352.6719 1062.8125,355.3906 L1062.8125,356.5156 C1062.8125,359.0938 1064.9219,360.9844 1067.8125,360.9844 C1069.0313,360.9844 1070.1875,360.6875 1070.9375,360.1406 C1071.5156,359.7344 1071.8438,359.2813 1071.8438,358.8906 C1071.8438,358.4375 1071.4531,358.0469 1070.9844,358.0469 C1070.7656,358.0469 1070.5625,358.125 1070.375,358.3125 C1069.9219,358.7969 1069.9219,358.7969 1069.7344,358.8906 C1069.3125,359.1563 1068.625,359.2813 1067.8594,359.2813 C1065.8125,359.2813 1064.5156,358.1875 1064.5156,356.4844 L1064.5156,355.3906 C1064.5156,353.6094 1065.7656,352.2969 1067.5,352.2969 C1068.0781,352.2969 1068.6875,352.4531 1069.1563,352.7031 C1069.6406,352.9844 1069.8125,353.2031 1069.9063,353.6094 C1069.9688,354.0156 1070,354.1406 1070.1406,354.2656 C1070.2813,354.4063 1070.5156,354.5156 1070.7344,354.5156 C1071,354.5156 1071.2656,354.375 1071.4375,354.1563 C1071.5469,354 1071.5781,353.8125 1071.5781,353.3906 L1071.5781,351.9688 C1071.5781,351.5313 1071.5625,351.4063 1071.4688,351.25 C1071.3125,350.9844 1071.0313,350.8438 1070.7344,350.8438 C1070.4375,350.8438 1070.2344,350.9375 1070.0156,351.25 L1069.8438,351.1719 Z "
+          fill="#000000"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+            textLength="117" x="1081.5" y="360.3467">ConfirmUseCase
+      </text>
+      <line style="stroke:#181818;stroke-width:0.5;" x1="1053.5" x2="1200.5" y1="371.5" y2="371.5"/>
+      <line style="stroke:#181818;stroke-width:0.5;" x1="1053.5" x2="1200.5" y1="379.5" y2="379.5"/>
+      <ellipse cx="1063.5" cy="393.1484" fill="#84BE84" rx="3" ry="3"
+               style="stroke:#038048;stroke-width:1.0;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+            textLength="122" x="1072.5" y="396.4951">void action(UUID)
+      </text>
+    </g><!--class ConfirmReservationService-->
+    <g id="elem_ConfirmReservationService">
+      <rect codeLine="23" fill="#F1F1F1" height="64.2969" id="ConfirmReservationService" rx="2.5"
+            ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="229" x="1012.5" y="570.5"/>
+      <ellipse cx="1027.5" cy="586.5" fill="#ADD1B2" rx="11" ry="11"
+               style="stroke:#181818;stroke-width:1.0;"/>
+      <path
+          d="M1029.8438,582.1719 C1028.9063,581.7344 1028.3125,581.5938 1027.4375,581.5938 C1024.8125,581.5938 1022.8125,583.6719 1022.8125,586.3906 L1022.8125,587.5156 C1022.8125,590.0938 1024.9219,591.9844 1027.8125,591.9844 C1029.0313,591.9844 1030.1875,591.6875 1030.9375,591.1406 C1031.5156,590.7344 1031.8438,590.2813 1031.8438,589.8906 C1031.8438,589.4375 1031.4531,589.0469 1030.9844,589.0469 C1030.7656,589.0469 1030.5625,589.125 1030.375,589.3125 C1029.9219,589.7969 1029.9219,589.7969 1029.7344,589.8906 C1029.3125,590.1563 1028.625,590.2813 1027.8594,590.2813 C1025.8125,590.2813 1024.5156,589.1875 1024.5156,587.4844 L1024.5156,586.3906 C1024.5156,584.6094 1025.7656,583.2969 1027.5,583.2969 C1028.0781,583.2969 1028.6875,583.4531 1029.1563,583.7031 C1029.6406,583.9844 1029.8125,584.2031 1029.9063,584.6094 C1029.9688,585.0156 1030,585.1406 1030.1406,585.2656 C1030.2813,585.4063 1030.5156,585.5156 1030.7344,585.5156 C1031,585.5156 1031.2656,585.375 1031.4375,585.1563 C1031.5469,585 1031.5781,584.8125 1031.5781,584.3906 L1031.5781,582.9688 C1031.5781,582.5313 1031.5625,582.4063 1031.4688,582.25 C1031.3125,581.9844 1031.0313,581.8438 1030.7344,581.8438 C1030.4375,581.8438 1030.2344,581.9375 1030.0156,582.25 L1029.8438,582.1719 Z "
+          fill="#000000"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+            textLength="197" x="1041.5" y="591.3467">ConfirmReservationService
+      </text>
+      <line style="stroke:#181818;stroke-width:0.5;" x1="1013.5" x2="1240.5" y1="602.5" y2="602.5"/>
+      <line style="stroke:#181818;stroke-width:0.5;" x1="1013.5" x2="1240.5" y1="610.5" y2="610.5"/>
+      <ellipse cx="1023.5" cy="624.1484" fill="#84BE84" rx="3" ry="3"
+               style="stroke:#038048;stroke-width:1.0;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+            textLength="182" x="1032.5" y="627.4951">void serve(ReservationId)
+      </text>
+    </g><!--class ConfirmReservationComponent-->
+    <g id="elem_ConfirmReservationComponent">
+      <rect codeLine="26" fill="#F1F1F1" height="64.2969" id="ConfirmReservationComponent" rx="2.5"
+            ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="262" x="996" y="743.5"/>
+      <ellipse cx="1011" cy="759.5" fill="#ADD1B2" rx="11" ry="11"
+               style="stroke:#181818;stroke-width:1.0;"/>
+      <path
+          d="M1013.3438,755.1719 C1012.4063,754.7344 1011.8125,754.5938 1010.9375,754.5938 C1008.3125,754.5938 1006.3125,756.6719 1006.3125,759.3906 L1006.3125,760.5156 C1006.3125,763.0938 1008.4219,764.9844 1011.3125,764.9844 C1012.5313,764.9844 1013.6875,764.6875 1014.4375,764.1406 C1015.0156,763.7344 1015.3438,763.2813 1015.3438,762.8906 C1015.3438,762.4375 1014.9531,762.0469 1014.4844,762.0469 C1014.2656,762.0469 1014.0625,762.125 1013.875,762.3125 C1013.4219,762.7969 1013.4219,762.7969 1013.2344,762.8906 C1012.8125,763.1563 1012.125,763.2813 1011.3594,763.2813 C1009.3125,763.2813 1008.0156,762.1875 1008.0156,760.4844 L1008.0156,759.3906 C1008.0156,757.6094 1009.2656,756.2969 1011,756.2969 C1011.5781,756.2969 1012.1875,756.4531 1012.6563,756.7031 C1013.1406,756.9844 1013.3125,757.2031 1013.4063,757.6094 C1013.4688,758.0156 1013.5,758.1406 1013.6406,758.2656 C1013.7813,758.4063 1014.0156,758.5156 1014.2344,758.5156 C1014.5,758.5156 1014.7656,758.375 1014.9375,758.1563 C1015.0469,758 1015.0781,757.8125 1015.0781,757.3906 L1015.0781,755.9688 C1015.0781,755.5313 1015.0625,755.4063 1014.9688,755.25 C1014.8125,754.9844 1014.5313,754.8438 1014.2344,754.8438 C1013.9375,754.8438 1013.7344,754.9375 1013.5156,755.25 L1013.3438,755.1719 Z "
+          fill="#000000"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+            textLength="230" x="1025" y="764.3467">ConfirmReservationComponent
+      </text>
+      <line style="stroke:#181818;stroke-width:0.5;" x1="997" x2="1257" y1="775.5" y2="775.5"/>
+      <line style="stroke:#181818;stroke-width:0.5;" x1="997" x2="1257" y1="783.5" y2="783.5"/>
+      <ellipse cx="1007" cy="797.1484" fill="#84BE84" rx="3" ry="3"
+               style="stroke:#038048;stroke-width:1.0;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+            textLength="201" x="1016" y="800.4951">void execute(ReservationId)
+      </text>
+    </g><!--class ReservationRepository-->
+    <g id="elem_ReservationRepository">
+      <rect codeLine="29" fill="#F1F1F1" height="129.4844" id="ReservationRepository" rx="2.5"
+            ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="268" x="355" y="993"/>
+      <ellipse cx="404.25" cy="1009" fill="#B4A7E5" rx="11" ry="11"
+               style="stroke:#181818;stroke-width:1.0;"/>
+      <path
+          d="M405.2031,1005.7813 L406.9219,1005.7813 C407.3125,1005.7813 407.5,1005.75 407.625,1005.6719 C407.8906,1005.5156 408.0313,1005.2344 408.0313,1004.9375 C408.0313,1004.6719 407.9219,1004.4063 407.6875,1004.2344 C407.5156,1004.125 407.375,1004.0938 406.9219,1004.0938 L401.7813,1004.0938 C401.3438,1004.0938 401.2188,1004.1094 401.0625,1004.2031 C400.8125,1004.3594 400.6563,1004.6563 400.6563,1004.9375 C400.6563,1005.2188 400.7969,1005.4688 401.0156,1005.6406 C401.1719,1005.75 401.3594,1005.7813 401.7813,1005.7813 L403.5,1005.7813 L403.5,1012.2969 L401.7813,1012.2969 C401.3438,1012.2969 401.2188,1012.3125 401.0625,1012.4219 C400.8125,1012.5781 400.6563,1012.8594 400.6563,1013.1563 C400.6563,1013.4063 400.7969,1013.6719 401.0156,1013.8281 C401.1719,1013.9531 401.375,1014 401.7813,1014 L406.9219,1014 C407.6719,1014 408.0313,1013.7188 408.0313,1013.1563 C408.0313,1012.875 407.9219,1012.625 407.6875,1012.4531 C407.5156,1012.3281 407.375,1012.2969 406.9219,1012.2969 L405.2031,1012.2969 L405.2031,1005.7813 Z "
+          fill="#000000"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic"
+            lengthAdjust="spacing" textLength="161" x="424.75" y="1013.8467">ReservationRepository
+      </text>
+      <line style="stroke:#181818;stroke-width:0.5;" x1="356" x2="622" y1="1025" y2="1025"/>
+      <line style="stroke:#181818;stroke-width:0.5;" x1="356" x2="622" y1="1033" y2="1033"/>
+      <ellipse cx="366" cy="1046.6484" fill="#84BE84" rx="3" ry="3"
+               style="stroke:#038048;stroke-width:1.0;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic"
+            lengthAdjust="spacing" textLength="242" x="375" y="1049.9951">Reservation
+        findBy(ReservationId)
+      </text>
+      <ellipse cx="366" cy="1062.9453" fill="#84BE84" rx="3" ry="3"
+               style="stroke:#038048;stroke-width:1.0;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic"
+            lengthAdjust="spacing" textLength="162" x="375" y="1066.292">void save(Reservation)
+      </text>
+      <ellipse cx="366" cy="1079.2422" fill="#84BE84" rx="3" ry="3"
+               style="stroke:#038048;stroke-width:1.0;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic"
+            lengthAdjust="spacing" textLength="190" x="375" y="1082.5889">void submit(ReservationId)
+      </text>
+      <ellipse cx="366" cy="1095.5391" fill="#84BE84" rx="3" ry="3"
+               style="stroke:#038048;stroke-width:1.0;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic"
+            lengthAdjust="spacing" textLength="197" x="375" y="1098.8857">void
+        confirm(ReservationId)
+      </text>
+      <ellipse cx="366" cy="1111.8359" fill="#84BE84" rx="3" ry="3"
+               style="stroke:#038048;stroke-width:1.0;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic"
+            lengthAdjust="spacing" textLength="178" x="375" y="1115.1826">void reset(ReservationId)
+      </text>
+    </g><!--class Reservation-->
+    <g id="elem_Reservation">
+      <rect codeLine="36" fill="#F1F1F1" height="80.5938" id="Reservation" rx="2.5" ry="2.5"
+            style="stroke:#181818;stroke-width:0.5;" width="177" x="142.5" y="1017"/>
+      <ellipse cx="184.05" cy="1033" fill="#ADD1B2" rx="11" ry="11"
+               style="stroke:#181818;stroke-width:1.0;"/>
+      <path
+          d="M186.3938,1028.6719 C185.4563,1028.2344 184.8625,1028.0938 183.9875,1028.0938 C181.3625,1028.0938 179.3625,1030.1719 179.3625,1032.8906 L179.3625,1034.0156 C179.3625,1036.5938 181.4719,1038.4844 184.3625,1038.4844 C185.5813,1038.4844 186.7375,1038.1875 187.4875,1037.6406 C188.0656,1037.2344 188.3938,1036.7813 188.3938,1036.3906 C188.3938,1035.9375 188.0031,1035.5469 187.5344,1035.5469 C187.3156,1035.5469 187.1125,1035.625 186.925,1035.8125 C186.4719,1036.2969 186.4719,1036.2969 186.2844,1036.3906 C185.8625,1036.6563 185.175,1036.7813 184.4094,1036.7813 C182.3625,1036.7813 181.0656,1035.6875 181.0656,1033.9844 L181.0656,1032.8906 C181.0656,1031.1094 182.3156,1029.7969 184.05,1029.7969 C184.6281,1029.7969 185.2375,1029.9531 185.7063,1030.2031 C186.1906,1030.4844 186.3625,1030.7031 186.4563,1031.1094 C186.5188,1031.5156 186.55,1031.6406 186.6906,1031.7656 C186.8313,1031.9063 187.0656,1032.0156 187.2844,1032.0156 C187.55,1032.0156 187.8156,1031.875 187.9875,1031.6563 C188.0969,1031.5 188.1281,1031.3125 188.1281,1030.8906 L188.1281,1029.4688 C188.1281,1029.0313 188.1125,1028.9063 188.0188,1028.75 C187.8625,1028.4844 187.5813,1028.3438 187.2844,1028.3438 C186.9875,1028.3438 186.7844,1028.4375 186.5656,1028.75 L186.3938,1028.6719 Z "
+          fill="#000000"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+            textLength="86" x="203.95" y="1037.8467">Reservation
+      </text>
+      <line style="stroke:#181818;stroke-width:0.5;" x1="143.5" x2="318.5" y1="1049" y2="1049"/>
+      <line style="stroke:#181818;stroke-width:0.5;" x1="143.5" x2="318.5" y1="1057" y2="1057"/>
+      <ellipse cx="153.5" cy="1070.6484" fill="#84BE84" rx="3" ry="3"
+               style="stroke:#038048;stroke-width:1.0;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+            textLength="151" x="162.5" y="1073.9951">ReservationId getId()
+      </text>
+      <ellipse cx="153.5" cy="1086.9453" fill="#84BE84" rx="3" ry="3"
+               style="stroke:#038048;stroke-width:1.0;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+            textLength="97" x="162.5" y="1090.292">Trip getTrip()
+      </text>
+    </g><!--class ReservationId-->
+    <g id="elem_ReservationId">
+      <rect codeLine="40" fill="#F1F1F1" height="64.2969" id="ReservationId" rx="2.5" ry="2.5"
+            style="stroke:#181818;stroke-width:0.5;" width="131" x="165.5" y="1265"/>
+      <ellipse cx="180.5" cy="1281" fill="#ADD1B2" rx="11" ry="11"
+               style="stroke:#181818;stroke-width:1.0;"/>
+      <path
+          d="M182.8438,1276.6719 C181.9063,1276.2344 181.3125,1276.0938 180.4375,1276.0938 C177.8125,1276.0938 175.8125,1278.1719 175.8125,1280.8906 L175.8125,1282.0156 C175.8125,1284.5938 177.9219,1286.4844 180.8125,1286.4844 C182.0313,1286.4844 183.1875,1286.1875 183.9375,1285.6406 C184.5156,1285.2344 184.8438,1284.7813 184.8438,1284.3906 C184.8438,1283.9375 184.4531,1283.5469 183.9844,1283.5469 C183.7656,1283.5469 183.5625,1283.625 183.375,1283.8125 C182.9219,1284.2969 182.9219,1284.2969 182.7344,1284.3906 C182.3125,1284.6563 181.625,1284.7813 180.8594,1284.7813 C178.8125,1284.7813 177.5156,1283.6875 177.5156,1281.9844 L177.5156,1280.8906 C177.5156,1279.1094 178.7656,1277.7969 180.5,1277.7969 C181.0781,1277.7969 181.6875,1277.9531 182.1563,1278.2031 C182.6406,1278.4844 182.8125,1278.7031 182.9063,1279.1094 C182.9688,1279.5156 183,1279.6406 183.1406,1279.7656 C183.2813,1279.9063 183.5156,1280.0156 183.7344,1280.0156 C184,1280.0156 184.2656,1279.875 184.4375,1279.6563 C184.5469,1279.5 184.5781,1279.3125 184.5781,1278.8906 L184.5781,1277.4688 C184.5781,1277.0313 184.5625,1276.9063 184.4688,1276.75 C184.3125,1276.4844 184.0313,1276.3438 183.7344,1276.3438 C183.4375,1276.3438 183.2344,1276.4375 183.0156,1276.75 L182.8438,1276.6719 Z "
+          fill="#000000"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+            textLength="99" x="194.5" y="1285.8467">ReservationId
+      </text>
+      <line style="stroke:#181818;stroke-width:0.5;" x1="166.5" x2="295.5" y1="1297" y2="1297"/>
+      <line style="stroke:#181818;stroke-width:0.5;" x1="166.5" x2="295.5" y1="1305" y2="1305"/>
+      <ellipse cx="176.5" cy="1318.6484" fill="#84BE84" rx="3" ry="3"
+               style="stroke:#038048;stroke-width:1.0;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+            textLength="85" x="185.5" y="1321.9951">UUID getId()
+      </text>
+    </g><!--class Trip-->
+    <g id="elem_Trip">
+      <rect codeLine="43" fill="#F1F1F1" height="162.0781" id="Trip" rx="2.5" ry="2.5"
+            style="stroke:#181818;stroke-width:0.5;" width="226" x="703" y="1216"/>
+      <ellipse cx="797.25" cy="1232" fill="#ADD1B2" rx="11" ry="11"
+               style="stroke:#181818;stroke-width:1.0;"/>
+      <path
+          d="M799.5938,1227.6719 C798.6563,1227.2344 798.0625,1227.0938 797.1875,1227.0938 C794.5625,1227.0938 792.5625,1229.1719 792.5625,1231.8906 L792.5625,1233.0156 C792.5625,1235.5938 794.6719,1237.4844 797.5625,1237.4844 C798.7813,1237.4844 799.9375,1237.1875 800.6875,1236.6406 C801.2656,1236.2344 801.5938,1235.7813 801.5938,1235.3906 C801.5938,1234.9375 801.2031,1234.5469 800.7344,1234.5469 C800.5156,1234.5469 800.3125,1234.625 800.125,1234.8125 C799.6719,1235.2969 799.6719,1235.2969 799.4844,1235.3906 C799.0625,1235.6563 798.375,1235.7813 797.6094,1235.7813 C795.5625,1235.7813 794.2656,1234.6875 794.2656,1232.9844 L794.2656,1231.8906 C794.2656,1230.1094 795.5156,1228.7969 797.25,1228.7969 C797.8281,1228.7969 798.4375,1228.9531 798.9063,1229.2031 C799.3906,1229.4844 799.5625,1229.7031 799.6563,1230.1094 C799.7188,1230.5156 799.75,1230.6406 799.8906,1230.7656 C800.0313,1230.9063 800.2656,1231.0156 800.4844,1231.0156 C800.75,1231.0156 801.0156,1230.875 801.1875,1230.6563 C801.2969,1230.5 801.3281,1230.3125 801.3281,1229.8906 L801.3281,1228.4688 C801.3281,1228.0313 801.3125,1227.9063 801.2188,1227.75 C801.0625,1227.4844 800.7813,1227.3438 800.4844,1227.3438 C800.1875,1227.3438 799.9844,1227.4375 799.7656,1227.75 L799.5938,1227.6719 Z "
+          fill="#000000"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+            textLength="29" x="817.75" y="1236.8467">Trip
+      </text>
+      <line style="stroke:#181818;stroke-width:0.5;" x1="704" x2="928" y1="1248" y2="1248"/>
+      <line style="stroke:#181818;stroke-width:0.5;" x1="704" x2="928" y1="1256" y2="1256"/>
+      <ellipse cx="714" cy="1269.6484" fill="#84BE84" rx="3" ry="3"
+               style="stroke:#038048;stroke-width:1.0;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+            textLength="94" x="723" y="1272.9951">TripId getId()
+      </text>
+      <ellipse cx="714" cy="1285.9453" fill="#84BE84" rx="3" ry="3"
+               style="stroke:#038048;stroke-width:1.0;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+            textLength="135" x="723" y="1289.292">Station getOrigin()
+      </text>
+      <ellipse cx="714" cy="1302.2422" fill="#84BE84" rx="3" ry="3"
+               style="stroke:#038048;stroke-width:1.0;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+            textLength="176" x="723" y="1305.5889">Station getDestination()
+      </text>
+      <ellipse cx="714" cy="1318.5391" fill="#84BE84" rx="3" ry="3"
+               style="stroke:#038048;stroke-width:1.0;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+            textLength="200" x="723" y="1321.8857">List&lt;Station&gt; getStations()
+      </text>
+      <ellipse cx="714" cy="1334.8359" fill="#84BE84" rx="3" ry="3"
+               style="stroke:#038048;stroke-width:1.0;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+            textLength="111" x="723" y="1338.1826">Train getTrain()
+      </text>
+      <ellipse cx="714" cy="1351.1328" fill="#84BE84" rx="3" ry="3"
+               style="stroke:#038048;stroke-width:1.0;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+            textLength="105" x="723" y="1354.4795">Seat getSeat()
+      </text>
+      <ellipse cx="714" cy="1367.4297" fill="#84BE84" rx="3" ry="3"
+               style="stroke:#038048;stroke-width:1.0;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+            textLength="137" x="723" y="1370.7764">Wagon getWagon()
+      </text>
+    </g><!--class TripId-->
+    <g id="elem_TripId">
+      <rect codeLine="52" fill="#F1F1F1" height="64.2969" id="TripId" rx="2.5" ry="2.5"
+            style="stroke:#181818;stroke-width:0.5;" width="111" x="760.5" y="1531.5"/>
+      <ellipse cx="792.15" cy="1547.5" fill="#ADD1B2" rx="11" ry="11"
+               style="stroke:#181818;stroke-width:1.0;"/>
+      <path
+          d="M794.4938,1543.1719 C793.5563,1542.7344 792.9625,1542.5938 792.0875,1542.5938 C789.4625,1542.5938 787.4625,1544.6719 787.4625,1547.3906 L787.4625,1548.5156 C787.4625,1551.0938 789.5719,1552.9844 792.4625,1552.9844 C793.6813,1552.9844 794.8375,1552.6875 795.5875,1552.1406 C796.1656,1551.7344 796.4938,1551.2813 796.4938,1550.8906 C796.4938,1550.4375 796.1031,1550.0469 795.6344,1550.0469 C795.4156,1550.0469 795.2125,1550.125 795.025,1550.3125 C794.5719,1550.7969 794.5719,1550.7969 794.3844,1550.8906 C793.9625,1551.1563 793.275,1551.2813 792.5094,1551.2813 C790.4625,1551.2813 789.1656,1550.1875 789.1656,1548.4844 L789.1656,1547.3906 C789.1656,1545.6094 790.4156,1544.2969 792.15,1544.2969 C792.7281,1544.2969 793.3375,1544.4531 793.8063,1544.7031 C794.2906,1544.9844 794.4625,1545.2031 794.5563,1545.6094 C794.6188,1546.0156 794.65,1546.1406 794.7906,1546.2656 C794.9313,1546.4063 795.1656,1546.5156 795.3844,1546.5156 C795.65,1546.5156 795.9156,1546.375 796.0875,1546.1563 C796.1969,1546 796.2281,1545.8125 796.2281,1545.3906 L796.2281,1543.9688 C796.2281,1543.5313 796.2125,1543.4063 796.1188,1543.25 C795.9625,1542.9844 795.6813,1542.8438 795.3844,1542.8438 C795.0875,1542.8438 794.8844,1542.9375 794.6656,1543.25 L794.4938,1543.1719 Z "
+          fill="#000000"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+            textLength="42" x="809.85" y="1552.3467">TripId
+      </text>
+      <line style="stroke:#181818;stroke-width:0.5;" x1="761.5" x2="870.5" y1="1563.5" y2="1563.5"/>
+      <line style="stroke:#181818;stroke-width:0.5;" x1="761.5" x2="870.5" y1="1571.5" y2="1571.5"/>
+      <ellipse cx="771.5" cy="1585.1484" fill="#84BE84" rx="3" ry="3"
+               style="stroke:#038048;stroke-width:1.0;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+            textLength="85" x="780.5" y="1588.4951">UUID getId()
+      </text>
+    </g><!--class Station-->
+    <g id="elem_Station">
+      <rect codeLine="55" fill="#F1F1F1" height="80.5938" id="Station" rx="2.5" ry="2.5"
+            style="stroke:#181818;stroke-width:0.5;" width="150" x="985" y="1523"/>
+      <ellipse cx="1029.25" cy="1539" fill="#ADD1B2" rx="11" ry="11"
+               style="stroke:#181818;stroke-width:1.0;"/>
+      <path
+          d="M1031.5938,1534.6719 C1030.6563,1534.2344 1030.0625,1534.0938 1029.1875,1534.0938 C1026.5625,1534.0938 1024.5625,1536.1719 1024.5625,1538.8906 L1024.5625,1540.0156 C1024.5625,1542.5938 1026.6719,1544.4844 1029.5625,1544.4844 C1030.7813,1544.4844 1031.9375,1544.1875 1032.6875,1543.6406 C1033.2656,1543.2344 1033.5938,1542.7813 1033.5938,1542.3906 C1033.5938,1541.9375 1033.2031,1541.5469 1032.7344,1541.5469 C1032.5156,1541.5469 1032.3125,1541.625 1032.125,1541.8125 C1031.6719,1542.2969 1031.6719,1542.2969 1031.4844,1542.3906 C1031.0625,1542.6563 1030.375,1542.7813 1029.6094,1542.7813 C1027.5625,1542.7813 1026.2656,1541.6875 1026.2656,1539.9844 L1026.2656,1538.8906 C1026.2656,1537.1094 1027.5156,1535.7969 1029.25,1535.7969 C1029.8281,1535.7969 1030.4375,1535.9531 1030.9063,1536.2031 C1031.3906,1536.4844 1031.5625,1536.7031 1031.6563,1537.1094 C1031.7188,1537.5156 1031.75,1537.6406 1031.8906,1537.7656 C1032.0313,1537.9063 1032.2656,1538.0156 1032.4844,1538.0156 C1032.75,1538.0156 1033.0156,1537.875 1033.1875,1537.6563 C1033.2969,1537.5 1033.3281,1537.3125 1033.3281,1536.8906 L1033.3281,1535.4688 C1033.3281,1535.0313 1033.3125,1534.9063 1033.2188,1534.75 C1033.0625,1534.4844 1032.7813,1534.3438 1032.4844,1534.3438 C1032.1875,1534.3438 1031.9844,1534.4375 1031.7656,1534.75 L1031.5938,1534.6719 Z "
+          fill="#000000"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+            textLength="53" x="1049.75" y="1543.8467">Station
+      </text>
+      <line style="stroke:#181818;stroke-width:0.5;" x1="986" x2="1134" y1="1555" y2="1555"/>
+      <line style="stroke:#181818;stroke-width:0.5;" x1="986" x2="1134" y1="1563" y2="1563"/>
+      <ellipse cx="996" cy="1576.6484" fill="#84BE84" rx="3" ry="3"
+               style="stroke:#038048;stroke-width:1.0;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+            textLength="118" x="1005" y="1579.9951">StationId getId()
+      </text>
+      <ellipse cx="996" cy="1592.9453" fill="#84BE84" rx="3" ry="3"
+               style="stroke:#038048;stroke-width:1.0;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+            textLength="124" x="1005" y="1596.292">String getName()
+      </text>
+    </g><!--class StationId-->
+    <g id="elem_StationId">
+      <rect codeLine="59" fill="#F1F1F1" height="64.2969" id="StationId" rx="2.5" ry="2.5"
+            style="stroke:#181818;stroke-width:0.5;" width="111" x="1004.5" y="1672"/>
+      <ellipse cx="1025.35" cy="1688" fill="#ADD1B2" rx="11" ry="11"
+               style="stroke:#181818;stroke-width:1.0;"/>
+      <path
+          d="M1027.6938,1683.6719 C1026.7563,1683.2344 1026.1625,1683.0938 1025.2875,1683.0938 C1022.6625,1683.0938 1020.6625,1685.1719 1020.6625,1687.8906 L1020.6625,1689.0156 C1020.6625,1691.5938 1022.7719,1693.4844 1025.6625,1693.4844 C1026.8813,1693.4844 1028.0375,1693.1875 1028.7875,1692.6406 C1029.3656,1692.2344 1029.6938,1691.7813 1029.6938,1691.3906 C1029.6938,1690.9375 1029.3031,1690.5469 1028.8344,1690.5469 C1028.6156,1690.5469 1028.4125,1690.625 1028.225,1690.8125 C1027.7719,1691.2969 1027.7719,1691.2969 1027.5844,1691.3906 C1027.1625,1691.6563 1026.475,1691.7813 1025.7094,1691.7813 C1023.6625,1691.7813 1022.3656,1690.6875 1022.3656,1688.9844 L1022.3656,1687.8906 C1022.3656,1686.1094 1023.6156,1684.7969 1025.35,1684.7969 C1025.9281,1684.7969 1026.5375,1684.9531 1027.0063,1685.2031 C1027.4906,1685.4844 1027.6625,1685.7031 1027.7563,1686.1094 C1027.8188,1686.5156 1027.85,1686.6406 1027.9906,1686.7656 C1028.1313,1686.9063 1028.3656,1687.0156 1028.5844,1687.0156 C1028.85,1687.0156 1029.1156,1686.875 1029.2875,1686.6563 C1029.3969,1686.5 1029.4281,1686.3125 1029.4281,1685.8906 L1029.4281,1684.4688 C1029.4281,1684.0313 1029.4125,1683.9063 1029.3188,1683.75 C1029.1625,1683.4844 1028.8813,1683.3438 1028.5844,1683.3438 C1028.2875,1683.3438 1028.0844,1683.4375 1027.8656,1683.75 L1027.6938,1683.6719 Z "
+          fill="#000000"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+            textLength="66" x="1040.65" y="1692.8467">StationId
+      </text>
+      <line style="stroke:#181818;stroke-width:0.5;" x1="1005.5" x2="1114.5" y1="1704" y2="1704"/>
+      <line style="stroke:#181818;stroke-width:0.5;" x1="1005.5" x2="1114.5" y1="1712" y2="1712"/>
+      <ellipse cx="1015.5" cy="1725.6484" fill="#84BE84" rx="3" ry="3"
+               style="stroke:#038048;stroke-width:1.0;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+            textLength="85" x="1024.5" y="1728.9951">UUID getId()
+      </text>
+    </g><!--class Train-->
+    <g id="elem_Train">
+      <rect codeLine="62" fill="#F1F1F1" height="80.5938" id="Train" rx="2.5" ry="2.5"
+            style="stroke:#181818;stroke-width:0.5;" width="150" x="1865" y="1523"/>
+      <ellipse cx="1917.75" cy="1539" fill="#ADD1B2" rx="11" ry="11"
+               style="stroke:#181818;stroke-width:1.0;"/>
+      <path
+          d="M1920.0938,1534.6719 C1919.1563,1534.2344 1918.5625,1534.0938 1917.6875,1534.0938 C1915.0625,1534.0938 1913.0625,1536.1719 1913.0625,1538.8906 L1913.0625,1540.0156 C1913.0625,1542.5938 1915.1719,1544.4844 1918.0625,1544.4844 C1919.2813,1544.4844 1920.4375,1544.1875 1921.1875,1543.6406 C1921.7656,1543.2344 1922.0938,1542.7813 1922.0938,1542.3906 C1922.0938,1541.9375 1921.7031,1541.5469 1921.2344,1541.5469 C1921.0156,1541.5469 1920.8125,1541.625 1920.625,1541.8125 C1920.1719,1542.2969 1920.1719,1542.2969 1919.9844,1542.3906 C1919.5625,1542.6563 1918.875,1542.7813 1918.1094,1542.7813 C1916.0625,1542.7813 1914.7656,1541.6875 1914.7656,1539.9844 L1914.7656,1538.8906 C1914.7656,1537.1094 1916.0156,1535.7969 1917.75,1535.7969 C1918.3281,1535.7969 1918.9375,1535.9531 1919.4063,1536.2031 C1919.8906,1536.4844 1920.0625,1536.7031 1920.1563,1537.1094 C1920.2188,1537.5156 1920.25,1537.6406 1920.3906,1537.7656 C1920.5313,1537.9063 1920.7656,1538.0156 1920.9844,1538.0156 C1921.25,1538.0156 1921.5156,1537.875 1921.6875,1537.6563 C1921.7969,1537.5 1921.8281,1537.3125 1921.8281,1536.8906 L1921.8281,1535.4688 C1921.8281,1535.0313 1921.8125,1534.9063 1921.7188,1534.75 C1921.5625,1534.4844 1921.2813,1534.3438 1920.9844,1534.3438 C1920.6875,1534.3438 1920.4844,1534.4375 1920.2656,1534.75 L1920.0938,1534.6719 Z "
+          fill="#000000"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+            textLength="36" x="1938.25" y="1543.8467">Train
+      </text>
+      <line style="stroke:#181818;stroke-width:0.5;" x1="1866" x2="2014" y1="1555" y2="1555"/>
+      <line style="stroke:#181818;stroke-width:0.5;" x1="1866" x2="2014" y1="1563" y2="1563"/>
+      <ellipse cx="1876" cy="1576.6484" fill="#84BE84" rx="3" ry="3"
+               style="stroke:#038048;stroke-width:1.0;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+            textLength="101" x="1885" y="1579.9951">TrainId getId()
+      </text>
+      <ellipse cx="1876" cy="1592.9453" fill="#84BE84" rx="3" ry="3"
+               style="stroke:#038048;stroke-width:1.0;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+            textLength="124" x="1885" y="1596.292">String getName()
+      </text>
+    </g><!--class TrainId-->
+    <g id="elem_TrainId">
+      <rect codeLine="66" fill="#F1F1F1" height="64.2969" id="TrainId" rx="2.5" ry="2.5"
+            style="stroke:#181818;stroke-width:0.5;" width="111" x="1884.5" y="1672"/>
+      <ellipse cx="1913" cy="1688" fill="#ADD1B2" rx="11" ry="11"
+               style="stroke:#181818;stroke-width:1.0;"/>
+      <path
+          d="M1915.3438,1683.6719 C1914.4063,1683.2344 1913.8125,1683.0938 1912.9375,1683.0938 C1910.3125,1683.0938 1908.3125,1685.1719 1908.3125,1687.8906 L1908.3125,1689.0156 C1908.3125,1691.5938 1910.4219,1693.4844 1913.3125,1693.4844 C1914.5313,1693.4844 1915.6875,1693.1875 1916.4375,1692.6406 C1917.0156,1692.2344 1917.3438,1691.7813 1917.3438,1691.3906 C1917.3438,1690.9375 1916.9531,1690.5469 1916.4844,1690.5469 C1916.2656,1690.5469 1916.0625,1690.625 1915.875,1690.8125 C1915.4219,1691.2969 1915.4219,1691.2969 1915.2344,1691.3906 C1914.8125,1691.6563 1914.125,1691.7813 1913.3594,1691.7813 C1911.3125,1691.7813 1910.0156,1690.6875 1910.0156,1688.9844 L1910.0156,1687.8906 C1910.0156,1686.1094 1911.2656,1684.7969 1913,1684.7969 C1913.5781,1684.7969 1914.1875,1684.9531 1914.6563,1685.2031 C1915.1406,1685.4844 1915.3125,1685.7031 1915.4063,1686.1094 C1915.4688,1686.5156 1915.5,1686.6406 1915.6406,1686.7656 C1915.7813,1686.9063 1916.0156,1687.0156 1916.2344,1687.0156 C1916.5,1687.0156 1916.7656,1686.875 1916.9375,1686.6563 C1917.0469,1686.5 1917.0781,1686.3125 1917.0781,1685.8906 L1917.0781,1684.4688 C1917.0781,1684.0313 1917.0625,1683.9063 1916.9688,1683.75 C1916.8125,1683.4844 1916.5313,1683.3438 1916.2344,1683.3438 C1915.9375,1683.3438 1915.7344,1683.4375 1915.5156,1683.75 L1915.3438,1683.6719 Z "
+          fill="#000000"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+            textLength="49" x="1930" y="1692.8467">TrainId
+      </text>
+      <line style="stroke:#181818;stroke-width:0.5;" x1="1885.5" x2="1994.5" y1="1704" y2="1704"/>
+      <line style="stroke:#181818;stroke-width:0.5;" x1="1885.5" x2="1994.5" y1="1712" y2="1712"/>
+      <ellipse cx="1895.5" cy="1725.6484" fill="#84BE84" rx="3" ry="3"
+               style="stroke:#038048;stroke-width:1.0;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+            textLength="85" x="1904.5" y="1728.9951">UUID getId()
+      </text>
+    </g><!--class Wagon-->
+    <g id="elem_Wagon">
+      <rect codeLine="69" fill="#F1F1F1" height="96.8906" id="Wagon" rx="2.5" ry="2.5"
+            style="stroke:#181818;stroke-width:0.5;" width="166" x="1607" y="1515"/>
+      <ellipse cx="1661.25" cy="1531" fill="#ADD1B2" rx="11" ry="11"
+               style="stroke:#181818;stroke-width:1.0;"/>
+      <path
+          d="M1663.5938,1526.6719 C1662.6563,1526.2344 1662.0625,1526.0938 1661.1875,1526.0938 C1658.5625,1526.0938 1656.5625,1528.1719 1656.5625,1530.8906 L1656.5625,1532.0156 C1656.5625,1534.5938 1658.6719,1536.4844 1661.5625,1536.4844 C1662.7813,1536.4844 1663.9375,1536.1875 1664.6875,1535.6406 C1665.2656,1535.2344 1665.5938,1534.7813 1665.5938,1534.3906 C1665.5938,1533.9375 1665.2031,1533.5469 1664.7344,1533.5469 C1664.5156,1533.5469 1664.3125,1533.625 1664.125,1533.8125 C1663.6719,1534.2969 1663.6719,1534.2969 1663.4844,1534.3906 C1663.0625,1534.6563 1662.375,1534.7813 1661.6094,1534.7813 C1659.5625,1534.7813 1658.2656,1533.6875 1658.2656,1531.9844 L1658.2656,1530.8906 C1658.2656,1529.1094 1659.5156,1527.7969 1661.25,1527.7969 C1661.8281,1527.7969 1662.4375,1527.9531 1662.9063,1528.2031 C1663.3906,1528.4844 1663.5625,1528.7031 1663.6563,1529.1094 C1663.7188,1529.5156 1663.75,1529.6406 1663.8906,1529.7656 C1664.0313,1529.9063 1664.2656,1530.0156 1664.4844,1530.0156 C1664.75,1530.0156 1665.0156,1529.875 1665.1875,1529.6563 C1665.2969,1529.5 1665.3281,1529.3125 1665.3281,1528.8906 L1665.3281,1527.4688 C1665.3281,1527.0313 1665.3125,1526.9063 1665.2188,1526.75 C1665.0625,1526.4844 1664.7813,1526.3438 1664.4844,1526.3438 C1664.1875,1526.3438 1663.9844,1526.4375 1663.7656,1526.75 L1663.5938,1526.6719 Z "
+          fill="#000000"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+            textLength="49" x="1681.75" y="1535.8467">Wagon
+      </text>
+      <line style="stroke:#181818;stroke-width:0.5;" x1="1608" x2="1772" y1="1547" y2="1547"/>
+      <line style="stroke:#181818;stroke-width:0.5;" x1="1608" x2="1772" y1="1555" y2="1555"/>
+      <ellipse cx="1618" cy="1568.6484" fill="#84BE84" rx="3" ry="3"
+               style="stroke:#038048;stroke-width:1.0;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+            textLength="114" x="1627" y="1571.9951">WagonId getId()
+      </text>
+      <ellipse cx="1618" cy="1584.9453" fill="#84BE84" rx="3" ry="3"
+               style="stroke:#038048;stroke-width:1.0;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+            textLength="124" x="1627" y="1588.292">String getName()
+      </text>
+      <ellipse cx="1618" cy="1601.2422" fill="#84BE84" rx="3" ry="3"
+               style="stroke:#038048;stroke-width:1.0;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+            textLength="140" x="1627" y="1604.5889">String getNumber()
+      </text>
+    </g><!--class WagonId-->
+    <g id="elem_WagonId">
+      <rect codeLine="74" fill="#F1F1F1" height="64.2969" id="WagonId" rx="2.5" ry="2.5"
+            style="stroke:#181818;stroke-width:0.5;" width="111" x="1634.5" y="1672"/>
+      <ellipse cx="1657.15" cy="1688" fill="#ADD1B2" rx="11" ry="11"
+               style="stroke:#181818;stroke-width:1.0;"/>
+      <path
+          d="M1659.4938,1683.6719 C1658.5563,1683.2344 1657.9625,1683.0938 1657.0875,1683.0938 C1654.4625,1683.0938 1652.4625,1685.1719 1652.4625,1687.8906 L1652.4625,1689.0156 C1652.4625,1691.5938 1654.5719,1693.4844 1657.4625,1693.4844 C1658.6813,1693.4844 1659.8375,1693.1875 1660.5875,1692.6406 C1661.1656,1692.2344 1661.4938,1691.7813 1661.4938,1691.3906 C1661.4938,1690.9375 1661.1031,1690.5469 1660.6344,1690.5469 C1660.4156,1690.5469 1660.2125,1690.625 1660.025,1690.8125 C1659.5719,1691.2969 1659.5719,1691.2969 1659.3844,1691.3906 C1658.9625,1691.6563 1658.275,1691.7813 1657.5094,1691.7813 C1655.4625,1691.7813 1654.1656,1690.6875 1654.1656,1688.9844 L1654.1656,1687.8906 C1654.1656,1686.1094 1655.4156,1684.7969 1657.15,1684.7969 C1657.7281,1684.7969 1658.3375,1684.9531 1658.8063,1685.2031 C1659.2906,1685.4844 1659.4625,1685.7031 1659.5563,1686.1094 C1659.6188,1686.5156 1659.65,1686.6406 1659.7906,1686.7656 C1659.9313,1686.9063 1660.1656,1687.0156 1660.3844,1687.0156 C1660.65,1687.0156 1660.9156,1686.875 1661.0875,1686.6563 C1661.1969,1686.5 1661.2281,1686.3125 1661.2281,1685.8906 L1661.2281,1684.4688 C1661.2281,1684.0313 1661.2125,1683.9063 1661.1188,1683.75 C1660.9625,1683.4844 1660.6813,1683.3438 1660.3844,1683.3438 C1660.0875,1683.3438 1659.8844,1683.4375 1659.6656,1683.75 L1659.4938,1683.6719 Z "
+          fill="#000000"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+            textLength="62" x="1672.85" y="1692.8467">WagonId
+      </text>
+      <line style="stroke:#181818;stroke-width:0.5;" x1="1635.5" x2="1744.5" y1="1704" y2="1704"/>
+      <line style="stroke:#181818;stroke-width:0.5;" x1="1635.5" x2="1744.5" y1="1712" y2="1712"/>
+      <ellipse cx="1645.5" cy="1725.6484" fill="#84BE84" rx="3" ry="3"
+               style="stroke:#038048;stroke-width:1.0;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+            textLength="85" x="1654.5" y="1728.9951">UUID getId()
+      </text>
+    </g><!--class Seat-->
+    <g id="elem_Seat">
+      <rect codeLine="77" fill="#F1F1F1" height="80.5938" id="Seat" rx="2.5" ry="2.5"
+            style="stroke:#181818;stroke-width:0.5;" width="150" x="1332" y="1523"/>
+      <ellipse cx="1386.25" cy="1539" fill="#ADD1B2" rx="11" ry="11"
+               style="stroke:#181818;stroke-width:1.0;"/>
+      <path
+          d="M1388.5938,1534.6719 C1387.6563,1534.2344 1387.0625,1534.0938 1386.1875,1534.0938 C1383.5625,1534.0938 1381.5625,1536.1719 1381.5625,1538.8906 L1381.5625,1540.0156 C1381.5625,1542.5938 1383.6719,1544.4844 1386.5625,1544.4844 C1387.7813,1544.4844 1388.9375,1544.1875 1389.6875,1543.6406 C1390.2656,1543.2344 1390.5938,1542.7813 1390.5938,1542.3906 C1390.5938,1541.9375 1390.2031,1541.5469 1389.7344,1541.5469 C1389.5156,1541.5469 1389.3125,1541.625 1389.125,1541.8125 C1388.6719,1542.2969 1388.6719,1542.2969 1388.4844,1542.3906 C1388.0625,1542.6563 1387.375,1542.7813 1386.6094,1542.7813 C1384.5625,1542.7813 1383.2656,1541.6875 1383.2656,1539.9844 L1383.2656,1538.8906 C1383.2656,1537.1094 1384.5156,1535.7969 1386.25,1535.7969 C1386.8281,1535.7969 1387.4375,1535.9531 1387.9063,1536.2031 C1388.3906,1536.4844 1388.5625,1536.7031 1388.6563,1537.1094 C1388.7188,1537.5156 1388.75,1537.6406 1388.8906,1537.7656 C1389.0313,1537.9063 1389.2656,1538.0156 1389.4844,1538.0156 C1389.75,1538.0156 1390.0156,1537.875 1390.1875,1537.6563 C1390.2969,1537.5 1390.3281,1537.3125 1390.3281,1536.8906 L1390.3281,1535.4688 C1390.3281,1535.0313 1390.3125,1534.9063 1390.2188,1534.75 C1390.0625,1534.4844 1389.7813,1534.3438 1389.4844,1534.3438 C1389.1875,1534.3438 1388.9844,1534.4375 1388.7656,1534.75 L1388.5938,1534.6719 Z "
+          fill="#000000"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+            textLength="33" x="1406.75" y="1543.8467">Seat
+      </text>
+      <line style="stroke:#181818;stroke-width:0.5;" x1="1333" x2="1481" y1="1555" y2="1555"/>
+      <line style="stroke:#181818;stroke-width:0.5;" x1="1333" x2="1481" y1="1563" y2="1563"/>
+      <ellipse cx="1343" cy="1576.6484" fill="#84BE84" rx="3" ry="3"
+               style="stroke:#038048;stroke-width:1.0;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+            textLength="98" x="1352" y="1579.9951">SeatId getId()
+      </text>
+      <ellipse cx="1343" cy="1592.9453" fill="#84BE84" rx="3" ry="3"
+               style="stroke:#038048;stroke-width:1.0;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+            textLength="124" x="1352" y="1596.292">String getName()
+      </text>
+    </g><!--class SeatId-->
+    <g id="elem_SeatId">
+      <rect codeLine="81" fill="#F1F1F1" height="64.2969" id="SeatId" rx="2.5" ry="2.5"
+            style="stroke:#181818;stroke-width:0.5;" width="111" x="1351.5" y="1672"/>
+      <ellipse cx="1381.35" cy="1688" fill="#ADD1B2" rx="11" ry="11"
+               style="stroke:#181818;stroke-width:1.0;"/>
+      <path
+          d="M1383.6938,1683.6719 C1382.7563,1683.2344 1382.1625,1683.0938 1381.2875,1683.0938 C1378.6625,1683.0938 1376.6625,1685.1719 1376.6625,1687.8906 L1376.6625,1689.0156 C1376.6625,1691.5938 1378.7719,1693.4844 1381.6625,1693.4844 C1382.8813,1693.4844 1384.0375,1693.1875 1384.7875,1692.6406 C1385.3656,1692.2344 1385.6938,1691.7813 1385.6938,1691.3906 C1385.6938,1690.9375 1385.3031,1690.5469 1384.8344,1690.5469 C1384.6156,1690.5469 1384.4125,1690.625 1384.225,1690.8125 C1383.7719,1691.2969 1383.7719,1691.2969 1383.5844,1691.3906 C1383.1625,1691.6563 1382.475,1691.7813 1381.7094,1691.7813 C1379.6625,1691.7813 1378.3656,1690.6875 1378.3656,1688.9844 L1378.3656,1687.8906 C1378.3656,1686.1094 1379.6156,1684.7969 1381.35,1684.7969 C1381.9281,1684.7969 1382.5375,1684.9531 1383.0063,1685.2031 C1383.4906,1685.4844 1383.6625,1685.7031 1383.7563,1686.1094 C1383.8188,1686.5156 1383.85,1686.6406 1383.9906,1686.7656 C1384.1313,1686.9063 1384.3656,1687.0156 1384.5844,1687.0156 C1384.85,1687.0156 1385.1156,1686.875 1385.2875,1686.6563 C1385.3969,1686.5 1385.4281,1686.3125 1385.4281,1685.8906 L1385.4281,1684.4688 C1385.4281,1684.0313 1385.4125,1683.9063 1385.3188,1683.75 C1385.1625,1683.4844 1384.8813,1683.3438 1384.5844,1683.3438 C1384.2875,1683.3438 1384.0844,1683.4375 1383.8656,1683.75 L1383.6938,1683.6719 Z "
+          fill="#000000"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+            textLength="46" x="1398.65" y="1692.8467">SeatId
+      </text>
+      <line style="stroke:#181818;stroke-width:0.5;" x1="1352.5" x2="1461.5" y1="1704" y2="1704"/>
+      <line style="stroke:#181818;stroke-width:0.5;" x1="1352.5" x2="1461.5" y1="1712" y2="1712"/>
+      <ellipse cx="1362.5" cy="1725.6484" fill="#84BE84" rx="3" ry="3"
+               style="stroke:#038048;stroke-width:1.0;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+            textLength="85" x="1371.5" y="1728.9951">UUID getId()
+      </text>
+    </g><!--class ResetReservationService-->
+    <g id="elem_ResetReservationService">
+      <rect codeLine="84" fill="#F1F1F1" height="64.2969" id="ResetReservationService" rx="2.5"
+            ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="213" x="662.5" y="570.5"/>
+      <ellipse cx="677.5" cy="586.5" fill="#ADD1B2" rx="11" ry="11"
+               style="stroke:#181818;stroke-width:1.0;"/>
+      <path
+          d="M679.8438,582.1719 C678.9063,581.7344 678.3125,581.5938 677.4375,581.5938 C674.8125,581.5938 672.8125,583.6719 672.8125,586.3906 L672.8125,587.5156 C672.8125,590.0938 674.9219,591.9844 677.8125,591.9844 C679.0313,591.9844 680.1875,591.6875 680.9375,591.1406 C681.5156,590.7344 681.8438,590.2813 681.8438,589.8906 C681.8438,589.4375 681.4531,589.0469 680.9844,589.0469 C680.7656,589.0469 680.5625,589.125 680.375,589.3125 C679.9219,589.7969 679.9219,589.7969 679.7344,589.8906 C679.3125,590.1563 678.625,590.2813 677.8594,590.2813 C675.8125,590.2813 674.5156,589.1875 674.5156,587.4844 L674.5156,586.3906 C674.5156,584.6094 675.7656,583.2969 677.5,583.2969 C678.0781,583.2969 678.6875,583.4531 679.1563,583.7031 C679.6406,583.9844 679.8125,584.2031 679.9063,584.6094 C679.9688,585.0156 680,585.1406 680.1406,585.2656 C680.2813,585.4063 680.5156,585.5156 680.7344,585.5156 C681,585.5156 681.2656,585.375 681.4375,585.1563 C681.5469,585 681.5781,584.8125 681.5781,584.3906 L681.5781,582.9688 C681.5781,582.5313 681.5625,582.4063 681.4688,582.25 C681.3125,581.9844 681.0313,581.8438 680.7344,581.8438 C680.4375,581.8438 680.2344,581.9375 680.0156,582.25 L679.8438,582.1719 Z "
+          fill="#000000"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+            textLength="181" x="691.5" y="591.3467">ResetReservationService
+      </text>
+      <line style="stroke:#181818;stroke-width:0.5;" x1="663.5" x2="874.5" y1="602.5" y2="602.5"/>
+      <line style="stroke:#181818;stroke-width:0.5;" x1="663.5" x2="874.5" y1="610.5" y2="610.5"/>
+      <ellipse cx="673.5" cy="624.1484" fill="#84BE84" rx="3" ry="3"
+               style="stroke:#038048;stroke-width:1.0;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+            textLength="182" x="682.5" y="627.4951">void serve(ReservationId)
+      </text>
+    </g><!--class ResetReservationComponent-->
+    <g id="elem_ResetReservationComponent">
+      <rect codeLine="87" fill="#F1F1F1" height="64.2969" id="ResetReservationComponent" rx="2.5"
+            ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="246" x="646" y="743.5"/>
+      <ellipse cx="661" cy="759.5" fill="#ADD1B2" rx="11" ry="11"
+               style="stroke:#181818;stroke-width:1.0;"/>
+      <path
+          d="M663.3438,755.1719 C662.4063,754.7344 661.8125,754.5938 660.9375,754.5938 C658.3125,754.5938 656.3125,756.6719 656.3125,759.3906 L656.3125,760.5156 C656.3125,763.0938 658.4219,764.9844 661.3125,764.9844 C662.5313,764.9844 663.6875,764.6875 664.4375,764.1406 C665.0156,763.7344 665.3438,763.2813 665.3438,762.8906 C665.3438,762.4375 664.9531,762.0469 664.4844,762.0469 C664.2656,762.0469 664.0625,762.125 663.875,762.3125 C663.4219,762.7969 663.4219,762.7969 663.2344,762.8906 C662.8125,763.1563 662.125,763.2813 661.3594,763.2813 C659.3125,763.2813 658.0156,762.1875 658.0156,760.4844 L658.0156,759.3906 C658.0156,757.6094 659.2656,756.2969 661,756.2969 C661.5781,756.2969 662.1875,756.4531 662.6563,756.7031 C663.1406,756.9844 663.3125,757.2031 663.4063,757.6094 C663.4688,758.0156 663.5,758.1406 663.6406,758.2656 C663.7813,758.4063 664.0156,758.5156 664.2344,758.5156 C664.5,758.5156 664.7656,758.375 664.9375,758.1563 C665.0469,758 665.0781,757.8125 665.0781,757.3906 L665.0781,755.9688 C665.0781,755.5313 665.0625,755.4063 664.9688,755.25 C664.8125,754.9844 664.5313,754.8438 664.2344,754.8438 C663.9375,754.8438 663.7344,754.9375 663.5156,755.25 L663.3438,755.1719 Z "
+          fill="#000000"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+            textLength="214" x="675" y="764.3467">ResetReservationComponent
+      </text>
+      <line style="stroke:#181818;stroke-width:0.5;" x1="647" x2="891" y1="775.5" y2="775.5"/>
+      <line style="stroke:#181818;stroke-width:0.5;" x1="647" x2="891" y1="783.5" y2="783.5"/>
+      <ellipse cx="657" cy="797.1484" fill="#84BE84" rx="3" ry="3"
+               style="stroke:#038048;stroke-width:1.0;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+            textLength="201" x="666" y="800.4951">void execute(ReservationId)
+      </text>
+    </g><!--class SubmitReservationService-->
+    <g id="elem_SubmitReservationService">
+      <rect codeLine="90" fill="#F1F1F1" height="113.1875" id="SubmitReservationService" rx="2.5"
+            ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="455" x="102.5" y="546"/>
+      <ellipse cx="230.25" cy="562" fill="#ADD1B2" rx="11" ry="11"
+               style="stroke:#181818;stroke-width:1.0;"/>
+      <path
+          d="M232.5938,557.6719 C231.6563,557.2344 231.0625,557.0938 230.1875,557.0938 C227.5625,557.0938 225.5625,559.1719 225.5625,561.8906 L225.5625,563.0156 C225.5625,565.5938 227.6719,567.4844 230.5625,567.4844 C231.7813,567.4844 232.9375,567.1875 233.6875,566.6406 C234.2656,566.2344 234.5938,565.7813 234.5938,565.3906 C234.5938,564.9375 234.2031,564.5469 233.7344,564.5469 C233.5156,564.5469 233.3125,564.625 233.125,564.8125 C232.6719,565.2969 232.6719,565.2969 232.4844,565.3906 C232.0625,565.6563 231.375,565.7813 230.6094,565.7813 C228.5625,565.7813 227.2656,564.6875 227.2656,562.9844 L227.2656,561.8906 C227.2656,560.1094 228.5156,558.7969 230.25,558.7969 C230.8281,558.7969 231.4375,558.9531 231.9063,559.2031 C232.3906,559.4844 232.5625,559.7031 232.6563,560.1094 C232.7188,560.5156 232.75,560.6406 232.8906,560.7656 C233.0313,560.9063 233.2656,561.0156 233.4844,561.0156 C233.75,561.0156 234.0156,560.875 234.1875,560.6563 C234.2969,560.5 234.3281,560.3125 234.3281,559.8906 L234.3281,558.4688 C234.3281,558.0313 234.3125,557.9063 234.2188,557.75 C234.0625,557.4844 233.7813,557.3438 233.4844,557.3438 C233.1875,557.3438 232.9844,557.4375 232.7656,557.75 L232.5938,557.6719 Z "
+          fill="#000000"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+            textLength="191" x="250.75" y="566.8467">SubmitReservationService
+      </text>
+      <line style="stroke:#181818;stroke-width:0.5;" x1="103.5" x2="556.5" y1="578" y2="578"/>
+      <ellipse cx="113.5" cy="591.6484" fill="none" rx="3" ry="3"
+               style="stroke:#038048;stroke-width:1.0;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+            textLength="364" x="122.5" y="594.9951">SubmitReservationComponent submitReservation
+      </text>
+      <line style="stroke:#181818;stroke-width:0.5;" x1="103.5" x2="556.5" y1="602.2969"
+            y2="602.2969"/>
+      <ellipse cx="113.5" cy="615.9453" fill="#84BE84" rx="3" ry="3"
+               style="stroke:#038048;stroke-width:1.0;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+            textLength="401" x="122.5" y="619.292">SubmitReservationComponent getSubmitReservation()
+      </text>
+      <ellipse cx="113.5" cy="632.2422" fill="#84BE84" rx="3" ry="3"
+               style="stroke:#038048;stroke-width:1.0;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+            textLength="429" x="122.5" y="635.5889">void
+        setSubmitReservation(SubmitReservationComponent)
+      </text>
+      <ellipse cx="113.5" cy="648.5391" fill="#84BE84" rx="3" ry="3"
+               style="stroke:#038048;stroke-width:1.0;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+            textLength="182" x="122.5" y="651.8857">void serve(ReservationId)
+      </text>
+    </g><!--class SubmitReservationComponent-->
+    <g id="elem_SubmitReservationComponent">
+      <rect codeLine="97" fill="#F1F1F1" height="113.1875" id="SubmitReservationComponent" rx="2.5"
+            ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="423" x="118.5" y="719"/>
+      <ellipse cx="213.75" cy="735" fill="#ADD1B2" rx="11" ry="11"
+               style="stroke:#181818;stroke-width:1.0;"/>
+      <path
+          d="M216.0938,730.6719 C215.1563,730.2344 214.5625,730.0938 213.6875,730.0938 C211.0625,730.0938 209.0625,732.1719 209.0625,734.8906 L209.0625,736.0156 C209.0625,738.5938 211.1719,740.4844 214.0625,740.4844 C215.2813,740.4844 216.4375,740.1875 217.1875,739.6406 C217.7656,739.2344 218.0938,738.7813 218.0938,738.3906 C218.0938,737.9375 217.7031,737.5469 217.2344,737.5469 C217.0156,737.5469 216.8125,737.625 216.625,737.8125 C216.1719,738.2969 216.1719,738.2969 215.9844,738.3906 C215.5625,738.6563 214.875,738.7813 214.1094,738.7813 C212.0625,738.7813 210.7656,737.6875 210.7656,735.9844 L210.7656,734.8906 C210.7656,733.1094 212.0156,731.7969 213.75,731.7969 C214.3281,731.7969 214.9375,731.9531 215.4063,732.2031 C215.8906,732.4844 216.0625,732.7031 216.1563,733.1094 C216.2188,733.5156 216.25,733.6406 216.3906,733.7656 C216.5313,733.9063 216.7656,734.0156 216.9844,734.0156 C217.25,734.0156 217.5156,733.875 217.6875,733.6563 C217.7969,733.5 217.8281,733.3125 217.8281,732.8906 L217.8281,731.4688 C217.8281,731.0313 217.8125,730.9063 217.7188,730.75 C217.5625,730.4844 217.2813,730.3438 216.9844,730.3438 C216.6875,730.3438 216.4844,730.4375 216.2656,730.75 L216.0938,730.6719 Z "
+          fill="#000000"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+            textLength="224" x="234.25" y="739.8467">SubmitReservationComponent
+      </text>
+      <line style="stroke:#181818;stroke-width:0.5;" x1="119.5" x2="540.5" y1="751" y2="751"/>
+      <ellipse cx="129.5" cy="764.6484" fill="none" rx="3" ry="3"
+               style="stroke:#038048;stroke-width:1.0;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+            textLength="330" x="138.5" y="767.9951">ReservationRepository reservationRepository
+      </text>
+      <line style="stroke:#181818;stroke-width:0.5;" x1="119.5" x2="540.5" y1="775.2969"
+            y2="775.2969"/>
+      <ellipse cx="129.5" cy="788.9453" fill="#84BE84" rx="3" ry="3"
+               style="stroke:#038048;stroke-width:1.0;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+            textLength="369" x="138.5" y="792.292">ReservationRepository getReservationRepository()
+      </text>
+      <ellipse cx="129.5" cy="805.2422" fill="#84BE84" rx="3" ry="3"
+               style="stroke:#038048;stroke-width:1.0;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+            textLength="397" x="138.5" y="808.5889">void
+        setReservationRepository(ReservationRepository)
+      </text>
+      <ellipse cx="129.5" cy="821.5391" fill="#84BE84" rx="3" ry="3"
+               style="stroke:#038048;stroke-width:1.0;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+            textLength="201" x="138.5" y="824.8857">void execute(ReservationId)
+      </text>
+    </g><!--class ReservationRepositoryUseCase-->
+    <g id="elem_ReservationRepositoryUseCase">
+      <rect codeLine="104" fill="#F1F1F1" height="48" id="ReservationRepositoryUseCase" rx="2.5"
+            ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="254" x="2195" y="1273"/>
+      <ellipse cx="2210" cy="1289" fill="#B4A7E5" rx="11" ry="11"
+               style="stroke:#181818;stroke-width:1.0;"/>
+      <path
+          d="M2210.9531,1285.7813 L2212.6719,1285.7813 C2213.0625,1285.7813 2213.25,1285.75 2213.375,1285.6719 C2213.6406,1285.5156 2213.7813,1285.2344 2213.7813,1284.9375 C2213.7813,1284.6719 2213.6719,1284.4063 2213.4375,1284.2344 C2213.2656,1284.125 2213.125,1284.0938 2212.6719,1284.0938 L2207.5313,1284.0938 C2207.0938,1284.0938 2206.9688,1284.1094 2206.8125,1284.2031 C2206.5625,1284.3594 2206.4063,1284.6563 2206.4063,1284.9375 C2206.4063,1285.2188 2206.5469,1285.4688 2206.7656,1285.6406 C2206.9219,1285.75 2207.1094,1285.7813 2207.5313,1285.7813 L2209.25,1285.7813 L2209.25,1292.2969 L2207.5313,1292.2969 C2207.0938,1292.2969 2206.9688,1292.3125 2206.8125,1292.4219 C2206.5625,1292.5781 2206.4063,1292.8594 2206.4063,1293.1563 C2206.4063,1293.4063 2206.5469,1293.6719 2206.7656,1293.8281 C2206.9219,1293.9531 2207.125,1294 2207.5313,1294 L2212.6719,1294 C2213.4219,1294 2213.7813,1293.7188 2213.7813,1293.1563 C2213.7813,1292.875 2213.6719,1292.625 2213.4375,1292.4531 C2213.2656,1292.3281 2213.125,1292.2969 2212.6719,1292.2969 L2210.9531,1292.2969 L2210.9531,1285.7813 Z "
+          fill="#000000"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic"
+            lengthAdjust="spacing" textLength="222" x="2224" y="1293.8467">
+        ReservationRepositoryUseCase
+      </text>
+      <line style="stroke:#181818;stroke-width:0.5;" x1="2196" x2="2448" y1="1305" y2="1305"/>
+      <line style="stroke:#181818;stroke-width:0.5;" x1="2196" x2="2448" y1="1313" y2="1313"/>
+    </g><!--class ResetUseCase-->
+    <g id="elem_ResetUseCase">
+      <rect codeLine="106" fill="#F1F1F1" height="64.2969" id="ResetUseCase" rx="2.5" ry="2.5"
+            style="stroke:#181818;stroke-width:0.5;" width="148" x="695" y="339.5"/>
+      <ellipse cx="716.75" cy="355.5" fill="#ADD1B2" rx="11" ry="11"
+               style="stroke:#181818;stroke-width:1.0;"/>
+      <path
+          d="M719.0938,351.1719 C718.1563,350.7344 717.5625,350.5938 716.6875,350.5938 C714.0625,350.5938 712.0625,352.6719 712.0625,355.3906 L712.0625,356.5156 C712.0625,359.0938 714.1719,360.9844 717.0625,360.9844 C718.2813,360.9844 719.4375,360.6875 720.1875,360.1406 C720.7656,359.7344 721.0938,359.2813 721.0938,358.8906 C721.0938,358.4375 720.7031,358.0469 720.2344,358.0469 C720.0156,358.0469 719.8125,358.125 719.625,358.3125 C719.1719,358.7969 719.1719,358.7969 718.9844,358.8906 C718.5625,359.1563 717.875,359.2813 717.1094,359.2813 C715.0625,359.2813 713.7656,358.1875 713.7656,356.4844 L713.7656,355.3906 C713.7656,353.6094 715.0156,352.2969 716.75,352.2969 C717.3281,352.2969 717.9375,352.4531 718.4063,352.7031 C718.8906,352.9844 719.0625,353.2031 719.1563,353.6094 C719.2188,354.0156 719.25,354.1406 719.3906,354.2656 C719.5313,354.4063 719.7656,354.5156 719.9844,354.5156 C720.25,354.5156 720.5156,354.375 720.6875,354.1563 C720.7969,354 720.8281,353.8125 720.8281,353.3906 L720.8281,351.9688 C720.8281,351.5313 720.8125,351.4063 720.7188,351.25 C720.5625,350.9844 720.2813,350.8438 719.9844,350.8438 C719.6875,350.8438 719.4844,350.9375 719.2656,351.25 L719.0938,351.1719 Z "
+          fill="#000000"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+            textLength="101" x="732.25" y="360.3467">ResetUseCase
+      </text>
+      <line style="stroke:#181818;stroke-width:0.5;" x1="696" x2="842" y1="371.5" y2="371.5"/>
+      <line style="stroke:#181818;stroke-width:0.5;" x1="696" x2="842" y1="379.5" y2="379.5"/>
+      <ellipse cx="706" cy="393.1484" fill="#84BE84" rx="3" ry="3"
+               style="stroke:#038048;stroke-width:1.0;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+            textLength="122" x="715" y="396.4951">void action(UUID)
+      </text>
+    </g><!--class SubmitUseCase-->
+    <g id="elem_SubmitUseCase">
+      <rect codeLine="109" fill="#F1F1F1" height="113.1875" id="SubmitUseCase" rx="2.5" ry="2.5"
+            style="stroke:#181818;stroke-width:0.5;" width="422" x="119" y="315"/>
+      <ellipse cx="270.25" cy="331" fill="#ADD1B2" rx="11" ry="11"
+               style="stroke:#181818;stroke-width:1.0;"/>
+      <path
+          d="M272.5938,326.6719 C271.6563,326.2344 271.0625,326.0938 270.1875,326.0938 C267.5625,326.0938 265.5625,328.1719 265.5625,330.8906 L265.5625,332.0156 C265.5625,334.5938 267.6719,336.4844 270.5625,336.4844 C271.7813,336.4844 272.9375,336.1875 273.6875,335.6406 C274.2656,335.2344 274.5938,334.7813 274.5938,334.3906 C274.5938,333.9375 274.2031,333.5469 273.7344,333.5469 C273.5156,333.5469 273.3125,333.625 273.125,333.8125 C272.6719,334.2969 272.6719,334.2969 272.4844,334.3906 C272.0625,334.6563 271.375,334.7813 270.6094,334.7813 C268.5625,334.7813 267.2656,333.6875 267.2656,331.9844 L267.2656,330.8906 C267.2656,329.1094 268.5156,327.7969 270.25,327.7969 C270.8281,327.7969 271.4375,327.9531 271.9063,328.2031 C272.3906,328.4844 272.5625,328.7031 272.6563,329.1094 C272.7188,329.5156 272.75,329.6406 272.8906,329.7656 C273.0313,329.9063 273.2656,330.0156 273.4844,330.0156 C273.75,330.0156 274.0156,329.875 274.1875,329.6563 C274.2969,329.5 274.3281,329.3125 274.3281,328.8906 L274.3281,327.4688 C274.3281,327.0313 274.3125,326.9063 274.2188,326.75 C274.0625,326.4844 273.7813,326.3438 273.4844,326.3438 C273.1875,326.3438 272.9844,326.4375 272.7656,326.75 L272.5938,326.6719 Z "
+          fill="#000000"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+            textLength="111" x="290.75" y="335.8467">SubmitUseCase
+      </text>
+      <line style="stroke:#181818;stroke-width:0.5;" x1="120" x2="540" y1="347" y2="347"/>
+      <ellipse cx="130" cy="360.6484" fill="none" rx="3" ry="3"
+               style="stroke:#038048;stroke-width:1.0;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+            textLength="331" x="139" y="363.9951">SubmitReservationService submitReservation
+      </text>
+      <line style="stroke:#181818;stroke-width:0.5;" x1="120" x2="540" y1="371.2969" y2="371.2969"/>
+      <ellipse cx="130" cy="384.9453" fill="#84BE84" rx="3" ry="3"
+               style="stroke:#038048;stroke-width:1.0;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+            textLength="368" x="139" y="388.292">SubmitReservationService getSubmitReservation()
+      </text>
+      <ellipse cx="130" cy="401.2422" fill="#84BE84" rx="3" ry="3"
+               style="stroke:#038048;stroke-width:1.0;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+            textLength="396" x="139" y="404.5889">void
+        setSubmitReservation(SubmitReservationService)
+      </text>
+      <ellipse cx="130" cy="417.5391" fill="#84BE84" rx="3" ry="3"
+               style="stroke:#038048;stroke-width:1.0;"/>
+      <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing"
+            textLength="122" x="139" y="420.8857">void action(UUID)
+      </text>
+    </g><!--link ConfirmReservationResourceAdapter to ConfirmUseCase-->
+    <g id="link_ConfirmReservationResourceAdapter_ConfirmUseCase">
+      <path codeLine="116" d="M1127,172.62 C1127,216.63 1127,289.22 1127,333.28 " fill="none"
+            id="ConfirmReservationResourceAdapter-to-ConfirmUseCase"
+            style="stroke:#181818;stroke-width:1.0;"/>
+      <polygon fill="#181818" points="1127,339.28,1131,330.28,1127,334.28,1123,330.28,1127,339.28"
+               style="stroke:#181818;stroke-width:1.0;"/>
+    </g><!--link ReservationRepositoryAdapter to ReservationRepositoryUseCase-->
+    <g id="link_ReservationRepositoryAdapter_ReservationRepositoryUseCase">
+      <path codeLine="117"
+            d="M2528.63,1058 C2450,1058 2364.33,1058 2364.33,1058 C2364.33,1058 2364.33,1206.007 2364.33,1266.768 "
+            fill="none" id="ReservationRepositoryAdapter-to-ReservationRepositoryUseCase"
+            style="stroke:#181818;stroke-width:1.0;"/>
+      <polygon fill="#181818"
+               points="2364.33,1272.768,2368.33,1263.768,2364.33,1267.768,2360.33,1263.768,2364.33,1272.768"
+               style="stroke:#181818;stroke-width:1.0;"/>
+    </g><!--link ResetReservationResourceAdapter to ResetUseCase-->
+    <g id="link_ResetReservationResourceAdapter_ResetUseCase">
+      <path codeLine="118" d="M769,172.62 C769,216.63 769,289.22 769,333.28 " fill="none"
+            id="ResetReservationResourceAdapter-to-ResetUseCase"
+            style="stroke:#181818;stroke-width:1.0;"/>
+      <polygon fill="#181818" points="769,339.28,773,330.28,769,334.28,765,330.28,769,339.28"
+               style="stroke:#181818;stroke-width:1.0;"/>
+    </g><!--link SubmitReservationResourceAdapter to SubmitUseCase-->
+    <g id="link_SubmitReservationResourceAdapter_SubmitUseCase">
+      <path codeLine="119" d="M330,197.01 C330,232.81 330,272.94 330,308.77 " fill="none"
+            id="SubmitReservationResourceAdapter-to-SubmitUseCase"
+            style="stroke:#181818;stroke-width:1.0;"/>
+      <polygon fill="#181818" points="330,314.77,334,305.77,330,309.77,326,305.77,330,314.77"
+               style="stroke:#181818;stroke-width:1.0;"/>
+    </g><!--link ConfirmUseCase to ConfirmReservationService-->
+    <g id="link_ConfirmUseCase_ConfirmReservationService">
+      <path codeLine="120" d="M1127,403.62 C1127,447.63 1127,520.22 1127,564.28 " fill="none"
+            id="ConfirmUseCase-to-ConfirmReservationService"
+            style="stroke:#181818;stroke-width:1.0;"/>
+      <polygon fill="#181818" points="1127,570.28,1131,561.28,1127,565.28,1123,561.28,1127,570.28"
+               style="stroke:#181818;stroke-width:1.0;"/>
+    </g><!--link ConfirmReservationService to ConfirmReservationComponent-->
+    <g id="link_ConfirmReservationService_ConfirmReservationComponent">
+      <path codeLine="121" d="M1127,634.63 C1127,665.61 1127,706.23 1127,737.24 " fill="none"
+            id="ConfirmReservationService-to-ConfirmReservationComponent"
+            style="stroke:#181818;stroke-width:1.0;"/>
+      <polygon fill="#181818" points="1127,743.24,1131,734.24,1127,738.24,1123,734.24,1127,743.24"
+               style="stroke:#181818;stroke-width:1.0;"/>
+    </g><!--link ConfirmReservationComponent to ReservationRepository-->
+    <g id="link_ConfirmReservationComponent_ReservationRepository">
+      <path codeLine="122"
+            d="M1065.5,807.72 C1065.5,874.11 1065.5,1020 1065.5,1020 C1065.5,1020 799.401,1020 629.073,1020 "
+            fill="none" id="ConfirmReservationComponent-to-ReservationRepository"
+            style="stroke:#181818;stroke-width:1.0;"/>
+      <polygon fill="#181818"
+               points="623.073,1020,632.073,1024,628.073,1020,632.073,1016,623.073,1020"
+               style="stroke:#181818;stroke-width:1.0;"/>
+    </g><!--link Reservation to Trip-->
+    <g id="link_Reservation_Trip">
+      <path codeLine="123"
+            d="M308,1098.225 C308,1152.285 308,1241 308,1241 C308,1241 547.253,1241 696.943,1241 "
+            fill="none" id="Reservation-to-Trip" style="stroke:#181818;stroke-width:1.0;"/>
+      <polygon fill="#181818"
+               points="702.943,1241,693.943,1237,697.943,1241,693.943,1245,702.943,1241"
+               style="stroke:#181818;stroke-width:1.0;"/>
+    </g><!--link Reservation to ReservationId-->
+    <g id="link_Reservation_ReservationId">
+      <path codeLine="124" d="M231,1098.128 C231,1145.105 231,1215.487 231,1258.638 " fill="none"
+            id="Reservation-to-ReservationId" style="stroke:#181818;stroke-width:1.0;"/>
+      <polygon fill="#181818"
+               points="231,1264.638,235,1255.638,231,1259.638,227,1255.638,231,1264.638"
+               style="stroke:#181818;stroke-width:1.0;"/>
+    </g><!--link Trip to TripId-->
+    <g id="link_Trip_TripId">
+      <path codeLine="125" d="M816,1378.044 C816,1429.651 816,1487.668 816,1525.4 " fill="none"
+            id="Trip-to-TripId" style="stroke:#181818;stroke-width:1.0;"/>
+      <polygon fill="#181818" points="816,1531.4,820,1522.4,816,1526.4,812,1522.4,816,1531.4"
+               style="stroke:#181818;stroke-width:1.0;"/>
+    </g><!--link Trip to Station-->
+    <g id="link_Trip_Station">
+      <path codeLine="126"
+            d="M890.667,1378.117 C890.667,1444.677 890.667,1528 890.667,1528 C890.667,1528 933.517,1528 978.742,1528 "
+            fill="none" id="Trip-to-Station" style="stroke:#181818;stroke-width:1.0;"/>
+      <polygon fill="#181818"
+               points="984.742,1528,975.742,1524,979.742,1528,975.742,1532,984.742,1528"
+               style="stroke:#181818;stroke-width:1.0;"/>
+    </g><!--link Trip to Seat-->
+    <g id="link_Trip_Seat">
+      <path codeLine="127"
+            d="M929.251,1359 C1100.86,1359 1407,1359 1407,1359 C1407,1359 1407,1456.93 1407,1516.608 "
+            fill="none" id="Trip-to-Seat" style="stroke:#181818;stroke-width:1.0;"/>
+      <polygon fill="#181818"
+               points="1407,1522.608,1411,1513.608,1407,1517.608,1403,1513.608,1407,1522.608"
+               style="stroke:#181818;stroke-width:1.0;"/>
+    </g><!--link Trip to Train-->
+    <g id="link_Trip_Train">
+      <path codeLine="128"
+            d="M929.18,1340 C1214.39,1340 1940,1340 1940,1340 C1940,1340 1940,1452.301 1940,1516.767 "
+            fill="none" id="Trip-to-Train" style="stroke:#181818;stroke-width:1.0;"/>
+      <polygon fill="#181818"
+               points="1940,1522.767,1944,1513.767,1940,1517.767,1936,1513.767,1940,1522.767"
+               style="stroke:#181818;stroke-width:1.0;"/>
+    </g><!--link Trip to Wagon-->
+    <g id="link_Trip_Wagon">
+      <path codeLine="129"
+            d="M909.833,1378.089 C909.833,1441.507 909.833,1519 909.833,1519 C909.833,1519 1399.85,1519 1600.88,1519 "
+            fill="none" id="Trip-to-Wagon" style="stroke:#181818;stroke-width:1.0;"/>
+      <polygon fill="#181818"
+               points="1606.88,1519,1597.88,1515,1601.88,1519,1597.88,1523,1606.88,1519"
+               style="stroke:#181818;stroke-width:1.0;"/>
+    </g><!--link Station to StationId-->
+    <g id="link_Station_StationId">
+      <path codeLine="130" d="M1060,1604.138 C1060,1625.696 1060,1645.808 1060,1665.923 "
+            fill="none" id="Station-to-StationId" style="stroke:#181818;stroke-width:1.0;"/>
+      <polygon fill="#181818"
+               points="1060,1671.923,1064,1662.923,1060,1666.923,1056,1662.923,1060,1671.923"
+               style="stroke:#181818;stroke-width:1.0;"/>
+    </g><!--link Train to TrainId-->
+    <g id="link_Train_TrainId">
+      <path codeLine="131" d="M1940,1604.138 C1940,1625.696 1940,1645.808 1940,1665.923 "
+            fill="none" id="Train-to-TrainId" style="stroke:#181818;stroke-width:1.0;"/>
+      <polygon fill="#181818"
+               points="1940,1671.923,1944,1662.923,1940,1666.923,1936,1662.923,1940,1671.923"
+               style="stroke:#181818;stroke-width:1.0;"/>
+    </g><!--link Wagon to WagonId-->
+    <g id="link_Wagon_WagonId">
+      <path codeLine="132" d="M1690,1612.246 C1690,1631.902 1690,1648.043 1690,1665.651 "
+            fill="none" id="Wagon-to-WagonId" style="stroke:#181818;stroke-width:1.0;"/>
+      <polygon fill="#181818"
+               points="1690,1671.651,1694,1662.651,1690,1666.651,1686,1662.651,1690,1671.651"
+               style="stroke:#181818;stroke-width:1.0;"/>
+    </g><!--link Seat to SeatId-->
+    <g id="link_Seat_SeatId">
+      <path codeLine="133" d="M1407,1604.138 C1407,1625.696 1407,1645.808 1407,1665.923 "
+            fill="none" id="Seat-to-SeatId" style="stroke:#181818;stroke-width:1.0;"/>
+      <polygon fill="#181818"
+               points="1407,1671.923,1411,1662.923,1407,1666.923,1403,1662.923,1407,1671.923"
+               style="stroke:#181818;stroke-width:1.0;"/>
+    </g><!--link ResetReservationService to ResetReservationComponent-->
+    <g id="link_ResetReservationService_ResetReservationComponent">
+      <path codeLine="134" d="M769,634.63 C769,665.61 769,706.23 769,737.24 " fill="none"
+            id="ResetReservationService-to-ResetReservationComponent"
+            style="stroke:#181818;stroke-width:1.0;"/>
+      <polygon fill="#181818" points="769,743.24,773,734.24,769,738.24,765,734.24,769,743.24"
+               style="stroke:#181818;stroke-width:1.0;"/>
+    </g><!--link ResetReservationComponent to ReservationRepository-->
+    <g id="link_ResetReservationComponent_ReservationRepository">
+      <path codeLine="135"
+            d="M674.5,807.69 C674.5,871.3 674.5,1007 674.5,1007 C674.5,1007 658.331,1007 629.32,1007 "
+            fill="none" id="ResetReservationComponent-to-ReservationRepository"
+            style="stroke:#181818;stroke-width:1.0;"/>
+      <polygon fill="#181818" points="623.32,1007,632.32,1011,628.32,1007,632.32,1003,623.32,1007"
+               style="stroke:#181818;stroke-width:1.0;"/>
+    </g><!--link SubmitReservationService to SubmitReservationComponent-->
+    <g id="link_SubmitReservationService_SubmitReservationComponent">
+      <path codeLine="136" d="M330,659.15 C330,678.26 330,693.6 330,712.73 " fill="none"
+            id="SubmitReservationService-to-SubmitReservationComponent"
+            style="stroke:#181818;stroke-width:1.0;"/>
+      <polygon fill="#181818" points="330,718.73,334,709.73,330,713.73,326,709.73,330,718.73"
+               style="stroke:#181818;stroke-width:1.0;"/>
+    </g><!--link SubmitReservationComponent to ReservationRepository-->
+    <g id="link_SubmitReservationComponent_ReservationRepository">
+      <path codeLine="137" d="M448.25,832.23 C448.25,878.71 448.25,938.491 448.25,986.975 "
+            fill="none" id="SubmitReservationComponent-to-ReservationRepository"
+            style="stroke:#181818;stroke-width:1.0;"/>
+      <polygon fill="#181818"
+               points="448.25,992.975,452.25,983.975,448.25,987.975,444.25,983.975,448.25,992.975"
+               style="stroke:#181818;stroke-width:1.0;"/>
+    </g><!--reverse link ReservationRepository to ReservationRepositoryUseCase-->
+    <g id="link_ReservationRepository_ReservationRepositoryUseCase">
+      <path codeLine="138"
+            d="M641.225,1102 C1057.3,1102 2279.67,1102 2279.67,1102 C2279.67,1102 2279.67,1220.424 2279.67,1272.697 "
+            fill="none" id="ReservationRepository-backto-ReservationRepositoryUseCase"
+            style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/>
+      <polygon fill="none" points="623.225,1102,641.225,1108,641.225,1096,623.225,1102"
+               style="stroke:#181818;stroke-width:1.0;"/>
+    </g><!--link ResetUseCase to ResetReservationService-->
+    <g id="link_ResetUseCase_ResetReservationService">
+      <path codeLine="139" d="M769,403.62 C769,447.63 769,520.22 769,564.28 " fill="none"
+            id="ResetUseCase-to-ResetReservationService" style="stroke:#181818;stroke-width:1.0;"/>
+      <polygon fill="#181818" points="769,570.28,773,561.28,769,565.28,765,561.28,769,570.28"
+               style="stroke:#181818;stroke-width:1.0;"/>
+    </g><!--link SubmitUseCase to SubmitReservationService-->
+    <g id="link_SubmitUseCase_SubmitReservationService">
+      <path codeLine="140" d="M330,428.01 C330,463.81 330,503.94 330,539.77 " fill="none"
+            id="SubmitUseCase-to-SubmitReservationService"
+            style="stroke:#181818;stroke-width:1.0;"/>
+      <polygon fill="#181818" points="330,545.77,334,536.77,330,540.77,326,536.77,330,545.77"
+               style="stroke:#181818;stroke-width:1.0;"/>
+    </g><!--SRC=[vLbTRvim57tths1zQZILNp1LsjgNIDKshQlsM3dWKAl1HhP95x7-znaC2IPyc1QRA7rfYBcsppdNzwRt-bF2O1H3B-LeIGHYCGen5EWd39vXXBYtXXkE07_6984Cnju64oHs2V8e4qyKy2Vwud4v3z5y581W0pdtBcueMMCM_q8SiIqKc1BvI5CMeAyXJAJzXGUv5o8_NFbRH4Bg9uoAOWr_bGPFAObyTfZiXtYB6FUXcipzGAtlhsXAGiXs_k26NWOyx_EMuj3BJT3bmyFoTW5UAyJQp8HoB2ZRJGCsaN-m58a4w02uRp-9LSCbhEcOlnCwAF5s3U_JLOpjWUN5yWUqGzifkChgWQCRo96drf3ZZu_7BoCarC3beaQq6jDi2uESVhiIvN4iZT_9MyRcOo2NwJxs5O63Vs2GBzK1goRPlNp0mNG84H5OO6GKeUNUHwUgPh8CUz7Vq3YXHExf0ByS48nk_1uKDIReBmfIqS85vrbs3INjzfGpFPEw-H6RLWoAXvV15HTCdgJNcfMtnYJyjciIq-sLCw7kotOZ5Ll3gvN-CB0iSbhd8QgDEvQwiD8Ilz9PGvhde6MeyizlXfFyU_vvsKvX6SvEGcBEzicmGh_7ccEt2r787Jfn5X9cbPYwlFT2EK4E_M0umkHe-1PnWKdnLRsxap_ZNqg3w-BdGZtpoc4G4-Knk5yEGL5OoayryWT6QldYeIcMROyEojNlpvAm0unSz1_1oazPpMbD1pDCedpaEunH2midMXlo60eZUQ0SW1NvFZt78p_VsVwecyfT6fy6_dwXYvXq1lGbtwqJhaeKsJvd3CYjZwNn2h4ZPWwTOC1j8DN8ZEaOBPTRTWTgdicpAgSRfvh2zjHuz2lVB0Ej5Ga3vUVO0g4vts9vq41U_tTQlBKqwAgYhSa_M51h3ZXwUo37cwyQ1NRhf7srNNlRLdZNNtSljp0y8zqhsDUtEYKzeZGhWbfHnjf6zqAtpuaQxPpgXQvpkqdhwEBz5UxKJH7pzjgXJQAdZAaHjQKrqnQDrcMQ355xf6kOEeD_H71NKoO9xNAnHPTWJhl7LrVNBZfum6MNUIfEemCGE6jOJqMn9wA1muRsL7Hwqm5mqQcUYiaR-irWhZwtVSu6FMemVvTySXt6TxZ1h6rVgm8CDlZEcBjHknhCs8gUr_FdpjsmrNhU8epg0tq4ANgxmH_dBFHsOi5ftEMSJ8gmdYbDBbfE8a0SAM5o4t92yU9KbU5RYHFxLR6XZi4rWHKLnZJvmRnN36TNLndVJqpEV7pd7inzSt0ktX_VplTJ_zzvSE-xEB2TtJgoAh1__M0zUhlondy0]-->
+  </g>
+</svg>

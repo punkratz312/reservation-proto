@@ -1,0 +1,277 @@
+@startuml
+'https://github.com/awslabs/aws-icons-for-plantuml/blob/main/AWSSymbols.md
+skinparam linetype ortho
+'left to right direction
+allow_mixing
+!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v17.0/dist
+!include AWSPuml/AWSCommon.puml
+!include AWSPuml/AWSSimplified.puml
+!include AWSPuml/ApplicationIntegration/APIGateway.puml
+!include AWSPuml/ApplicationIntegration/EventBridgeScheduler.puml
+!include AWSPuml/ApplicationIntegration/SimpleQueueService.puml
+!include AWSPuml/Compute/EC2.puml
+!include AWSPuml/Compute/EC2Instance.puml
+!include AWSPuml/Compute/Lambda.puml
+!include AWSPuml/Database/AuroraPostgreSQLInstance.puml
+!include AWSPuml/Database/DynamoDB.puml
+!include AWSPuml/General/Internet.puml
+!include AWSPuml/General/Users.puml
+!include AWSPuml/Groups/AWSCloud.puml
+!include AWSPuml/Groups/AvailabilityZone.puml
+!include AWSPuml/Groups/PrivateSubnet.puml
+!include AWSPuml/Groups/PublicSubnet.puml
+!include AWSPuml/Groups/VPC.puml
+!include AWSPuml/NetworkingContentDelivery/VPCInternetGateway.puml
+!include AWSPuml/NetworkingContentDelivery/VPCNATGateway.puml
+!include AWSPuml/SecurityIdentityCompliance/Cognito.puml
+!include AWSPuml/Storage/SimpleStorageService.puml
+hide stereotype
+!define _adapters #82ffb4
+!define _api #lightblue
+!define _boundary #lime
+!define _test #azure
+!define _control #orange
+!define _modul #limegreen
+!define _domain #goldenrod
+!define _drivers #82ffb4
+!define _drivers #skyblue
+!define _entity #fcfdb0
+!define _use_cases #ff9a99
+!define b(x) <b>x</b>
+!define dry(x) <b><i>#x#</i></b>
+!define pk(x) b(<u>x</u>)
+package io.quarkus.hibernate.orm.panache {
+    class PanacheEntity {
+    }
+    interface PanacheRepositoryBase {
+    }
+}
+package de.db.vendo.common {
+    package patterns {
+        package bce {
+            package boundary _boundary {
+                package control _control {
+                    interface Component<Type> {
+                        + execute(): Type
+                    }
+                }
+            }
+        }
+    }
+}
+package de.db.vendo.prototype.buchung {
+    artifact drivers _drivers {
+        AWSCloudGroup(cloud) _drivers {
+            package api _domain {
+                package boundary _boundary {
+                    package web {
+                        Internet(touchpoint, "touchpoint", "millions of users")
+                        APIGateway(reservationAPI, "APIGateway", "user request")
+                        Cognito(userAuth, "User Authentication", "jwt to submit request")
+                    }
+                    package control _control {
+                        Lambda(SubmitLambda, "Submit", "enter or update vote per user")
+                        Lambda(CancelLambda, "Cancel", "enter or update vote per user")
+                        Lambda(ConfirmLambda, "Confirm", "enter or update vote per user")
+                    }
+                }
+            }
+            package vacant _domain {
+                package schedule _domain {
+                    package boundary _boundary {
+                        package control _control {
+                            EventBridgeScheduler(VacantScheduler, "VacantScheduler", "")
+                        }
+                    }
+                }
+                package message _domain {
+                    package publisher _domain {
+                        package boundary _boundary {
+                            SimpleQueueService(VacantSuccessMessageQueue, "VacantSuccessMessageQueue", "")
+                            SimpleQueueService(VacantFailureMessageQueue, "VacantFailureMessageQueue", "")
+                            class JmsVacantSuccessMessagePublisher implements de.db.vendo.prototype.buchung.drivers.adapters.use_cases.entities.boundary.control.VacantSuccessMessagePublisher {
+                            }
+                            class JmsVacantFailureMessagePublisher implements de.db.vendo.prototype.buchung.drivers.adapters.use_cases.entities.boundary.control.VacantFailureMessagePublisher {
+                            }
+                        }
+                    }
+                }
+            }
+            package persistence _domain {
+                package boundary _boundary {
+                    package control _control {
+                        package dynamo {
+                            DynamoDB(ReservationDynamoDbRepository, "ReservationDynamoDbRepository", "")
+                        }
+                        package s3 {
+                            SimpleStorageService(ReservationS3Repository, "ReservationS3Repository", "")
+                        }
+                        package postgresql {
+                            AuroraPostgreSQLInstance(PostgreSQL, "PostgreSQL", "")
+                        }
+                        package panache {
+                            interface ReservationPanacheRepository <<ReservationPanacheEntity, ReservationId>> extends io.quarkus.hibernate.orm.panache.PanacheRepositoryBase {
+                            }
+                        }
+                        class ReservationRepositoryImpl extends de.db.vendo.prototype.buchung.drivers.adapters.use_cases.entities.boundary.control.ReservationRepository {
+                            - reservationPanacheRepository: ReservationPanacheRepository
+                            - reservationS3Repository: ReservationS3Repository
+                            - reservationDynamoDbRepository: ReservationDynamoDbRepository
+                        }
+                        package entity _entity {
+                            package panache {
+                                class ReservationPanacheEntity extends io.quarkus.hibernate.orm.panache.PanacheEntity {
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        artifact adapters _adapters {
+            class SubmitAdapter {
+                - submit Submit
+            }
+            class ConfirmAdapter {
+                - Confirm Confirm
+            }
+            class CancelAdapter {
+                - cancel Cancel
+            }
+            class VacantAdapter {
+                - vacant Vacant
+            }
+            artifact use_cases _use_cases {
+                interface Submit {
+                    + action(Request req): Result
+                }
+                interface Confirm {
+                    + action(ReservationId id): Result
+                }
+                interface Cancel {
+                    + action(ReservationId id): Result
+                }
+                artifact entities _entity {
+                    package boundary _boundary {
+                        class SubmitService implements de.db.vendo.prototype.buchung.drivers.adapters.use_cases.Submit {
+                            - SubmitComponent submit
+                        }
+                        class ConfirmService implements de.db.vendo.prototype.buchung.drivers.adapters.use_cases.Confirm {
+                            - ConfirmComponent confirm
+                        }
+                        class CancelService implements de.db.vendo.prototype.buchung.drivers.adapters.use_cases.Cancel {
+                            - CancelComponent cancel
+                        }
+                        class VacantService implements de.db.vendo.prototype.buchung.drivers.adapters.use_cases.Vacant {
+                            - VacantComponent Vacant
+                        }
+                        package control _control {
+                            interface ReservationRepository {
+                                + findById(ReservationId id): Reservation
+                                + submit(ReservationId id): Reservation
+                                + confirm(ReservationId id): Reservation
+                                + cancel(ReservationId id): Reservation
+                            }
+                            class SubmitComponent implements de.db.vendo.common.patterns.bce.boundary.control.Component {
+                                - CheckUniqueComponent checkUnique
+                                - ReservationRepository reservationRepo
+                            }
+                            class CheckUniqueComponent implements de.db.vendo.common.patterns.bce.boundary.control.Component {
+                                - ReservationRepository reservationRepo
+                            }
+                            class ConfirmComponent implements de.db.vendo.common.patterns.bce.boundary.control.Component {
+                                - ReservationRepository reservationRepo
+                            }
+                            class CancelComponent implements de.db.vendo.common.patterns.bce.boundary.control.Component {
+                                - ReservationRepository reservationRepo
+                            }
+                            class VacantComponent implements de.db.vendo.common.patterns.bce.boundary.control.Component {
+                                - ReservationRepository reservationRepo
+                                - VacantSuccessMessagePublisher vacantSuccessMessagePublisher
+                                - VacantFailureMessagePublisher vacantFailureMessagePublisher
+                            }
+                            interface VacantSuccessMessagePublisher extends de.db.vendo.common.patterns.bce.boundary.control.Component {
+                            }
+                            interface VacantFailureMessagePublisher extends de.db.vendo.common.patterns.bce.boundary.control.Component {
+                            }
+                            package entity _entity {
+                                interface ReservationId {
+                                    + id: UUID
+                                }
+                                interface Reservation extends ReservationId {
+                                    + begin: String
+                                    + destination: String
+                                }
+                                interface Request extends ReservationId {
+                                }
+                                interface Result extends ReservationId {
+                                }
+                                interface Success extends Result {
+                                }
+                                interface Failure extends Result {
+                                }
+                                interface Vacant extends Success {
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+CancelAdapter ...> de.db.vendo.prototype.buchung.drivers.adapters.use_cases.Cancel: action
+CancelComponent ---> ReservationRepository
+CancelLambda ---> CancelAdapter
+CancelService ---> CancelComponent
+CheckUniqueComponent ---> ReservationRepository
+ConfirmAdapter ...> de.db.vendo.prototype.buchung.drivers.adapters.use_cases.Confirm: action
+ConfirmComponent ---> ReservationRepository
+ConfirmLambda ---> ConfirmAdapter
+ConfirmService ---> ConfirmComponent
+JmsVacantFailureMessagePublisher ---> VacantFailureMessageQueue
+JmsVacantSuccessMessagePublisher ---> VacantSuccessMessageQueue
+ReservationPanacheRepository ...> PostgreSQL
+ReservationRepository ---> Reservation
+ReservationRepositoryImpl ...> ReservationDynamoDbRepository
+ReservationRepositoryImpl ...> ReservationPanacheRepository
+ReservationRepositoryImpl ...> ReservationS3Repository
+SubmitAdapter ...> de.db.vendo.prototype.buchung.drivers.adapters.use_cases.Submit: action
+SubmitComponent ---> CheckUniqueComponent
+SubmitComponent ---> ReservationRepository
+SubmitLambda ---> SubmitAdapter
+SubmitService ---> SubmitComponent
+VacantAdapter ...> de.db.vendo.prototype.buchung.drivers.adapters.use_cases.Vacant: action
+VacantComponent ---> ReservationRepository
+VacantComponent ---> VacantFailureMessagePublisher
+VacantComponent ---> de.db.vendo.prototype.buchung.drivers.adapters.use_cases.entities.boundary.control.VacantSuccessMessagePublisher
+VacantScheduler ---> VacantAdapter
+VacantService ---> VacantComponent
+reservationAPI ...> CancelLambda
+reservationAPI ...> ConfirmLambda
+reservationAPI ...> SubmitLambda
+touchpoint ---> userAuth
+userAuth ---> reservationAPI
+legend top left
+| b(Term)                   | b(Explanation) |
+| Clean Code                | Do one thing only and do it well. One thing means one level of abstraction |
+| The Clean Architecture    | [[https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html Clean Arch]] |
+| Clean & Onion Architecture| [[https://www.happycoders.eu/de/software-craftsmanship/hexagonale-architektur Was unterscheidet die hexagonale Architektur von „Clean Architecture“ und „Onion Architecture“]] |
+| Clean & Onion Architecture| [[https://www.happycoders.eu/wp-content/uploads/2023/01/hexagonal-architecture-vs-clean-architecture-2.v4.png Image]] |
+| Separation of concerns    | [[https://en.wikipedia.org/wiki/Separation_of_concerns SoC]] |
+| SOLID                     | [[https://de.wikipedia.org/wiki/Prinzipien_objektorientierten_Designs#SOLID-Prinzipien SOLID]] |
+| ECB                       | [[https://en.wikipedia.org/wiki/Entity-control-boundary Entity-control-boundary]] |
+| Entity                    | Clean Arch: b(Enterprise Business Rules) - representing a single entity representing business case domain objects (aka. domain model) |
+| Boundary                  | Clean Arch: b(Interface adapters) - Delegating to corresponding control unit |
+| UseCase                   | Clean Arch: b(Application Business Rules) - Feature |
+| Control                   | Clean Arch: b(Application Business Rules) - concrete implementation of corresponding UseCase - Alternates the corresponding entity |
+| BFF                       | Backend for Frontend (Middleware) |
+| Domain                    | object representing the real world business use case |
+| IstWelt                   | Current state of the project |
+| NeueWelt                  | SoC: One Thing - Extract till you Drop. [[https://sites.google.com/site/unclebobconsultingllc/one-thing-extract-till-you-drop Read More]] |
+| api                       | Application Programming Interface (Marker package) |
+| core                      | Actual implementation of the API |
+| e2e                       | End-to-End (Black Box) Testing, we do not test any units, unless we have to |
+endlegend
+@enduml
