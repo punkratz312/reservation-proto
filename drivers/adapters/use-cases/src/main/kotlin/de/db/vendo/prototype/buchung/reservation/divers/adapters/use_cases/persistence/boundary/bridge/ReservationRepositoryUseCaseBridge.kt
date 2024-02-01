@@ -1,4 +1,4 @@
-package de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.persistence.boundary
+package de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.persistence.boundary.bridge
 
 import java.util.*
 
