@@ -7,11 +7,11 @@ import org.hamcrest.CoreMatchers.equalTo
 
 @QuarkusTest
 class SubmitUseCaseResourceTest : BDD() {
-    override fun then_() {
-        given()
-                .`when`().get("submit")
-                .then()
-                .statusCode(200)
-                .body(equalTo("Hello from RESTEasy Reactive"))
-    }
+  override fun then_() {
+    given()
+            .`when`().get("submit")
+            .then()
+            .statusCode(200)
+            .body(equalTo("Hello from RESTEasy Reactive"))
+  }
 }
