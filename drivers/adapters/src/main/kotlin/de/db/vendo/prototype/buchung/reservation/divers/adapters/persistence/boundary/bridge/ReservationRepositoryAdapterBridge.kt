@@ -2,7 +2,6 @@ package de.db.vendo.prototype.buchung.reservation.divers.adapters.persistence.bo
 
 import java.util.*
 
-
 interface ReservationRepositoryAdapterBridge {
 
     fun findBy(id: UUID): String
