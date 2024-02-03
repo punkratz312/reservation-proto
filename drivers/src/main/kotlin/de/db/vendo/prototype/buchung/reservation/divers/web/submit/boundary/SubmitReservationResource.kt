@@ -12,12 +12,12 @@ import java.util.*
 @Path("submit")
 class SubmitReservationResource {
 
-    @Inject
-    @field: Default
-    lateinit var resourceAdapter: SubmitReservationResourceAdapter
+  @Inject
+  @field: Default
+  lateinit var resourceAdapter: SubmitReservationResourceAdapter
 
-    @GET
-    fun serve(): String {
-        return resourceAdapter.serve(UUID.randomUUID()).toString()
-    }
+  @GET
+  fun serve(): String {
+    return resourceAdapter.serve(UUID.randomUUID())
+  }
 }
