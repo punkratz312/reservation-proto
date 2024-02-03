@@ -1,11 +1,12 @@
 package de.db.vendo.prototype.buchung
 
-import io.restassured.RestAssured
+import io.restassured.RestAssured.given
+import io.restassured.response.ValidatableResponse
 import org.hamcrest.CoreMatchers
 
 open class Endpoint {
   fun submit() {
-    RestAssured.given()
+    given()
       .`when`().get("submit")
       .then()
       .statusCode(200)
@@ -13,10 +14,14 @@ open class Endpoint {
   }
 
   fun confirm() {
-    RestAssured.given()
+    confirmReq()
+      .statusCode(202)
+      .body(CoreMatchers.equalTo("Hello from RESTEasy Reactive"))
+  }
+
+  fun confirmReq(): ValidatableResponse {
+    return given()
       .`when`().get("submit")
       .then()
-      .statusCode(200)
-      .body(CoreMatchers.equalTo("Hello from RESTEasy Reactive"))
   }
 }
