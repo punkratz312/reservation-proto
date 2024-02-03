@@ -2,6 +2,7 @@ package de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.enti
 
 import de.db.vendo.prototype.buchung.reservation.common.bce.boundary.control.Component
 import de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.boundary.control.ReservationRepository
+import de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.boundary.control.entity.Reservation
 import de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.boundary.control.entity.ReservationId
 import jakarta.enterprise.context.ApplicationScoped
 import jakarta.enterprise.inject.Default
@@ -15,8 +16,6 @@ class SubmitReservationComponent : Component<ReservationId> {
   lateinit var reservationRepository: ReservationRepository
 
   override fun execute(reference: ReservationId) {
-    reservationRepository.findBy(reference).ifPresent {
-      reservationRepository.save(it.copy(status = "Submit"))
-    }
+    reservationRepository.save(Reservation(reference, "Submit"))
   }
 }
