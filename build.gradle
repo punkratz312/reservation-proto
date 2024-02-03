@@ -1,97 +1,101 @@
 plugins {
-    id 'org.jetbrains.kotlin.jvm' version '1.9.21'
-    id 'org.jetbrains.kotlin.plugin.allopen' version '1.9.21'
-    id 'org.jlleitschuh.gradle.ktlint' version '12.0.3'
-    id 'io.gitlab.plunts.plantuml' version '2.1.3'
+  id 'org.jetbrains.kotlin.jvm' version '1.9.21'
+  id 'org.jetbrains.kotlin.plugin.allopen' version '1.9.21'
+  id 'org.jlleitschuh.gradle.ktlint' version '12.0.3'
+  id 'io.gitlab.plunts.plantuml' version '2.1.3'
+  id 'org.openrewrite.rewrite' version '6.8.1'
 }
-group = "de.db.vendo.prototype.buchung.reservation"
-version = "1.0.0-SNAPSHOT"
+group = 'de.db.vendo.prototype.buchung.reservation'
+version = '1.0.0-SNAPSHOT'
 repositories {
-    mavenCentral()
-    mavenLocal()
+  mavenCentral()
+  mavenLocal()
+}
+rewrite {
+  activeRecipe("org.openrewrite.kotlin.StaticAnalysis")
 }
 classDiagrams {
-    defaults {
-        exclude methods().withNameLike("*component*")
-        exclude methods().withNameLike("*copy*")
-        exclude classes().withNameLike("*DefaultImpls*")
-        style {
-            skinparam "linetype", "ortho"
-            show "stereotype"
-        }
+  defaults {
+    exclude methods().withNameLike('*component*')
+    exclude methods().withNameLike('*copy*')
+    exclude classes().withNameLike('*DefaultImpls*')
+    style {
+      skinparam 'linetype', 'ortho'
+      show 'stereotype'
     }
-    diagram {
-        name "buchung"
-        include packages().withName("de.db.vendo.prototype.buchung.reservation")
-        include classes().withName("io.quarkus.hibernate.orm.panache.PanacheRepository").outsideOfProject()
-        writeTo file('doc/uml/puml/buchung.puml')
-        renderTo file('doc/uml/svg/buchung.svg')
-    }
-    diagram {
-        name "divers"
-        include packages().withName("de.db.vendo.prototype.buchung.reservation.divers")
-        writeTo file('doc/uml/puml/divers.puml')
-        renderTo file('doc/uml/svg/divers.svg')
-    }
-    diagram {
-        name "adapters"
-        include packages().withName("de.db.vendo.prototype.buchung.reservation.divers.adapters")
-        writeTo file('doc/uml/puml/adapters.puml')
-        renderTo file('doc/uml/svg/adapters.svg')
-    }
-    diagram {
-        name "use_cases"
-        include packages().withName("de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases")
-        writeTo file('doc/uml/puml/use_cases.puml')
-        renderTo file('doc/uml/svg/use_cases.svg')
-    }
-    diagram {
-        name "entities"
-        include packages().withName("de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities")
-        writeTo file('doc/uml/puml/entities.puml')
-        renderTo file('doc/uml/svg/entities.svg')
-    }
-    diagram {
-        name "er-model"
-        include packages().withName("de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation")
-        writeTo file('doc/uml/puml/er-model.puml')
-        renderTo file('doc/uml/svg/er-model.svg')
-    }
+  }
+  diagram {
+    name 'buchung'
+    include packages().withName('de.db.vendo.prototype.buchung.reservation')
+    include classes().withName('io.quarkus.hibernate.orm.panache.PanacheRepository').outsideOfProject()
+    writeTo file('doc/uml/puml/buchung.puml')
+    renderTo file('doc/uml/svg/buchung.svg')
+  }
+  diagram {
+    name 'divers'
+    include packages().withName('de.db.vendo.prototype.buchung.reservation.divers')
+    writeTo file('doc/uml/puml/divers.puml')
+    renderTo file('doc/uml/svg/divers.svg')
+  }
+  diagram {
+    name 'adapters'
+    include packages().withName('de.db.vendo.prototype.buchung.reservation.divers.adapters')
+    writeTo file('doc/uml/puml/adapters.puml')
+    renderTo file('doc/uml/svg/adapters.svg')
+  }
+  diagram {
+    name 'use_cases'
+    include packages().withName('de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases')
+    writeTo file('doc/uml/puml/use_cases.puml')
+    renderTo file('doc/uml/svg/use_cases.svg')
+  }
+  diagram {
+    name 'entities'
+    include packages().withName('de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities')
+    writeTo file('doc/uml/puml/entities.puml')
+    renderTo file('doc/uml/svg/entities.svg')
+  }
+  diagram {
+    name 'er-model'
+    include packages().withName('de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation')
+    writeTo file('doc/uml/puml/er-model.puml')
+    renderTo file('doc/uml/svg/er-model.svg')
+  }
 }
 subprojects {
-    apply plugin: 'java'
-    apply plugin: 'kotlin'
-    repositories {
-        mavenCentral()
-        mavenLocal()
-    }
-    dependencies {
-        implementation "jakarta.enterprise:jakarta.enterprise.cdi-api:4.1.0-M1"
-        implementation "jakarta.inject:jakarta.inject-api:2.0.1"
-        implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
-        testImplementation "org.assertj:assertj-core:3.25.1"
-        testImplementation "org.junit.jupiter:junit-jupiter-api:5.10.1"
-        testImplementation "org.junit.jupiter:junit-jupiter-engine:5.10.1"
-    }
-    java {
-        sourceCompatibility = JavaVersion.VERSION_17
-        targetCompatibility = JavaVersion.VERSION_17
-    }
-    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile) {
-        kotlinOptions.jvmTarget = JavaVersion.VERSION_17.toString()
-        kotlinOptions.javaParameters = true
-    }
-}
-tasks.withType(Test) {
-    systemProperty("java.util.logging.manager", "org.jboss.logmanager.LogManager")
-}
-allOpen {
-    annotation("jakarta.ws.rs.Path")
-    annotation("jakarta.enterprise.context.ApplicationScoped")
-    annotation("jakarta.persistence.Entity")
-    annotation("io.quarkus.test.junit.QuarkusTest")
-}
-tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile) {
+  apply plugin: 'java'
+  apply plugin: 'kotlin'
+  repositories {
+    mavenCentral()
+    mavenLocal()
+  }
+  dependencies {
+    implementation 'jakarta.enterprise:jakarta.enterprise.cdi-api:4.1.0-M1'
+    implementation 'jakarta.inject:jakarta.inject-api:2.0.1'
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk8'
+    testImplementation 'org.assertj:assertj-core:3.25.1'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.10.1'
+    testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.10.1'
+  }
+  java {
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
+  }
+  tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile) {
     kotlinOptions.jvmTarget = JavaVersion.VERSION_17.toString()
     kotlinOptions.javaParameters = true
+  }
+}
+tasks.withType(Test) {
+  systemProperty('java.util.logging.manager', 'org.jboss.logmanager.LogManager')
+}
+allOpen {
+  annotation('jakarta.ws.rs.Path')
+  annotation('jakarta.enterprise.context.ApplicationScoped')
+  annotation('jakarta.persistence.Entity')
+  annotation('io.quarkus.test.junit.QuarkusTest')
+}
+tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile) {
+  kotlinOptions.jvmTarget = JavaVersion.VERSION_17.toString()
+  kotlinOptions.javaParameters = true
 }
