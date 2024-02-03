@@ -18,5 +18,4 @@ class SubmitReservationResourceAdapter : Service<UUID> {
   override fun serve(reference: UUID) {
     return submit.action(reference)
   }
-
 }

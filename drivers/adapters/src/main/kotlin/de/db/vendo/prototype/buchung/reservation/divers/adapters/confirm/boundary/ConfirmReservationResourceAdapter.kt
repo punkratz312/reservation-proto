@@ -17,5 +17,4 @@ class ConfirmReservationResourceAdapter : Service<UUID> {
   override fun serve(reference: UUID) {
     return confirm.action(reference)
   }
-
 }

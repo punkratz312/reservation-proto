@@ -11,12 +11,11 @@ import java.util.*
 @ApplicationScoped
 class SubmitUseCase : UseCase<UUID> {
 
-    @Inject
-    @field: Default
-    lateinit var submitReservation: SubmitReservationService
+  @Inject
+  @field: Default
+  lateinit var submitReservation: SubmitReservationService
 
-    override fun action(reference: UUID) {
-        submitReservation.serve(ReservationId(reference))
-    }
-
+  override fun action(reference: UUID) {
+    submitReservation.serve(ReservationId(reference))
+  }
 }

@@ -18,5 +18,4 @@ class ConfirmUseCase : UseCase<UUID> {
   override fun action(reference: UUID) {
     confirmReservation.serve(ReservationId(reference))
   }
-
 }

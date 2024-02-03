@@ -25,5 +25,4 @@ class ConfirmReservationResource : Service<UUID> {
   override fun serve(reference: UUID) {
     resourceAdapter.serve(UUID.randomUUID())
   }
-
 }

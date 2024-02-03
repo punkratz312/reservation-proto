@@ -7,10 +7,9 @@ import de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entit
 import jakarta.inject.Inject
 
 class ResetReservationService @Inject constructor(private val confirmReservation: ResetReservationComponent) :
-        Service<ReservationId> {
+  Service<ReservationId> {
 
-    override fun serve(reference: ReservationId) {
-        confirmReservation.execute(reference)
-    }
-
+  override fun serve(reference: ReservationId) {
+    confirmReservation.execute(reference)
+  }
 }

@@ -11,12 +11,11 @@ import jakarta.inject.Inject
 @ApplicationScoped
 class SubmitReservationService : Service<ReservationId> {
 
-    @Inject
-    @field: Default
-    lateinit var submitReservation: SubmitReservationComponent
+  @Inject
+  @field: Default
+  lateinit var submitReservation: SubmitReservationComponent
 
-    override fun serve(reference: ReservationId) {
-        submitReservation.execute(reference)
-    }
-
+  override fun serve(reference: ReservationId) {
+    submitReservation.execute(reference)
+  }
 }
