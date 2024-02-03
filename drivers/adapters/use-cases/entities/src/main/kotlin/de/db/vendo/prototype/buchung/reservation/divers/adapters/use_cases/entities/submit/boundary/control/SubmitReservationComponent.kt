@@ -15,6 +15,8 @@ class SubmitReservationComponent : Component<ReservationId> {
   lateinit var reservationRepository: ReservationRepository
 
   override fun execute(reference: ReservationId) {
-    reservationRepository.save(reservationRepository.findBy(reference).copy(status = "Submit"))
+    reservationRepository.findBy(reference).ifPresent {
+      reservationRepository.save(it.copy(status = "Submit"))
+    }
   }
 }

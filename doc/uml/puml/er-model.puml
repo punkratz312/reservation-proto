@@ -13,6 +13,7 @@ interface "ReservationRepository" as de.db.vendo.prototype.buchung.reservation.d
 class "Reservation" as de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.boundary.control.entity.Reservation {
   +ReservationId getId()
   +Trip getTrip()
+  +String getStatus()
 }
 class "ReservationId" as de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.boundary.control.entity.ReservationId {
   +UUID getId()

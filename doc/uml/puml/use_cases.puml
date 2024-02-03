@@ -4,12 +4,24 @@ skinparam linetype ortho
 show stereotype
 
 class "ConfirmUseCase" as de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.confirm.boundary.ConfirmUseCase {
+  +ConfirmReservationService confirmReservation
+  __
+  +ConfirmReservationService getConfirmReservation()
+  +void setConfirmReservation(ConfirmReservationService)
   +void action(UUID)
 }
 class "ConfirmReservationService" as de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.confirm.boundary.ConfirmReservationService {
+  +ConfirmReservationComponent confirmReservation
+  __
+  +ConfirmReservationComponent getConfirmReservation()
+  +void setConfirmReservation(ConfirmReservationComponent)
   +void serve(ReservationId)
 }
 class "ConfirmReservationComponent" as de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.confirm.boundary.control.ConfirmReservationComponent {
+  +ReservationRepository reservationRepository
+  __
+  +ReservationRepository getReservationRepository()
+  +void setReservationRepository(ReservationRepository)
   +void execute(ReservationId)
 }
 interface "ReservationRepository" as de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.boundary.control.ReservationRepository {
@@ -22,6 +34,7 @@ interface "ReservationRepository" as de.db.vendo.prototype.buchung.reservation.d
 class "Reservation" as de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.boundary.control.entity.Reservation {
   +ReservationId getId()
   +Trip getTrip()
+  +String getStatus()
 }
 class "ReservationId" as de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.boundary.control.entity.ReservationId {
   +UUID getId()
