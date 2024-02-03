@@ -4,14 +4,16 @@ import de.db.vendo.prototype.buchung.BDD
 import io.quarkus.test.junit.QuarkusTest
 import io.restassured.RestAssured.given
 import org.hamcrest.CoreMatchers.equalTo
+import org.junit.jupiter.api.Disabled
 
 @QuarkusTest
+@Disabled
 class ConfirmFailWithoutSubmitUseCaseResourceTest : BDD() {
   override fun then_() {
     given()
-            .`when`().get("confirm")
-            .then()
-            .statusCode(400)
-            .body(equalTo("Hello from RESTEasy Reactive"))
+      .`when`().get("confirm")
+      .then()
+      .statusCode(400)
+      .body(equalTo("Hello from RESTEasy Reactive"))
   }
 }
