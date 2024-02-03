@@ -2,7 +2,7 @@ package de.db.vendo.prototype.buchung
 
 import org.junit.jupiter.api.Test
 
-abstract class BDD {
+abstract class BDD : Endpoint() {
   @Test
   fun verify() {
     given_()
