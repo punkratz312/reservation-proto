@@ -495,7 +495,7 @@ ij_shell_switch_cases_indented = false
 [{*.gant,*.gradle,*.groovy,*.gy}]
 indent_size = 2
 tab_width = 2
-ij_continuation_indent_size = 8
+ij_continuation_indent_size = 2
 ij_groovy_align_group_field_declarations = false
 ij_groovy_align_multiline_array_initializer_expression = false
 ij_groovy_align_multiline_assignment = false
@@ -677,7 +677,7 @@ ij_groovy_wrap_long_lines = false
 [{*.gradle.kts,*.kt,*.kts,*.main.kts}]
 indent_size = 2
 tab_width = 2
-ij_continuation_indent_size = 8
+ij_continuation_indent_size = 2
 ij_kotlin_align_in_columns_case_branch = false
 ij_kotlin_align_multiline_binary_operation = false
 ij_kotlin_align_multiline_extends_list = false

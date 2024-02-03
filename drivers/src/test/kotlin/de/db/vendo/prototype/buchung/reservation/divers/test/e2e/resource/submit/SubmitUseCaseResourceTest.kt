@@ -9,9 +9,9 @@ import org.hamcrest.CoreMatchers.equalTo
 class SubmitUseCaseResourceTest : BDD() {
   override fun then_() {
     given()
-            .`when`().get("submit")
-            .then()
-            .statusCode(200)
-            .body(equalTo("Hello from RESTEasy Reactive"))
+      .`when`().get("submit")
+      .then()
+      .statusCode(200)
+      .body(equalTo("Hello from RESTEasy Reactive"))
   }
 }
