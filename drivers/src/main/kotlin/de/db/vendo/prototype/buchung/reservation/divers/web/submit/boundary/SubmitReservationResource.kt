@@ -5,7 +5,7 @@ import de.db.vendo.prototype.buchung.reservation.divers.adapters.submit.boundary
 import jakarta.enterprise.context.ApplicationScoped
 import jakarta.enterprise.inject.Default
 import jakarta.inject.Inject
-import jakarta.ws.rs.GET
+import jakarta.ws.rs.PUT
 import jakarta.ws.rs.Path
 import java.util.*
 
@@ -17,7 +17,7 @@ class SubmitReservationResource : FunctionalService<UUID, String> {
   @field: Default
   lateinit var resourceAdapter: SubmitReservationResourceAdapter
 
-  @GET
+  @PUT
   override fun serve(reference: UUID): String {
     return resourceAdapter.serve(UUID.randomUUID())
   }

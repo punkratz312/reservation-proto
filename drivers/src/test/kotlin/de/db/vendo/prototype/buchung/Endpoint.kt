@@ -3,25 +3,26 @@ package de.db.vendo.prototype.buchung
 import io.restassured.RestAssured.given
 import io.restassured.response.ValidatableResponse
 import org.hamcrest.CoreMatchers
+import org.jboss.resteasy.reactive.RestResponse.StatusCode.NO_CONTENT
 
 open class Endpoint {
   fun submit() {
     given()
-      .`when`().get("submit")
+      .`when`().put("submit")
       .then()
-      .statusCode(200)
+      .statusCode(NO_CONTENT)
       .body(CoreMatchers.equalTo("Hello from RESTEasy Reactive"))
   }
 
   fun confirm() {
     confirmReq()
-      .statusCode(202)
+      .statusCode(NO_CONTENT)
       .body(CoreMatchers.equalTo("Hello from RESTEasy Reactive"))
   }
 
   fun confirmReq(): ValidatableResponse {
     return given()
-      .`when`().get("submit")
+      .`when`().put("submit")
       .then()
   }
 }
