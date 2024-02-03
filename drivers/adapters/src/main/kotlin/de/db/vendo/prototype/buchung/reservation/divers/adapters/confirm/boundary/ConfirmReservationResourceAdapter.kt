@@ -1,14 +1,19 @@
 package de.db.vendo.prototype.buchung.reservation.divers.adapters.confirm.boundary
 
-import de.db.vendo.prototype.buchung.reservation.common.bce.boundary.Service
-import de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.confirm.boundary.ConfirmUseCase
-import jakarta.inject.Inject
+import de.db.vendo.prototype.buchung.reservation.common.bce.boundary.FunctionalService
+import jakarta.enterprise.context.ApplicationScoped
 import java.util.*
 
-class ConfirmReservationResourceAdapter @Inject constructor(private val confirm: ConfirmUseCase) : Service<UUID> {
+@ApplicationScoped
+class ConfirmReservationResourceAdapter : FunctionalService<UUID, String> {
 
-    override fun serve(reference: UUID) {
-        confirm.action(reference)
-    }
+//    @Inject
+//    @field: Default
+//    lateinit var submit: SubmitUseCase
+
+  override fun serve(reference: UUID): String {
+//        submit.action(reference)
+    return "SubmitReservationResourceAdapter$reference"
+  }
 
 }
