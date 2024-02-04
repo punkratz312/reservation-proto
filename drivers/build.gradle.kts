@@ -1,7 +1,7 @@
 version = "1.0.0-SNAPSHOT"
 plugins {
   id("io.quarkus")
-  id("org.jetbrains.kotlin.plugin.serialization") version "2.0.0-Beta3"
+  id("org.jetbrains.kotlin.plugin.serialization") version "1.9.22"
 //    id("org.kordamp.gradle.jandex") version "1.1.0"
 }
 repositories {

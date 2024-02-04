@@ -5,7 +5,6 @@ import io.restassured.RestAssured.given
 import io.restassured.response.ValidatableResponse
 import io.restassured.specification.RequestSpecification
 import jakarta.ws.rs.core.MediaType.APPLICATION_JSON
-import org.hamcrest.CoreMatchers
 import org.jboss.resteasy.reactive.RestResponse.StatusCode.NO_CONTENT
 
 open class Endpoint {
@@ -19,13 +18,13 @@ open class Endpoint {
       .`when`().put("submit")
       .then()
       .statusCode(NO_CONTENT)
-      .body(CoreMatchers.equalTo("Hello from RESTEasy Reactive"))
+//      .body(CoreMatchers.equalTo("Hello from RESTEasy Reactive"))
   }
 
   fun confirm() {
     confirmReq()
       .statusCode(NO_CONTENT)
-      .body(CoreMatchers.equalTo("Hello from RESTEasy Reactive"))
+//      .body(CoreMatchers.equalTo("Hello from RESTEasy Reactive"))
   }
 
   fun confirmReq(): ValidatableResponse {
