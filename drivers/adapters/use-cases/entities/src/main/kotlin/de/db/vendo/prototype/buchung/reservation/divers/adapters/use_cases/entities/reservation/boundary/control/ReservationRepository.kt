@@ -8,7 +8,7 @@ import java.util.*
 interface ReservationRepository {
 
   fun findBy(id: ReservationId): Optional<Reservation>
-  
+
   fun save(reservation: Reservation)
 
   fun submit(id: ReservationId)
@@ -18,3 +18,5 @@ interface ReservationRepository {
   fun reset(id: ReservationId)
 
 }
+
+
