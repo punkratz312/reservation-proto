@@ -23,6 +23,6 @@ class SubmitReservationResource : FunctionalService<ReservationReq, UUID> {
   @PUT
   @ResponseStatus(NO_CONTENT)
   override fun serve(reference: ReservationReq): UUID {
-    return resourceAdapter.serve(reference.id)
+    return resourceAdapter.serve(reference.id.toString())
   }
 }

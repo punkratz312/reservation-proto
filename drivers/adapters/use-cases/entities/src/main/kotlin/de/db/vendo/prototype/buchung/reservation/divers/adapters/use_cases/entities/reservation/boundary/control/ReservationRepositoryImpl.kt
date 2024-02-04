@@ -13,8 +13,9 @@ class ReservationRepositoryImpl : ReservationRepository {
     return ofNullable(map[id.id])
   }
 
-  override fun save(reservation: Reservation) {
+  override fun save(reservation: Reservation): Reservation {
     map[reservation.id.id] = reservation
+    return map[reservation.id.id]!!
   }
 
   override fun submit(id: ReservationId) {

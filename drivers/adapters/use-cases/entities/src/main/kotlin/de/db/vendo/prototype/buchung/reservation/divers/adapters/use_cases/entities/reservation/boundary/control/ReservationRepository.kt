@@ -9,7 +9,7 @@ interface ReservationRepository {
 
   fun findBy(id: ReservationId): Optional<Reservation>
 
-  fun save(reservation: Reservation)
+  fun save(reservation: Reservation): Reservation
 
   fun submit(id: ReservationId)
 

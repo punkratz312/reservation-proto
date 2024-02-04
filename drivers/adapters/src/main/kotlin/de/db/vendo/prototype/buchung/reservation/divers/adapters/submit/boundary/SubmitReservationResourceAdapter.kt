@@ -9,13 +9,13 @@ import java.util.*
 
 
 @ApplicationScoped
-class SubmitReservationResourceAdapter : FunctionalService<UUID, UUID> {
+class SubmitReservationResourceAdapter : FunctionalService<String, UUID> {
 
   @Inject
   @field: Default
   lateinit var submit: SubmitUseCase
 
-  override fun serve(reference: UUID): UUID {
+  override fun serve(reference: String): UUID {
     submit.action(reference)
     return UUID.randomUUID()
   }
