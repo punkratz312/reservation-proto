@@ -7,7 +7,6 @@ import jakarta.enterprise.inject.Default
 import jakarta.inject.Inject
 import java.util.*
 
-
 @ApplicationScoped
 class SubmitReservationResourceAdapter : FunctionalService<String, UUID> {
 

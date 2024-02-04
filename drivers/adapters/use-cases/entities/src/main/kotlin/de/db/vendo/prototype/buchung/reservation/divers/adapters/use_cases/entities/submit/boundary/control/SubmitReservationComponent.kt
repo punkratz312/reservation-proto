@@ -15,9 +15,9 @@ class SubmitReservationComponent : FunctionalComponent<String, ReservationId> {
 
   @Inject
   @field: Default
-  lateinit var reservationRepository: ReservationRepository
+  lateinit var reservation: ReservationRepository
 
   override fun execute(reference: String): ReservationId {
-    return reservationRepository.save(Reservation(ReservationId(UUID.randomUUID()), SUBMIT)).id
+    return reservation.save(Reservation(ReservationId(UUID.randomUUID()), SUBMIT)).id
   }
 }

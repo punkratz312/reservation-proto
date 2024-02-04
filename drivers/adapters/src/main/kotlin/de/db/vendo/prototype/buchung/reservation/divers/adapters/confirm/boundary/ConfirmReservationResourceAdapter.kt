@@ -15,6 +15,6 @@ class ConfirmReservationResourceAdapter : Service<UUID> {
   lateinit var confirm: ConfirmUseCase
 
   override fun serve(reference: UUID) {
-    return confirm.action(reference)
+    confirm.action(reference)
   }
 }

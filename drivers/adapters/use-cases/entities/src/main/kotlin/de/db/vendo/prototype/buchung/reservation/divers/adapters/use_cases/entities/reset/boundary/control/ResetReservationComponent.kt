@@ -5,10 +5,10 @@ import de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entit
 import de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.boundary.control.entity.ReservationId
 import jakarta.inject.Inject
 
-class ResetReservationComponent @Inject constructor(private val reservationRepository: ReservationRepository) :
+class ResetReservationComponent @Inject constructor(private val reservation: ReservationRepository) :
   Component<ReservationId> {
 
   override fun execute(reference: ReservationId) {
-    reservationRepository.findBy(reference);
+    reservation.findBy(reference);
   }
 }
