@@ -2,9 +2,11 @@ package de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.enti
 
 import de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.boundary.control.entity.Reservation
 import de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.boundary.control.entity.ReservationId
+import jakarta.enterprise.context.ApplicationScoped
 import java.util.*
 import java.util.Optional.ofNullable
 
+@ApplicationScoped
 class ReservationRepositoryImpl : ReservationRepository {
 
   private val map = HashMap<UUID, Reservation>();

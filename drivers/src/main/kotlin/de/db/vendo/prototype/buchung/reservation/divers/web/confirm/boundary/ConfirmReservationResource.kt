@@ -1,6 +1,5 @@
 package de.db.vendo.prototype.buchung.reservation.divers.web.confirm.boundary
 
-
 import de.db.vendo.prototype.buchung.reservation.common.bce.boundary.Service
 import de.db.vendo.prototype.buchung.reservation.divers.adapters.confirm.boundary.ConfirmReservationResourceAdapter
 import jakarta.enterprise.context.ApplicationScoped

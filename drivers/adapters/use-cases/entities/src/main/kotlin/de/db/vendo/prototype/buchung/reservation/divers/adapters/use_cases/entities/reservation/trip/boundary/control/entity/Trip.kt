@@ -6,11 +6,11 @@ import de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entit
 import de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.trip.train.wagon.seat.boundary.control.entity.Seat
 
 data class Trip(
-        val id: TripId,
-        val origin: Station,
-        val destination: Station,
-        val stations: List<Station>,
-        val train: Train,
-        val seat: Seat,
-        val wagon: Wagon
+  val id: TripId,
+  val origin: Station,
+  val destination: Station,
+  val stations: List<Station>,
+  val train: Train,
+  val seat: Seat,
+  val wagon: Wagon
 )
