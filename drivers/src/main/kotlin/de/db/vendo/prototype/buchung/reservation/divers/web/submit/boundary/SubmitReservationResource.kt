@@ -20,7 +20,7 @@ class SubmitReservationResource : FunctionalService<String, String> {
 
   @PUT
   @ResponseStatus(NO_CONTENT)
-  override fun serve(reference: String): String {
-    return resourceAdapter.serve(reference).toString()
+  override fun serve(id: String): String {
+    return resourceAdapter.serve(id).toString()
   }
 }

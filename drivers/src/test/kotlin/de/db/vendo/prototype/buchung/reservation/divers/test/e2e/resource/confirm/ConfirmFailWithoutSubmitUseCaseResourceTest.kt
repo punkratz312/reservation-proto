@@ -8,6 +8,6 @@ import org.junit.jupiter.api.Disabled
 @Disabled
 class ConfirmFailWithoutSubmitUseCaseResourceTest : BDD() {
   override fun then_() {
-    confirmReq().statusCode(400)
+    confirmReq("").statusCode(400)
   }
 }

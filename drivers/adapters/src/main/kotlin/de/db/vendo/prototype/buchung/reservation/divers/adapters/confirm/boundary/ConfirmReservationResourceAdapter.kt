@@ -14,7 +14,7 @@ class ConfirmReservationResourceAdapter : Service<UUID> {
   @field: Default
   lateinit var confirm: ConfirmUseCase
 
-  override fun serve(reference: UUID) {
-    confirm.action(reference)
+  override fun serve(id: UUID) {
+    confirm.action(id)
   }
 }

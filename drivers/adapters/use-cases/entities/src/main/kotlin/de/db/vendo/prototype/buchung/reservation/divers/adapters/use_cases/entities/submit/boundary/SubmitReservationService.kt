@@ -14,7 +14,7 @@ class SubmitReservationService : FunctionalService<String, ReservationId> {
   @field: Default
   lateinit var submitReservation: SubmitReservationComponent
 
-  override fun serve(reference: String): ReservationId {
-    return submitReservation.execute(reference)
+  override fun serve(id: String): ReservationId {
+    return submitReservation.execute(id)
   }
 }

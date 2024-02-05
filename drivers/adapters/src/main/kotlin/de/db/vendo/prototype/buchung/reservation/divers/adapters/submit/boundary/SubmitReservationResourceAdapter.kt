@@ -14,7 +14,7 @@ class SubmitReservationResourceAdapter : FunctionalService<String, UUID> {
   @field: Default
   lateinit var submit: SubmitUseCase
 
-  override fun serve(reference: String): UUID {
-    return submit.action(reference)
+  override fun serve(id: String): UUID {
+    return submit.action(id)
   }
 }

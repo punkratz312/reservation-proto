@@ -5,6 +5,7 @@ import io.restassured.RestAssured.given
 import io.restassured.response.ValidatableResponse
 import io.restassured.specification.RequestSpecification
 import jakarta.ws.rs.core.MediaType.APPLICATION_JSON
+import org.hamcrest.CoreMatchers.notNullValue
 import org.jboss.resteasy.reactive.RestResponse.StatusCode.NO_CONTENT
 
 open class Endpoint {
@@ -13,23 +14,30 @@ open class Endpoint {
     enableLoggingOfRequestAndResponseIfValidationFails()
   }
 
-  fun submit() {
-    given_()
-      .`when`().put("submit")
+  fun submit(): String {
+    return given_()
+      .`when`()
+      .put("submit")
       .then()
       .statusCode(NO_CONTENT)
+      .body(notNullValue())
+      .extract()
+      .body()
+      .asString()
 //      .body(CoreMatchers.equalTo("Hello from RESTEasy Reactive"))
   }
 
-  fun confirm() {
-    confirmReq()
+  fun confirm(id: String) {
+    confirmReq(id)
       .statusCode(NO_CONTENT)
 //      .body(CoreMatchers.equalTo("Hello from RESTEasy Reactive"))
   }
 
-  fun confirmReq(): ValidatableResponse {
+  fun confirmReq(id: String): ValidatableResponse {
     return given_()
-      .`when`().put("submit")
+      .pathParam("id", id)
+      .`when`()
+      .put("confirm")
       .then()
   }
 

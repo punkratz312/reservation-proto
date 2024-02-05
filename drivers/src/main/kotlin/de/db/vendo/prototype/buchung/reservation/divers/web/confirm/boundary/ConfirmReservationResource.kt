@@ -7,12 +7,13 @@ import jakarta.enterprise.inject.Default
 import jakarta.inject.Inject
 import jakarta.ws.rs.PUT
 import jakarta.ws.rs.Path
+import jakarta.ws.rs.PathParam
 import org.jboss.resteasy.reactive.ResponseStatus
 import org.jboss.resteasy.reactive.RestResponse.StatusCode.NO_CONTENT
 import java.util.*
 
 @ApplicationScoped
-@Path("confirm")
+@Path("confirm/{id}")
 class ConfirmReservationResource : Service<UUID> {
 
   @Inject
@@ -21,7 +22,7 @@ class ConfirmReservationResource : Service<UUID> {
 
   @PUT
   @ResponseStatus(NO_CONTENT)
-  override fun serve(reference: UUID) {
+  override fun serve(@PathParam("id") id: UUID) {
     resourceAdapter.serve(UUID.randomUUID())
   }
 }

@@ -14,7 +14,7 @@ class ConfirmReservationService : Service<ReservationId> {
   @field: Default
   lateinit var confirmReservation: ConfirmReservationComponent
 
-  override fun serve(reference: ReservationId) {
-    confirmReservation.execute(reference)
+  override fun serve(id: ReservationId) {
+    confirmReservation.execute(id)
   }
 }

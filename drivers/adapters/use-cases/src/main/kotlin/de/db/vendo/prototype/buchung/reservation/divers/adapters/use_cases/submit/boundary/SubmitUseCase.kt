@@ -14,7 +14,7 @@ class SubmitUseCase : FunctionalUseCase<String, UUID> {
   @field: Default
   lateinit var submitReservation: SubmitReservationService
 
-  override fun action(reference: String): UUID {
-    return submitReservation.serve(reference).id
+  override fun action(id: String): UUID {
+    return submitReservation.serve(id).id
   }
 }

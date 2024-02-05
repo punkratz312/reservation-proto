@@ -15,7 +15,7 @@ class ConfirmUseCase : UseCase<UUID> {
   @field: Default
   lateinit var confirmReservation: ConfirmReservationService
 
-  override fun action(reference: UUID) {
-    confirmReservation.serve(ReservationId(reference))
+  override fun action(id: UUID) {
+    confirmReservation.serve(ReservationId(id))
   }
 }

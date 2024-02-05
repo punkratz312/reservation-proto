@@ -8,7 +8,7 @@ import jakarta.inject.Inject
 class ResetReservationService @Inject constructor(private val confirmReservation: ResetReservationComponent) :
   Service<ReservationId> {
 
-  override fun serve(reference: ReservationId) {
-    confirmReservation.execute(reference)
+  override fun serve(id: ReservationId) {
+    confirmReservation.execute(id)
   }
 }
