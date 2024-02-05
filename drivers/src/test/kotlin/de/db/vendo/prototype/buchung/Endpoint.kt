@@ -7,6 +7,7 @@ import io.restassured.specification.RequestSpecification
 import jakarta.ws.rs.core.MediaType.APPLICATION_JSON
 import org.hamcrest.CoreMatchers.notNullValue
 import org.jboss.resteasy.reactive.RestResponse.StatusCode.NO_CONTENT
+import org.jboss.resteasy.reactive.RestResponse.StatusCode.OK
 
 open class Endpoint {
 
@@ -19,7 +20,7 @@ open class Endpoint {
       .`when`()
       .put("submit")
       .then()
-      .statusCode(NO_CONTENT)
+      .statusCode(OK)
       .body(notNullValue())
       .extract()
       .body()
@@ -37,7 +38,7 @@ open class Endpoint {
     return given_()
       .pathParam("id", id)
       .`when`()
-      .put("confirm")
+      .put("confirm/{id}")
       .then()
   }
 

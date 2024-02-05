@@ -7,8 +7,6 @@ import jakarta.enterprise.inject.Default
 import jakarta.inject.Inject
 import jakarta.ws.rs.PUT
 import jakarta.ws.rs.Path
-import org.jboss.resteasy.reactive.ResponseStatus
-import org.jboss.resteasy.reactive.RestResponse.StatusCode.NO_CONTENT
 
 @ApplicationScoped
 @Path("submit")
@@ -19,7 +17,6 @@ class SubmitReservationResource : FunctionalService<String, String> {
   lateinit var resourceAdapter: SubmitReservationResourceAdapter
 
   @PUT
-  @ResponseStatus(NO_CONTENT)
   override fun serve(id: String): String {
     return resourceAdapter.serve(id).toString()
   }
