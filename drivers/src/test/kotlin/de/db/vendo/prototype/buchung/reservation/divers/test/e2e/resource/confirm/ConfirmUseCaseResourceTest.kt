@@ -6,7 +6,6 @@ import io.quarkus.test.junit.QuarkusTest
 @QuarkusTest
 class ConfirmUseCaseResourceTest : BDD() {
   override fun then_() {
-    val id = submit()
-    confirm(id)
+    confirm(submit())
   }
 }
