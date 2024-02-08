@@ -23,6 +23,6 @@ class ConfirmReservationResource : Service<UUID> {
   @PUT
   @ResponseStatus(NO_CONTENT)
   override fun serve(@PathParam("id") id: UUID) {
-    resourceAdapter.serve(UUID.randomUUID())
+    resourceAdapter.serve(id)
   }
 }
