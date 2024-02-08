@@ -17,7 +17,7 @@ class SubmitReservationResource : FunctionalService<String, String> {
   lateinit var resourceAdapter: SubmitReservationResourceAdapter
 
   @PUT
-  override fun serve(id: String): String {
-    return resourceAdapter.serve(id).toString()
+  override fun serve(input: String): String {
+    return resourceAdapter.serve(input).toString()
   }
 }

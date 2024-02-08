@@ -12,23 +12,23 @@ class ReservationRepositoryDriver : ReservationRepositoryAdapterBridge {
   @field: Default
   lateinit var panacheRepository: PanacheRepositoryBase<String, UUID>
 
-  override fun findBy(id: UUID): String {
-    return panacheRepository.findById(id).toString()
+  override fun findBy(input: UUID): String {
+    return panacheRepository.findById(input).toString()
   }
 
   override fun save(reservation: String) {
     TODO("Not yet implemented")
   }
 
-  override fun submit(id: UUID) {
+  override fun submit(input: UUID) {
     TODO("Not yet implemented")
   }
 
-  override fun confirm(id: UUID) {
+  override fun confirm(input: UUID) {
     TODO("Not yet implemented")
   }
 
-  override fun reset(id: UUID) {
+  override fun reset(input: UUID) {
     TODO("Not yet implemented")
   }
 }

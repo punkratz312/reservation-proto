@@ -17,9 +17,7 @@ class SubmitReservationComponent : FunctionalComponent<String, ReservationId> {
   @field: Default
   lateinit var reservation: ReservationRepository
 
-  override fun execute(id: String): ReservationId {
-    val id1 = UUID.randomUUID()
-    val save = reservation.save(Reservation(ReservationId(id1), SUBMIT))
-    return save.id
+  override fun execute(input: String): ReservationId {
+    return reservation.save(Reservation(ReservationId(UUID.fromString(input)), SUBMIT)).id
   }
 }

@@ -8,7 +8,7 @@ import java.util.*
 
 class ResetUseCase @Inject constructor(private val resetReservation: ResetReservationService) : UseCase<UUID> {
 
-  override fun action(id: UUID) {
-    resetReservation.serve(ReservationId(id))
+  override fun action(input: UUID) {
+    resetReservation.serve(ReservationId(input))
   }
 }

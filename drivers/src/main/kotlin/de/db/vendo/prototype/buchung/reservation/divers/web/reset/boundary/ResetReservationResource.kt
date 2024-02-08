@@ -8,7 +8,7 @@ import java.util.*
 class ResetReservationResource @Inject constructor(private val resourceAdapter: ResetReservationResourceAdapter) :
   Service<UUID> {
 
-  override fun serve(id: UUID) {
-    resourceAdapter.serve(id)
+  override fun serve(input: UUID) {
+    resourceAdapter.serve(input)
   }
 }

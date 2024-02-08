@@ -3,7 +3,7 @@
 skinparam linetype ortho
 show stereotype
 
-interface "FunctionalService" as de.db.vendo.prototype.buchung.reservation.common.bce.boundary.FunctionalService<Reference, Result> {
+interface "FunctionalService" as de.db.vendo.prototype.buchung.reservation.common.bce.boundary.FunctionalService<Reference, Output> {
   + {abstract}Result serve(Reference)
 }
 interface "Service" as de.db.vendo.prototype.buchung.reservation.common.bce.boundary.Service<Reference> {
@@ -12,10 +12,10 @@ interface "Service" as de.db.vendo.prototype.buchung.reservation.common.bce.boun
 interface "Component" as de.db.vendo.prototype.buchung.reservation.common.bce.boundary.control.Component<Reference> {
   + {abstract}void execute(Reference)
 }
-interface "FunctionalComponent" as de.db.vendo.prototype.buchung.reservation.common.bce.boundary.control.FunctionalComponent<Reference, Result> {
+interface "FunctionalComponent" as de.db.vendo.prototype.buchung.reservation.common.bce.boundary.control.FunctionalComponent<Reference, Output> {
   + {abstract}Result execute(Reference)
 }
-interface "FunctionalUseCase" as de.db.vendo.prototype.buchung.reservation.common.usecase.FunctionalUseCase<Reference, Result> {
+interface "FunctionalUseCase" as de.db.vendo.prototype.buchung.reservation.common.usecase.FunctionalUseCase<Reference, Output> {
   + {abstract}Result action(Reference)
 }
 interface "UseCase" as de.db.vendo.prototype.buchung.reservation.common.usecase.UseCase<Reference> {

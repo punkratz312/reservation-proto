@@ -4,14 +4,14 @@ import java.util.*
 
 interface ReservationRepositoryUseCaseBridge {
 
-  fun findBy(id: UUID): String
+  fun findBy(input: UUID): String
 
   fun save(reservation: String)
 
-  fun submit(id: UUID)
+  fun submit(input: UUID)
 
-  fun confirm(id: UUID)
+  fun confirm(input: UUID)
 
-  fun reset(id: UUID)
+  fun reset(input: UUID)
 
 }

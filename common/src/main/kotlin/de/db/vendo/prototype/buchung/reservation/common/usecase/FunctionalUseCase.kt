@@ -1,5 +1,5 @@
 package de.db.vendo.prototype.buchung.reservation.common.usecase
 
-interface FunctionalUseCase<Id, Result> {
-  fun action(id: Id): Result
+interface FunctionalUseCase<Input, Output> {
+  fun action(input: Input): Output
 }

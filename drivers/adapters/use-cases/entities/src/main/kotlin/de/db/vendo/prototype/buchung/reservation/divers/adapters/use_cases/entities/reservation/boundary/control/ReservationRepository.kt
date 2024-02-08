@@ -6,15 +6,15 @@ import java.util.*
 
 interface ReservationRepository {
 
-  fun findBy(id: ReservationId): Optional<Reservation>
+  fun findBy(input: ReservationId): Optional<Reservation>
 
   fun save(reservation: Reservation): Reservation
 
-  fun submit(id: ReservationId)
+  fun submit(input: ReservationId)
 
-  fun confirm(id: ReservationId)
+  fun confirm(input: ReservationId)
 
-  fun reset(id: ReservationId)
+  fun reset(input: ReservationId)
 
 }
 

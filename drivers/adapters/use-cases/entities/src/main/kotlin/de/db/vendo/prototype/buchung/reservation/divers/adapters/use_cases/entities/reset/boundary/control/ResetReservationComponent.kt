@@ -8,7 +8,7 @@ import jakarta.inject.Inject
 class ResetReservationComponent @Inject constructor(private val reservation: ReservationRepository) :
   Component<ReservationId> {
 
-  override fun execute(id: ReservationId) {
-    reservation.findBy(id);
+  override fun execute(input: ReservationId) {
+    reservation.findBy(input);
   }
 }

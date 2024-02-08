@@ -11,8 +11,8 @@ class ReservationRepositoryImpl : ReservationRepository {
 
   private val map = HashMap<UUID, Reservation>();
 
-  override fun findBy(id: ReservationId): Optional<Reservation> {
-    return ofNullable(map[id.id])
+  override fun findBy(input: ReservationId): Optional<Reservation> {
+    return ofNullable(map[input.id])
   }
 
   override fun save(reservation: Reservation): Reservation {
@@ -20,15 +20,15 @@ class ReservationRepositoryImpl : ReservationRepository {
     return map[reservation.id.id]!!
   }
 
-  override fun submit(id: ReservationId) {
+  override fun submit(input: ReservationId) {
     TODO("Not yet implemented")
   }
 
-  override fun confirm(id: ReservationId) {
+  override fun confirm(input: ReservationId) {
     TODO("Not yet implemented")
   }
 
-  override fun reset(id: ReservationId) {
+  override fun reset(input: ReservationId) {
     TODO("Not yet implemented")
   }
 

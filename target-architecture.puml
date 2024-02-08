@@ -143,13 +143,13 @@ package de.db.vendo.prototype.buchung {
             }
             artifact use_cases _use_cases {
                 interface Submit {
-                    + action(Request req): Result
+                    + action(Request req): Output
                 }
                 interface Confirm {
-                    + action(ReservationId id): Result
+                    + action(ReservationId id): Output
                 }
                 interface Cancel {
-                    + action(ReservationId id): Result
+                    + action(ReservationId id): Output
                 }
                 artifact entities _entity {
                     package boundary _boundary {

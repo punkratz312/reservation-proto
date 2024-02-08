@@ -8,6 +8,7 @@ import jakarta.ws.rs.core.MediaType.APPLICATION_JSON
 import org.hamcrest.CoreMatchers.notNullValue
 import org.jboss.resteasy.reactive.RestResponse.StatusCode.NO_CONTENT
 import org.jboss.resteasy.reactive.RestResponse.StatusCode.OK
+import java.util.*
 
 open class Endpoint {
 
@@ -15,8 +16,14 @@ open class Endpoint {
     enableLoggingOfRequestAndResponseIfValidationFails()
   }
 
+
   fun submit(): String {
     return given_()
+      .body("""
+      {
+        "id": "${UUID.randomUUID()}"
+      }
+      """.trimIndent())
       .`when`()
       .put("submit")
       .then()
@@ -25,11 +32,10 @@ open class Endpoint {
       .extract()
       .body()
       .asString()
-//      .body(CoreMatchers.equalTo("Hello from RESTEasy Reactive"))
   }
 
-  fun confirm(id: String) {
-    confirmReq(id)
+  fun confirm(input: String) {
+    confirmReq(input)
       .statusCode(NO_CONTENT)
 //      .body(CoreMatchers.equalTo("Hello from RESTEasy Reactive"))
   }

@@ -1,5 +1,5 @@
 package de.db.vendo.prototype.buchung.reservation.common.bce.boundary.control
 
-interface Component<Id> {
-  fun execute(id: Id)
+interface Component<Input> {
+  fun execute(input: Input)
 }

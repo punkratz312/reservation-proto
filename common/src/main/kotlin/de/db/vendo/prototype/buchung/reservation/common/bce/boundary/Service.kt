@@ -1,5 +1,5 @@
 package de.db.vendo.prototype.buchung.reservation.common.bce.boundary
 
-interface Service<Id> {
-  fun serve(id: Id)
+interface Service<Input> {
+  fun serve(input: Input)
 }

@@ -15,8 +15,8 @@ class ConfirmReservationComponent : Component<ReservationId> {
   @field: Default
   lateinit var reservation: ReservationRepository
 
-  override fun execute(id: ReservationId) {
-    val findBy = reservation.findBy(id)
+  override fun execute(input: ReservationId) {
+    val findBy = reservation.findBy(input)
     findBy.orElseThrow().let {
       reservation.save(it.copy(status = CONFIRM))
     }
