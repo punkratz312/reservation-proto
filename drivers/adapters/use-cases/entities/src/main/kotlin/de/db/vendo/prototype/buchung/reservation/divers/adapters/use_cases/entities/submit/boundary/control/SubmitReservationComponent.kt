@@ -8,7 +8,7 @@ import de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entit
 import jakarta.enterprise.context.ApplicationScoped
 import jakarta.enterprise.inject.Default
 import jakarta.inject.Inject
-import java.util.*
+import java.util.UUID.randomUUID
 
 @ApplicationScoped
 class SubmitReservationComponent : FunctionalComponent<String, ReservationId> {
@@ -18,6 +18,6 @@ class SubmitReservationComponent : FunctionalComponent<String, ReservationId> {
   lateinit var reservation: ReservationRepository
 
   override fun execute(input: String): ReservationId {
-    return reservation.save(Reservation(ReservationId(UUID.fromString(input)), SUBMIT)).id
+    return reservation.save(Reservation(ReservationId(randomUUID()), SUBMIT)).id
   }
 }

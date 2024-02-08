@@ -7,6 +7,7 @@ import jakarta.enterprise.inject.Default
 import jakarta.inject.Inject
 import jakarta.ws.rs.PUT
 import jakarta.ws.rs.Path
+import org.eclipse.microprofile.openapi.annotations.parameters.RequestBody
 
 @ApplicationScoped
 @Path("submit")
@@ -17,7 +18,7 @@ class SubmitReservationResource : FunctionalService<String, String> {
   lateinit var resourceAdapter: SubmitReservationResourceAdapter
 
   @PUT
-  override fun serve(input: String): String {
+  override fun serve(@RequestBody input: String): String {
     return resourceAdapter.serve(input).toString()
   }
 }

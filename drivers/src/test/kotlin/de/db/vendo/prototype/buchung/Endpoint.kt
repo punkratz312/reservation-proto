@@ -8,7 +8,7 @@ import jakarta.ws.rs.core.MediaType.APPLICATION_JSON
 import org.hamcrest.CoreMatchers.notNullValue
 import org.jboss.resteasy.reactive.RestResponse.StatusCode.NO_CONTENT
 import org.jboss.resteasy.reactive.RestResponse.StatusCode.OK
-import java.util.*
+import java.util.UUID.randomUUID
 
 open class Endpoint {
 
@@ -21,9 +21,11 @@ open class Endpoint {
     return given_()
       .body("""
       {
-        "id": "${UUID.randomUUID()}"
+        "id": "${randomUUID()}",
+        "name": "${randomUUID()}",
+        "type": "${randomUUID()}"
       }
-      """.trimIndent())
+      """)
       .`when`()
       .put("submit")
       .then()
