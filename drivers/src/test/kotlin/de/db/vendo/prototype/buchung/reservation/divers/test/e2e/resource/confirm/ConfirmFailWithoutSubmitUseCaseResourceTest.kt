@@ -2,12 +2,11 @@ package de.db.vendo.prototype.buchung.reservation.divers.test.e2e.resource.confi
 
 import de.db.vendo.prototype.buchung.BDD
 import io.quarkus.test.junit.QuarkusTest
-import org.junit.jupiter.api.Disabled
+import org.jboss.resteasy.reactive.RestResponse.StatusCode.NOT_FOUND
 
 @QuarkusTest
-@Disabled
 class ConfirmFailWithoutSubmitUseCaseResourceTest : BDD() {
   override fun then_() {
-    confirmReq("").statusCode(400)
+    confirmReq("").statusCode(NOT_FOUND)
   }
 }
