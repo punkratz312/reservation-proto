@@ -6,11 +6,7 @@ import org.junit.jupiter.api.Disabled
 
 @QuarkusTest
 @Disabled
-class ResetFailWithoutConfirmUseCaseResourceTest : BDD() {
-  override fun when_() {
-
-  }
-
+class ResetUseCaseResourceTest : BDD() {
   override fun then_() {
     submit().let {
       confirm(it)

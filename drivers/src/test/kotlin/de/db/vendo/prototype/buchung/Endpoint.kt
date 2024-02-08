@@ -39,7 +39,11 @@ open class Endpoint {
   fun confirm(input: String) {
     confirmReq(input)
       .statusCode(NO_CONTENT)
-//      .body(CoreMatchers.equalTo("Hello from RESTEasy Reactive"))
+  }
+
+  fun reset(input: String) {
+    confirmReq(input)
+      .statusCode(NO_CONTENT)
   }
 
   fun confirmReq(id: String): ValidatableResponse {
