@@ -4,7 +4,7 @@
 //import de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.boundary.control.entity.ReservationId
 //import jakarta.enterprise.context.ApplicationScoped
 //import java.util.*
-//import java.util.Optional.ofNullable
+//import java.util.Optional.of
 //
 //@ApplicationScoped
 //class ReservationRepositoryImpl : ReservationRepository {
@@ -12,7 +12,7 @@
 //  private val map = HashMap<UUID, Reservation>();
 //
 //  override fun findBy(input: ReservationId): Optional<Reservation> {
-//    return ofNullable(map[input.id])
+//    return of(map[input.id])
 //  }
 //
 //  override fun save(reservation: Reservation): Reservation {

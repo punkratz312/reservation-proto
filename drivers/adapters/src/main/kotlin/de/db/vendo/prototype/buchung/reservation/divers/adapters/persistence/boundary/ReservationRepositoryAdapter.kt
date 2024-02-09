@@ -12,7 +12,6 @@ class ReservationRepositoryAdapter : ReservationRepositoryAdapterBridge {
   @field: Default
   lateinit var repositoryUseCaseBridge: ReservationRepositoryUseCaseBridge
 
-
   override fun findBy(input: UUID): Optional<String> {
     return repositoryUseCaseBridge.findBy(input).map { it.toString() }
   }
