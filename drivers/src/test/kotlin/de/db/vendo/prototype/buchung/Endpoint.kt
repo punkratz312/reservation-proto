@@ -42,7 +42,7 @@ open class Endpoint {
   }
 
   fun reset(input: String) {
-    confirmReq(input)
+    resetReq(input)
       .statusCode(NO_CONTENT)
   }
 
@@ -51,6 +51,14 @@ open class Endpoint {
       .pathParam("id", id)
       .`when`()
       .put("confirm/{id}")
+      .then()
+  }
+
+  fun resetReq(id: String): ValidatableResponse {
+    return given_()
+      .pathParam("id", id)
+      .`when`()
+      .put("reset/{id}")
       .then()
   }
 

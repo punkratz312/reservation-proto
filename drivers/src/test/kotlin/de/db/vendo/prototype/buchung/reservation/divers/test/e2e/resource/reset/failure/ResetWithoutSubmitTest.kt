@@ -2,13 +2,11 @@ package de.db.vendo.prototype.buchung.reservation.divers.test.e2e.resource.reset
 
 import de.db.vendo.prototype.buchung.BDD
 import io.quarkus.test.junit.QuarkusTest
-import org.junit.jupiter.api.Disabled
-import java.util.*
+import org.jboss.resteasy.reactive.RestResponse.StatusCode.NOT_FOUND
 
 @QuarkusTest
-@Disabled
 class ResetWithoutSubmitTest : BDD() {
   override fun then_() {
-    reset(UUID.randomUUID().toString())
+    resetReq("").statusCode(NOT_FOUND)
   }
 }
