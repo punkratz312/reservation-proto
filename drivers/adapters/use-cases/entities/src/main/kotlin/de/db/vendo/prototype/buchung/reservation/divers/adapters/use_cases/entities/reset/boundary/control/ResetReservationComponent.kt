@@ -3,12 +3,21 @@ package de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.enti
 import de.db.vendo.prototype.buchung.reservation.common.bce.boundary.control.Component
 import de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.boundary.control.ReservationRepository
 import de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.boundary.control.entity.ReservationId
+import de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.boundary.control.entity.ReservationStatus.RESET
+import jakarta.enterprise.context.ApplicationScoped
+import jakarta.enterprise.inject.Default
 import jakarta.inject.Inject
 
-class ResetReservationComponent @Inject constructor(private val reservation: ReservationRepository) :
-  Component<ReservationId> {
+@ApplicationScoped
+class ResetReservationComponent : Component<ReservationId> {
+
+  @Inject
+  @field: Default
+  lateinit var reservation: ReservationRepository
 
   override fun execute(input: ReservationId) {
-    reservation.findBy(input);
+    reservation.findBy(input).orElseThrow().let {
+      reservation.save(it.copy(status = RESET))
+    }
   }
 }
