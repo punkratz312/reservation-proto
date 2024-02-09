@@ -1,6 +1,5 @@
 package de.db.vendo.prototype.buchung.reservation.divers.adapters.persistence.boundary
 
-import de.db.vendo.prototype.buchung.reservation.divers.adapters.persistence.boundary.bridge.ReservationRepositoryAdapterBridge
-import de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.persistence.boundary.bridge.ReservationRepositoryUseCaseBridge
+import de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.persistence.boundary.ReservationRepositoryUseCase
 
-abstract class ReservationRepositoryAdapter : ReservationRepositoryUseCaseBridge, ReservationRepositoryAdapterBridge
+abstract class ReservationRepositoryAdapter : ReservationRepositoryUseCase

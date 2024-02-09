@@ -3,23 +3,23 @@
 skinparam linetype ortho
 show stereotype
 
-interface "FunctionalService" as de.db.vendo.prototype.buchung.reservation.common.bce.boundary.FunctionalService<Reference, Output> {
-  + {abstract}Result serve(Reference)
+interface "FunctionalService" as de.db.vendo.prototype.buchung.reservation.common.bce.boundary.FunctionalService<Input, Output> {
+  + {abstract}Output serve(Input)
 }
-interface "Service" as de.db.vendo.prototype.buchung.reservation.common.bce.boundary.Service<Reference> {
-  + {abstract}void serve(Reference)
+interface "Service" as de.db.vendo.prototype.buchung.reservation.common.bce.boundary.Service<Input> {
+  + {abstract}void serve(Input)
 }
-interface "Component" as de.db.vendo.prototype.buchung.reservation.common.bce.boundary.control.Component<Reference> {
-  + {abstract}void execute(Reference)
+interface "Component" as de.db.vendo.prototype.buchung.reservation.common.bce.boundary.control.Component<Input> {
+  + {abstract}void execute(Input)
 }
-interface "FunctionalComponent" as de.db.vendo.prototype.buchung.reservation.common.bce.boundary.control.FunctionalComponent<Reference, Output> {
-  + {abstract}Result execute(Reference)
+interface "FunctionalComponent" as de.db.vendo.prototype.buchung.reservation.common.bce.boundary.control.FunctionalComponent<Input, Output> {
+  + {abstract}Output execute(Input)
 }
-interface "FunctionalUseCase" as de.db.vendo.prototype.buchung.reservation.common.usecase.FunctionalUseCase<Reference, Output> {
-  + {abstract}Result action(Reference)
+interface "FunctionalUseCase" as de.db.vendo.prototype.buchung.reservation.common.usecase.FunctionalUseCase<Input, Output> {
+  + {abstract}Output action(Input)
 }
-interface "UseCase" as de.db.vendo.prototype.buchung.reservation.common.usecase.UseCase<Reference> {
-  + {abstract}void action(Reference)
+interface "UseCase" as de.db.vendo.prototype.buchung.reservation.common.usecase.UseCase<Input> {
+  + {abstract}void action(Input)
 }
 class "ConfirmReservationResourceAdapter" as de.db.vendo.prototype.buchung.reservation.divers.adapters.confirm.boundary.ConfirmReservationResourceAdapter {
   +ConfirmUseCase confirm
@@ -38,6 +38,10 @@ interface "ReservationRepositoryAdapterBridge" as de.db.vendo.prototype.buchung.
   + {abstract}void reset(UUID)
 }
 class "ResetReservationResourceAdapter" as de.db.vendo.prototype.buchung.reservation.divers.adapters.reset.boundary.ResetReservationResourceAdapter {
+  +ResetUseCase reset
+  __
+  +ResetUseCase getReset()
+  +void setReset(ResetUseCase)
   +void serve(UUID)
 }
 class "SubmitReservationResourceAdapter" as de.db.vendo.prototype.buchung.reservation.divers.adapters.submit.boundary.SubmitReservationResourceAdapter {
@@ -62,10 +66,10 @@ class "ConfirmReservationService" as de.db.vendo.prototype.buchung.reservation.d
   +void serve(ReservationId)
 }
 class "ConfirmReservationComponent" as de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.confirm.boundary.control.ConfirmReservationComponent {
-  +ReservationRepository reservationRepository
+  +ReservationRepository reservation
   __
-  +ReservationRepository getReservationRepository()
-  +void setReservationRepository(ReservationRepository)
+  +ReservationRepository getReservation()
+  +void setReservation(ReservationRepository)
   +void execute(ReservationId)
 }
 interface "ReservationRepository" as de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.boundary.control.ReservationRepository {
@@ -92,7 +96,7 @@ class "ReservationId" as de.db.vendo.prototype.buchung.reservation.divers.adapte
 enum "ReservationStatus" as de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.boundary.control.entity.ReservationStatus {
   SUBMIT
   CONFIRM
-  CANCEL
+  RESET
   __
   + {static}EnumEntries<ReservationStatus> getEntries()
 }
@@ -116,14 +120,14 @@ class "StationId" as de.db.vendo.prototype.buchung.reservation.divers.adapters.u
   +UUID getId()
 }
 class "Train" as de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.trip.train.boundary.control.entity.Train {
-  +TrainId getId()
+  +Train getId()
   +String getName()
 }
 class "TrainId" as de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.trip.train.boundary.control.entity.TrainId {
   +UUID getId()
 }
 class "Wagon" as de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.trip.train.wagon.boundary.control.entity.Wagon {
-  +WagonId getId()
+  +Wagon getId()
   +String getName()
   +String getNumber()
 }
@@ -131,20 +135,28 @@ class "WagonId" as de.db.vendo.prototype.buchung.reservation.divers.adapters.use
   +UUID getId()
 }
 class "Seat" as de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.trip.train.wagon.seat.boundary.control.entity.Seat {
-  +SeatId getId()
+  +Seat getId()
   +String getName()
 }
 class "SeatId" as de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.trip.train.wagon.seat.boundary.control.entity.SeatId {
   +UUID getId()
 }
 class "ResetReservationService" as de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reset.boundary.ResetReservationService {
+  ..
+  +ResetReservationComponent resetReservation
+  __
+  +ResetReservationComponent getResetReservation()
+  +void setResetReservation(ResetReservationComponent)
   +void serve(ReservationId)
 }
 class "ResetReservationComponent" as de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reset.boundary.control.ResetReservationComponent {
+  +ReservationRepository reservation
+  __
+  +ReservationRepository getReservation()
+  +void setReservation(ReservationRepository)
   +void execute(ReservationId)
 }
 class "SubmitReservationService" as de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.submit.boundary.SubmitReservationService {
-  ..
   +SubmitReservationComponent submitReservation
   __
   +SubmitReservationComponent getSubmitReservation()
@@ -152,10 +164,10 @@ class "SubmitReservationService" as de.db.vendo.prototype.buchung.reservation.di
   +ReservationId serve(String)
 }
 class "SubmitReservationComponent" as de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.submit.boundary.control.SubmitReservationComponent {
-  +ReservationRepository reservationRepository
+  +ReservationRepository reservation
   __
-  +ReservationRepository getReservationRepository()
-  +void setReservationRepository(ReservationRepository)
+  +ReservationRepository getReservation()
+  +void setReservation(ReservationRepository)
   +ReservationId execute(String)
 }
 abstract class "ReservationRepositoryUseCase" as de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.persistence.boundary.ReservationRepositoryUseCase {
@@ -168,6 +180,10 @@ interface "ReservationRepositoryUseCaseBridge" as de.db.vendo.prototype.buchung.
   + {abstract}void reset(UUID)
 }
 class "ResetUseCase" as de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.reset.boundary.ResetUseCase {
+  +ResetReservationService resetReservation
+  __
+  +ResetReservationService getResetReservation()
+  +void setResetReservation(ResetReservationService)
   +void action(UUID)
 }
 class "SubmitUseCase" as de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.submit.boundary.SubmitUseCase {
@@ -196,6 +212,10 @@ class "ConfirmReservationResource" as de.db.vendo.prototype.buchung.reservation.
   +void serve(UUID)
 }
 class "ResetReservationResource" as de.db.vendo.prototype.buchung.reservation.divers.web.reset.boundary.ResetReservationResource {
+  +ResetReservationResourceAdapter resourceAdapter
+  __
+  +ResetReservationResourceAdapter getResourceAdapter()
+  +void setResourceAdapter(ResetReservationResourceAdapter)
   +void serve(UUID)
 }
 class "SubmitReservationResource" as de.db.vendo.prototype.buchung.reservation.divers.web.submit.boundary.SubmitReservationResource {
@@ -203,7 +223,7 @@ class "SubmitReservationResource" as de.db.vendo.prototype.buchung.reservation.d
   __
   +SubmitReservationResourceAdapter getResourceAdapter()
   +void setResourceAdapter(SubmitReservationResourceAdapter)
-  +UUID serve(ReservationReq)
+  +String serve(String)
 }
 class "ReservationReq" as de.db.vendo.prototype.buchung.reservation.divers.web.submit.boundary.control.entity.ReservationReq {
   +UUID getId()
@@ -237,9 +257,9 @@ de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.res
 de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.trip.boundary.control.entity.Trip --> de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.trip.train.boundary.control.entity.Train
 de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.trip.boundary.control.entity.Trip --> de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.trip.train.wagon.boundary.control.entity.Wagon
 de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.trip.station.boundary.control.entity.Station --> de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.trip.station.boundary.control.entity.StationId
-de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.trip.train.boundary.control.entity.Train --> de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.trip.train.boundary.control.entity.TrainId
-de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.trip.train.wagon.boundary.control.entity.Wagon --> de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.trip.train.wagon.boundary.control.entity.WagonId
-de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.trip.train.wagon.seat.boundary.control.entity.Seat --> de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.trip.train.wagon.seat.boundary.control.entity.SeatId
+de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.trip.train.boundary.control.entity.Train --> de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.trip.train.boundary.control.entity.Train
+de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.trip.train.wagon.boundary.control.entity.Wagon --> de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.trip.train.wagon.boundary.control.entity.Wagon
+de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.trip.train.wagon.seat.boundary.control.entity.Seat --> de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.trip.train.wagon.seat.boundary.control.entity.Seat
 de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reset.boundary.ResetReservationService .u.|> de.db.vendo.prototype.buchung.reservation.common.bce.boundary.Service
 de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reset.boundary.ResetReservationService --> de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reset.boundary.control.ResetReservationComponent
 de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reset.boundary.control.ResetReservationComponent .u.|> de.db.vendo.prototype.buchung.reservation.common.bce.boundary.control.Component
