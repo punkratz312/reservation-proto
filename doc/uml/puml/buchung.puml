@@ -28,11 +28,20 @@ class "ConfirmReservationResourceAdapter" as de.db.vendo.prototype.buchung.reser
   +void setConfirm(ConfirmUseCase)
   +void serve(UUID)
 }
-abstract class "ReservationRepositoryAdapter" as de.db.vendo.prototype.buchung.reservation.divers.adapters.persistence.boundary.ReservationRepositoryAdapter {
+class "ReservationRepositoryAdapter" as de.db.vendo.prototype.buchung.reservation.divers.adapters.persistence.boundary.ReservationRepositoryAdapter {
+  +ReservationRepositoryUseCaseBridge repositoryUseCaseBridge
+  __
+  +ReservationRepositoryUseCaseBridge getRepositoryUseCaseBridge()
+  +void setRepositoryUseCaseBridge(ReservationRepositoryUseCaseBridge)
+  +Optional<String> findBy(UUID)
+  +String save(String)
+  +void submit(UUID)
+  +void confirm(UUID)
+  +void reset(UUID)
 }
 interface "ReservationRepositoryAdapterBridge" as de.db.vendo.prototype.buchung.reservation.divers.adapters.persistence.boundary.bridge.ReservationRepositoryAdapterBridge {
-  + {abstract}String findBy(UUID)
-  + {abstract}void save(String)
+  + {abstract}Optional<String> findBy(UUID)
+  + {abstract}String save(String)
   + {abstract}void submit(UUID)
   + {abstract}void confirm(UUID)
   + {abstract}void reset(UUID)
@@ -78,13 +87,6 @@ interface "ReservationRepository" as de.db.vendo.prototype.buchung.reservation.d
   + {abstract}void submit(ReservationId)
   + {abstract}void confirm(ReservationId)
   + {abstract}void reset(ReservationId)
-}
-class "ReservationRepositoryImpl" as de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.boundary.control.ReservationRepositoryImpl {
-  +Optional<Reservation> findBy(ReservationId)
-  +Reservation save(Reservation)
-  +void submit(ReservationId)
-  +void confirm(ReservationId)
-  +void reset(ReservationId)
 }
 class "Reservation" as de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.boundary.control.entity.Reservation {
   +ReservationId getId()
@@ -170,11 +172,20 @@ class "SubmitReservationComponent" as de.db.vendo.prototype.buchung.reservation.
   +void setReservation(ReservationRepository)
   +ReservationId execute(String)
 }
-abstract class "ReservationRepositoryUseCase" as de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.persistence.boundary.ReservationRepositoryUseCase {
+class "ReservationRepositoryUseCase" as de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.persistence.boundary.ReservationRepositoryUseCase {
+  +ReservationRepositoryUseCaseBridge repositoryBridge
+  __
+  +ReservationRepositoryUseCaseBridge getRepositoryBridge()
+  +void setRepositoryBridge(ReservationRepositoryUseCaseBridge)
+  +Optional<Reservation> findBy(ReservationId)
+  +Reservation save(Reservation)
+  +void submit(ReservationId)
+  +void confirm(ReservationId)
+  +void reset(ReservationId)
 }
 interface "ReservationRepositoryUseCaseBridge" as de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.persistence.boundary.bridge.ReservationRepositoryUseCaseBridge {
-  + {abstract}String findBy(UUID)
-  + {abstract}void save(String)
+  + {abstract}Optional<String> findBy(UUID)
+  + {abstract}String save(String)
   + {abstract}void submit(UUID)
   + {abstract}void confirm(UUID)
   + {abstract}void reset(UUID)
@@ -198,8 +209,8 @@ class "ReservationRepositoryDriver" as de.db.vendo.prototype.buchung.reservation
   __
   +PanacheRepositoryBase<String, UUID> getPanacheRepository()
   +void setPanacheRepository(PanacheRepositoryBase<String, UUID>)
-  +String findBy(UUID)
-  +void save(String)
+  +Optional<String> findBy(UUID)
+  +String save(String)
   +void submit(UUID)
   +void confirm(UUID)
   +void reset(UUID)
@@ -235,8 +246,8 @@ interface "PanacheRepository" as io.quarkus.hibernate.orm.panache.PanacheReposit
 }
 de.db.vendo.prototype.buchung.reservation.divers.adapters.confirm.boundary.ConfirmReservationResourceAdapter .u.|> de.db.vendo.prototype.buchung.reservation.common.bce.boundary.Service
 de.db.vendo.prototype.buchung.reservation.divers.adapters.confirm.boundary.ConfirmReservationResourceAdapter --> de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.confirm.boundary.ConfirmUseCase
-de.db.vendo.prototype.buchung.reservation.divers.adapters.persistence.boundary.ReservationRepositoryAdapter .u.|> de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.persistence.boundary.bridge.ReservationRepositoryUseCaseBridge
 de.db.vendo.prototype.buchung.reservation.divers.adapters.persistence.boundary.ReservationRepositoryAdapter .u.|> de.db.vendo.prototype.buchung.reservation.divers.adapters.persistence.boundary.bridge.ReservationRepositoryAdapterBridge
+de.db.vendo.prototype.buchung.reservation.divers.adapters.persistence.boundary.ReservationRepositoryAdapter --> de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.persistence.boundary.bridge.ReservationRepositoryUseCaseBridge
 de.db.vendo.prototype.buchung.reservation.divers.adapters.reset.boundary.ResetReservationResourceAdapter .u.|> de.db.vendo.prototype.buchung.reservation.common.bce.boundary.Service
 de.db.vendo.prototype.buchung.reservation.divers.adapters.reset.boundary.ResetReservationResourceAdapter --> de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.reset.boundary.ResetUseCase
 de.db.vendo.prototype.buchung.reservation.divers.adapters.submit.boundary.SubmitReservationResourceAdapter .u.|> de.db.vendo.prototype.buchung.reservation.common.bce.boundary.FunctionalService
@@ -247,8 +258,6 @@ de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.con
 de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.confirm.boundary.ConfirmReservationService --> de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.confirm.boundary.control.ConfirmReservationComponent
 de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.confirm.boundary.control.ConfirmReservationComponent .u.|> de.db.vendo.prototype.buchung.reservation.common.bce.boundary.control.Component
 de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.confirm.boundary.control.ConfirmReservationComponent --> de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.boundary.control.ReservationRepository
-de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.boundary.control.ReservationRepositoryImpl .u.|> de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.boundary.control.ReservationRepository
-de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.boundary.control.ReservationRepositoryImpl --> de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.boundary.control.entity.Reservation
 de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.boundary.control.entity.Reservation --> de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.boundary.control.entity.ReservationId
 de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.boundary.control.entity.Reservation --> de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.boundary.control.entity.ReservationStatus
 de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.trip.boundary.control.entity.Trip --> de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.trip.boundary.control.entity.TripId
@@ -269,7 +278,7 @@ de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.sub
 de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.submit.boundary.control.SubmitReservationComponent .u.|> de.db.vendo.prototype.buchung.reservation.common.bce.boundary.control.FunctionalComponent
 de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.submit.boundary.control.SubmitReservationComponent --> de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.boundary.control.ReservationRepository
 de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.persistence.boundary.ReservationRepositoryUseCase .u.|> de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.boundary.control.ReservationRepository
-de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.persistence.boundary.ReservationRepositoryUseCase .u.|> de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.persistence.boundary.bridge.ReservationRepositoryUseCaseBridge
+de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.persistence.boundary.ReservationRepositoryUseCase --> de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.persistence.boundary.bridge.ReservationRepositoryUseCaseBridge
 de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.reset.boundary.ResetUseCase .u.|> de.db.vendo.prototype.buchung.reservation.common.usecase.UseCase
 de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.reset.boundary.ResetUseCase --> de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reset.boundary.ResetReservationService
 de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.submit.boundary.SubmitUseCase .u.|> de.db.vendo.prototype.buchung.reservation.common.usecase.FunctionalUseCase
