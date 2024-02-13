@@ -13,10 +13,10 @@ class ReservationRepositoryUseCase : ReservationRepository {
 
   @Inject
   @field: Default
-  lateinit var repositoryBridge: ReservationRepositoryUseCaseBridge
+  lateinit var bridge: ReservationRepositoryUseCaseBridge
 
   override fun findBy(input: ReservationId): Optional<Reservation> {
-    return repositoryBridge.findBy(input.id).map { Reservation(input, SUBMIT) }
+    return bridge.findBy(input.id).map { Reservation(input, SUBMIT) }
   }
 
   override fun save(reservation: Reservation): Reservation {

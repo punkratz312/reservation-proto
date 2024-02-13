@@ -6,18 +6,18 @@ import jakarta.enterprise.inject.Default
 import jakarta.inject.Inject
 import java.util.*
 
-class ReservationRepositoryAdapter : ReservationRepositoryAdapterBridge {
+class ReservationRepositoryAdapter : ReservationRepositoryUseCaseBridge {
 
   @Inject
   @field: Default
-  lateinit var repositoryUseCaseBridge: ReservationRepositoryUseCaseBridge
+  lateinit var bridge: ReservationRepositoryAdapterBridge
 
   override fun findBy(input: UUID): Optional<String> {
-    return repositoryUseCaseBridge.findBy(input).map { it.toString() }
+    return bridge.findBy(input)
   }
 
   override fun save(reservation: String): String {
-    TODO("Not yet implemented")
+    return bridge.save(reservation)
   }
 
   override fun submit(input: UUID) {
