@@ -11,11 +11,9 @@ import org.eclipse.microprofile.openapi.annotations.parameters.RequestBody
 
 @ApplicationScoped
 @Path("submit")
-class SubmitReservationResource : FunctionalService<String, String> {
-
-  @Inject
-  @field: Default
-  lateinit var resourceAdapter: SubmitReservationResourceAdapter
+class SubmitReservationResource @Inject constructor(
+  @field:Default private val resourceAdapter: SubmitReservationResourceAdapter
+) : FunctionalService<String, String> {
 
   @PUT
   override fun serve(@RequestBody input: String): String {

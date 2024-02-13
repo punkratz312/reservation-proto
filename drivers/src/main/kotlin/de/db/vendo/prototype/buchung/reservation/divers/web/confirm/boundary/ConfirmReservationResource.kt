@@ -14,11 +14,9 @@ import java.util.*
 
 @ApplicationScoped
 @Path("confirm/{id}")
-class ConfirmReservationResource : Service<UUID> {
-
-  @Inject
-  @field: Default
-  lateinit var resourceAdapter: ConfirmReservationResourceAdapter
+class ConfirmReservationResource @Inject constructor(
+  @field:Default private val resourceAdapter: ConfirmReservationResourceAdapter
+) : Service<UUID> {
 
   @PUT
   @ResponseStatus(NO_CONTENT)

@@ -9,11 +9,9 @@ import jakarta.enterprise.inject.Default
 import jakarta.inject.Inject
 import java.util.*
 
-class ReservationRepositoryUseCase : ReservationRepository {
-
-  @Inject
-  @field: Default
-  lateinit var bridge: ReservationRepositoryUseCaseBridge
+class ReservationRepositoryUseCase @Inject constructor(
+  @field:Default private val bridge: ReservationRepositoryUseCaseBridge
+) : ReservationRepository {
 
   override fun findBy(input: ReservationId): Optional<Reservation> {
     return bridge.findBy(input.id).map { Reservation(input, SUBMIT) }

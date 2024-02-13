@@ -8,11 +8,9 @@ import jakarta.enterprise.inject.Default
 import jakarta.inject.Inject
 
 @ApplicationScoped
-class SubmitReservationService : FunctionalService<String, ReservationId> {
-
-  @Inject
-  @field: Default
-  lateinit var submitReservation: SubmitReservationComponent
+class SubmitReservationService @Inject constructor(
+  @field:Default private val submitReservation: SubmitReservationComponent
+) : FunctionalService<String, ReservationId> {
 
   override fun serve(input: String): ReservationId {
     return submitReservation.execute(input)

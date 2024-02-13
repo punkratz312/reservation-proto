@@ -11,11 +11,9 @@ import jakarta.inject.Inject
 import java.util.UUID.randomUUID
 
 @ApplicationScoped
-class SubmitReservationComponent : FunctionalComponent<String, ReservationId> {
-
-  @Inject
-  @field: Default
-  lateinit var reservation: ReservationRepository
+class SubmitReservationComponent @Inject constructor(
+  @field:Default private val reservation: ReservationRepository
+) : FunctionalComponent<String, ReservationId> {
 
   override fun execute(input: String): ReservationId {
     return reservation.save(Reservation(ReservationId(randomUUID()), SUBMIT)).id

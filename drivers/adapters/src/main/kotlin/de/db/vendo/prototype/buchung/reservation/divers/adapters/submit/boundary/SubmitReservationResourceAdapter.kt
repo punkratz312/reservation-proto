@@ -8,11 +8,9 @@ import jakarta.inject.Inject
 import java.util.*
 
 @ApplicationScoped
-class SubmitReservationResourceAdapter : FunctionalService<String, UUID> {
-
-  @Inject
-  @field: Default
-  lateinit var submit: SubmitUseCase
+class SubmitReservationResourceAdapter @Inject constructor(
+  @field:Default private val submit: SubmitUseCase
+) : FunctionalService<String, UUID> {
 
   override fun serve(input: String): UUID {
     return submit.action(input)

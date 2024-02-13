@@ -8,11 +8,9 @@ import jakarta.enterprise.inject.Default
 import jakarta.inject.Inject
 
 @ApplicationScoped
-class ResetReservationService : Service<ReservationId> {
-
-  @Inject
-  @field: Default
-  lateinit var resetReservation: ResetReservationComponent
+class ResetReservationService @Inject constructor(
+  @field:Default private val resetReservation: ResetReservationComponent
+) : Service<ReservationId> {
 
   override fun serve(input: ReservationId) {
     resetReservation.execute(input)

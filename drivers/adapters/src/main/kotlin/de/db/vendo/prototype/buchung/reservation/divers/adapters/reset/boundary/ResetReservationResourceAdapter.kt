@@ -8,11 +8,9 @@ import jakarta.inject.Inject
 import java.util.*
 
 @ApplicationScoped
-class ResetReservationResourceAdapter : Service<UUID> {
-
-  @Inject
-  @field: Default
-  lateinit var reset: ResetUseCase
+class ResetReservationResourceAdapter @Inject constructor(
+  @field:Default private val reset: ResetUseCase
+) : Service<UUID> {
 
   override fun serve(input: UUID) {
     reset.action(input)
