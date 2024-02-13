@@ -12,6 +12,6 @@ class ConfirmReservationResourceAdapter @Inject constructor(
 ) : Service<ConfirmReservationResourceAdapterDto> {
 
   override fun serve(input: ConfirmReservationResourceAdapterDto) {
-    confirm.action(mapper.to(input))
+    confirm.action(mapper.toDto(input))
   }
 }
