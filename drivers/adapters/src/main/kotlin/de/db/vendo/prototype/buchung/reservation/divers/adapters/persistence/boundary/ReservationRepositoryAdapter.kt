@@ -3,7 +3,6 @@ package de.db.vendo.prototype.buchung.reservation.divers.adapters.persistence.bo
 import de.db.vendo.prototype.buchung.reservation.divers.adapters.persistence.boundary.bridge.ReservationRepositoryAdapterBridge
 import de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.persistence.boundary.bridge.ReservationRepositoryUseCaseBridge
 import jakarta.enterprise.context.ApplicationScoped
-import jakarta.enterprise.inject.Default
 import jakarta.inject.Inject
 import java.util.*
 
