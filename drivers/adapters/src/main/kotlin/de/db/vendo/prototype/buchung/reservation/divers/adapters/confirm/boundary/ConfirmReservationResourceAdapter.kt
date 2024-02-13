@@ -8,11 +8,9 @@ import jakarta.inject.Inject
 import java.util.*
 
 @ApplicationScoped
-class ConfirmReservationResourceAdapter : Service<UUID> {
-
-  @Inject
-  @field: Default
-  lateinit var confirm: ConfirmUseCase
+class ConfirmReservationResourceAdapter @Inject constructor(
+  @field:Default private val confirm: ConfirmUseCase
+) : Service<UUID> {
 
   override fun serve(input: UUID) {
     confirm.action(input)
