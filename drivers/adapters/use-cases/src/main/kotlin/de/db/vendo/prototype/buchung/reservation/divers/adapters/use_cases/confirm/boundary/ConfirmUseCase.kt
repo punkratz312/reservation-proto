@@ -4,14 +4,13 @@ import de.db.vendo.prototype.buchung.reservation.common.usecase.UseCase
 import de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.confirm.boundary.ConfirmReservationService
 import jakarta.enterprise.context.ApplicationScoped
 import jakarta.inject.Inject
-import java.util.*
 
 @ApplicationScoped
 class ConfirmUseCase @Inject constructor(
   private val confirmReservation: ConfirmReservationService
-) : UseCase<UUID> {
+) : UseCase<UseCaseDto> {
 
-  override fun action(input: UUID) {
+  override fun action(input: UseCaseDto) {
     confirmReservation.serve("ReservationId(input)")
   }
 }

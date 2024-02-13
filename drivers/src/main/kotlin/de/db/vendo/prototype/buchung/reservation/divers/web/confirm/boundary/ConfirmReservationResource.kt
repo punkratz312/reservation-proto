@@ -14,7 +14,7 @@ import org.jboss.resteasy.reactive.RestResponse.StatusCode.NO_CONTENT
 @Path("confirm/{id}")
 class ConfirmReservationResource @Inject constructor(
   private val resourceAdapter: ConfirmReservationResourceAdapter,
-  private val mapper: UserMapper
+  private val mapper: ResourceToAdapterMapper
 ) : Service<ConfirmReservationResourceDto> {
 
   @PUT

@@ -8,10 +8,10 @@ import jakarta.inject.Inject
 @ApplicationScoped
 class ConfirmReservationResourceAdapter @Inject constructor(
   private val confirm: ConfirmUseCase,
-  private val mapper: UserMapper
+  private val mapper: AdapterToUseCaseMapper
 ) : Service<ConfirmReservationResourceAdapterDto> {
 
   override fun serve(input: ConfirmReservationResourceAdapterDto) {
-    confirm.action(input)
+    confirm.action(mapper.to(input))
   }
 }
