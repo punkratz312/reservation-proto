@@ -11,10 +11,10 @@ class "ConfirmReservationResourceAdapter" as de.db.vendo.prototype.buchung.reser
   +void serve(UUID)
 }
 class "ReservationRepositoryAdapter" as de.db.vendo.prototype.buchung.reservation.divers.adapters.persistence.boundary.ReservationRepositoryAdapter {
-  +ReservationRepositoryUseCaseBridge repositoryUseCaseBridge
+  +ReservationRepositoryAdapterBridge bridge
   __
-  +ReservationRepositoryUseCaseBridge getRepositoryUseCaseBridge()
-  +void setRepositoryUseCaseBridge(ReservationRepositoryUseCaseBridge)
+  +ReservationRepositoryAdapterBridge getBridge()
+  +void setBridge(ReservationRepositoryAdapterBridge)
   +Optional<String> findBy(UUID)
   +String save(String)
   +void submit(UUID)
@@ -155,10 +155,10 @@ class "SubmitReservationComponent" as de.db.vendo.prototype.buchung.reservation.
   +ReservationId execute(String)
 }
 class "ReservationRepositoryUseCase" as de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.persistence.boundary.ReservationRepositoryUseCase {
-  +ReservationRepositoryUseCaseBridge repositoryBridge
+  +ReservationRepositoryUseCaseBridge bridge
   __
-  +ReservationRepositoryUseCaseBridge getRepositoryBridge()
-  +void setRepositoryBridge(ReservationRepositoryUseCaseBridge)
+  +ReservationRepositoryUseCaseBridge getBridge()
+  +void setBridge(ReservationRepositoryUseCaseBridge)
   +Optional<Reservation> findBy(ReservationId)
   +Reservation save(Reservation)
   +void submit(ReservationId)
@@ -187,10 +187,10 @@ class "SubmitUseCase" as de.db.vendo.prototype.buchung.reservation.divers.adapte
   +UUID action(String)
 }
 class "ReservationRepositoryDriver" as de.db.vendo.prototype.buchung.reservation.divers.persistence.boundary.ReservationRepositoryDriver {
-  +PanacheRepositoryBase<String, UUID> panacheRepository
+  +PanacheRepository<String> panacheRepository
   __
-  +PanacheRepositoryBase<String, UUID> getPanacheRepository()
-  +void setPanacheRepository(PanacheRepositoryBase<String, UUID>)
+  +PanacheRepository<String> getPanacheRepository()
+  +void setPanacheRepository(PanacheRepository<String>)
   +Optional<String> findBy(UUID)
   +String save(String)
   +void submit(UUID)
@@ -225,8 +225,8 @@ class "ReservationReq" as de.db.vendo.prototype.buchung.reservation.divers.web.s
   +Optional<Integer> getTariffCode()
 }
 de.db.vendo.prototype.buchung.reservation.divers.adapters.confirm.boundary.ConfirmReservationResourceAdapter --> de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.confirm.boundary.ConfirmUseCase
-de.db.vendo.prototype.buchung.reservation.divers.adapters.persistence.boundary.ReservationRepositoryAdapter .u.|> de.db.vendo.prototype.buchung.reservation.divers.adapters.persistence.boundary.bridge.ReservationRepositoryAdapterBridge
-de.db.vendo.prototype.buchung.reservation.divers.adapters.persistence.boundary.ReservationRepositoryAdapter --> de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.persistence.boundary.bridge.ReservationRepositoryUseCaseBridge
+de.db.vendo.prototype.buchung.reservation.divers.adapters.persistence.boundary.ReservationRepositoryAdapter .u.|> de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.persistence.boundary.bridge.ReservationRepositoryUseCaseBridge
+de.db.vendo.prototype.buchung.reservation.divers.adapters.persistence.boundary.ReservationRepositoryAdapter --> de.db.vendo.prototype.buchung.reservation.divers.adapters.persistence.boundary.bridge.ReservationRepositoryAdapterBridge
 de.db.vendo.prototype.buchung.reservation.divers.adapters.reset.boundary.ResetReservationResourceAdapter --> de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.reset.boundary.ResetUseCase
 de.db.vendo.prototype.buchung.reservation.divers.adapters.submit.boundary.SubmitReservationResourceAdapter --> de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.submit.boundary.SubmitUseCase
 de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.confirm.boundary.ConfirmUseCase --> de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.confirm.boundary.ConfirmReservationService

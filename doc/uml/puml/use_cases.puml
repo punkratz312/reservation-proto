@@ -116,10 +116,10 @@ class "SubmitReservationComponent" as de.db.vendo.prototype.buchung.reservation.
   +ReservationId execute(String)
 }
 class "ReservationRepositoryUseCase" as de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.persistence.boundary.ReservationRepositoryUseCase {
-  +ReservationRepositoryUseCaseBridge repositoryBridge
+  +ReservationRepositoryUseCaseBridge bridge
   __
-  +ReservationRepositoryUseCaseBridge getRepositoryBridge()
-  +void setRepositoryBridge(ReservationRepositoryUseCaseBridge)
+  +ReservationRepositoryUseCaseBridge getBridge()
+  +void setBridge(ReservationRepositoryUseCaseBridge)
   +Optional<Reservation> findBy(ReservationId)
   +Reservation save(Reservation)
   +void submit(ReservationId)

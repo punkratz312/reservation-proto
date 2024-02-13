@@ -28,7 +28,7 @@ classDiagrams {
   diagram {
     name 'buchung'
     include packages().withName('de.db.vendo.prototype.buchung.reservation')
-    include classes().withName('io.quarkus.hibernate.orm.panache.PanacheRepository').outsideOfProject()
+    //    include classes().withName('io.quarkus.hibernate.orm.panache.PanacheRepository').outsideOfProject()
     writeTo file('doc/uml/puml/buchung.puml')
     renderTo file('doc/uml/svg/buchung.svg')
   }
