@@ -5,16 +5,15 @@ import de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entit
 import jakarta.enterprise.context.ApplicationScoped
 import jakarta.enterprise.inject.Default
 import jakarta.inject.Inject
-import java.util.*
 
 @ApplicationScoped
-class SubmitUseCase : FunctionalUseCase<String, UUID> {
+class SubmitUseCase : FunctionalUseCase<String, String> {
 
   @Inject
   @field: Default
   lateinit var submitReservation: SubmitReservationService
 
-  override fun action(input: String): UUID {
-    return submitReservation.serve(input).id
+  override fun action(input: String): String {
+    return submitReservation.serve(input)
   }
 }

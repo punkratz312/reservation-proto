@@ -1,7 +1,6 @@
 package de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.submit.boundary
 
 import de.db.vendo.prototype.buchung.reservation.common.bce.boundary.FunctionalService
-import de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.boundary.control.entity.ReservationId
 import de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.submit.boundary.control.SubmitReservationComponent
 import jakarta.enterprise.context.ApplicationScoped
 import jakarta.inject.Inject
@@ -9,9 +8,9 @@ import jakarta.inject.Inject
 @ApplicationScoped
 class SubmitReservationService @Inject constructor(
   private val submitReservation: SubmitReservationComponent
-) : FunctionalService<String, ReservationId> {
+) : FunctionalService<String, String> {
 
-  override fun serve(input: String): ReservationId {
+  override fun serve(input: String): String {
     return submitReservation.execute(input)
   }
 }

@@ -167,10 +167,10 @@ package de.db.vendo.prototype.buchung {
                         }
                         package control _control {
                             interface ReservationRepository {
-                                + findById(ReservationId id): Reservation
-                                + submit(ReservationId id): Reservation
-                                + confirm(ReservationId id): Reservation
-                                + cancel(ReservationId id): Reservation
+                                + findById(ReservationId id): String
+                                + submit(ReservationId id): String
+                                + confirm(ReservationId id): String
+                                + cancel(ReservationId id): String
                             }
                             class SubmitComponent implements de.db.vendo.common.patterns.bce.boundary.control.Component {
                                 - CheckUniqueComponent checkUnique

@@ -3,16 +3,14 @@ package de.db.vendo.prototype.buchung.reservation.divers.adapters.submit.boundar
 import de.db.vendo.prototype.buchung.reservation.common.bce.boundary.FunctionalService
 import de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.submit.boundary.SubmitUseCase
 import jakarta.enterprise.context.ApplicationScoped
-import jakarta.enterprise.inject.Default
 import jakarta.inject.Inject
-import java.util.*
 
 @ApplicationScoped
 class SubmitReservationResourceAdapter @Inject constructor(
   private val submit: SubmitUseCase
-) : FunctionalService<String, UUID> {
+) : FunctionalService<String, String> {
 
-  override fun serve(input: String): UUID {
+  override fun serve(input: String): String {
     return submit.action(input)
   }
 }

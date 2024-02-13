@@ -1,20 +1,18 @@
 package de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.boundary.control
 
-import de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.boundary.control.entity.Reservation
-import de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.boundary.control.entity.ReservationId
 import java.util.*
 
 interface ReservationRepository {
 
-  fun findBy(input: ReservationId): Optional<Reservation>
+  fun findBy(input: UUID): Optional<String>
 
-  fun save(reservation: Reservation): Reservation
+  fun save(reservation: String): String
 
-  fun submit(input: ReservationId)
+  fun submit(input: String)
 
-  fun confirm(input: ReservationId)
+  fun confirm(input: String)
 
-  fun reset(input: ReservationId)
+  fun reset(input: String)
 
 }
 
