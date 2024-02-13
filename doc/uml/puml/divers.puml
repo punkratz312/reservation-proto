@@ -4,10 +4,6 @@ skinparam linetype ortho
 show stereotype
 
 class "ConfirmReservationResourceAdapter" as de.db.vendo.prototype.buchung.reservation.divers.adapters.confirm.boundary.ConfirmReservationResourceAdapter {
-  +ConfirmUseCase confirm
-  __
-  +ConfirmUseCase getConfirm()
-  +void setConfirm(ConfirmUseCase)
   +void serve(UUID)
 }
 class "ReservationRepositoryAdapter" as de.db.vendo.prototype.buchung.reservation.divers.adapters.persistence.boundary.ReservationRepositoryAdapter {
@@ -25,38 +21,18 @@ interface "ReservationRepositoryAdapterBridge" as de.db.vendo.prototype.buchung.
   + {abstract}void reset(UUID)
 }
 class "ResetReservationResourceAdapter" as de.db.vendo.prototype.buchung.reservation.divers.adapters.reset.boundary.ResetReservationResourceAdapter {
-  +ResetUseCase reset
-  __
-  +ResetUseCase getReset()
-  +void setReset(ResetUseCase)
   +void serve(UUID)
 }
 class "SubmitReservationResourceAdapter" as de.db.vendo.prototype.buchung.reservation.divers.adapters.submit.boundary.SubmitReservationResourceAdapter {
-  +SubmitUseCase submit
-  __
-  +SubmitUseCase getSubmit()
-  +void setSubmit(SubmitUseCase)
   +UUID serve(String)
 }
 class "ConfirmUseCase" as de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.confirm.boundary.ConfirmUseCase {
-  +ConfirmReservationService confirmReservation
-  __
-  +ConfirmReservationService getConfirmReservation()
-  +void setConfirmReservation(ConfirmReservationService)
   +void action(UUID)
 }
 class "ConfirmReservationService" as de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.confirm.boundary.ConfirmReservationService {
-  +ConfirmReservationComponent confirmReservation
-  __
-  +ConfirmReservationComponent getConfirmReservation()
-  +void setConfirmReservation(ConfirmReservationComponent)
   +void serve(ReservationId)
 }
 class "ConfirmReservationComponent" as de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.confirm.boundary.control.ConfirmReservationComponent {
-  +ReservationRepository reservation
-  __
-  +ReservationRepository getReservation()
-  +void setReservation(ReservationRepository)
   +void execute(ReservationId)
 }
 interface "ReservationRepository" as de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.boundary.control.ReservationRepository {
@@ -122,39 +98,18 @@ class "SeatId" as de.db.vendo.prototype.buchung.reservation.divers.adapters.use_
   +UUID getId()
 }
 class "ResetReservationService" as de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reset.boundary.ResetReservationService {
-  ..
-  +ResetReservationComponent resetReservation
-  __
-  +ResetReservationComponent getResetReservation()
-  +void setResetReservation(ResetReservationComponent)
   +void serve(ReservationId)
 }
 class "ResetReservationComponent" as de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reset.boundary.control.ResetReservationComponent {
-  +ReservationRepository reservation
-  __
-  +ReservationRepository getReservation()
-  +void setReservation(ReservationRepository)
   +void execute(ReservationId)
 }
 class "SubmitReservationService" as de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.submit.boundary.SubmitReservationService {
-  +SubmitReservationComponent submitReservation
-  __
-  +SubmitReservationComponent getSubmitReservation()
-  +void setSubmitReservation(SubmitReservationComponent)
   +ReservationId serve(String)
 }
 class "SubmitReservationComponent" as de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.submit.boundary.control.SubmitReservationComponent {
-  +ReservationRepository reservation
-  __
-  +ReservationRepository getReservation()
-  +void setReservation(ReservationRepository)
   +ReservationId execute(String)
 }
 class "ReservationRepositoryUseCase" as de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.persistence.boundary.ReservationRepositoryUseCase {
-  +ReservationRepositoryUseCaseBridge bridge
-  __
-  +ReservationRepositoryUseCaseBridge getBridge()
-  +void setBridge(ReservationRepositoryUseCaseBridge)
   +Optional<Reservation> findBy(ReservationId)
   +Reservation save(Reservation)
   +void submit(ReservationId)
@@ -169,6 +124,7 @@ interface "ReservationRepositoryUseCaseBridge" as de.db.vendo.prototype.buchung.
   + {abstract}void reset(UUID)
 }
 class "ResetUseCase" as de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.reset.boundary.ResetUseCase {
+  ..
   +ResetReservationService resetReservation
   __
   +ResetReservationService getResetReservation()
@@ -190,10 +146,6 @@ class "ReservationRepositoryDriver" as de.db.vendo.prototype.buchung.reservation
   +void reset(UUID)
 }
 class "ConfirmReservationResource" as de.db.vendo.prototype.buchung.reservation.divers.web.confirm.boundary.ConfirmReservationResource {
-  +ConfirmReservationResourceAdapter resourceAdapter
-  __
-  +ConfirmReservationResourceAdapter getResourceAdapter()
-  +void setResourceAdapter(ConfirmReservationResourceAdapter)
   +void serve(UUID)
 }
 class "ResetReservationResource" as de.db.vendo.prototype.buchung.reservation.divers.web.reset.boundary.ResetReservationResource {
@@ -204,10 +156,6 @@ class "ResetReservationResource" as de.db.vendo.prototype.buchung.reservation.di
   +void serve(UUID)
 }
 class "SubmitReservationResource" as de.db.vendo.prototype.buchung.reservation.divers.web.submit.boundary.SubmitReservationResource {
-  +SubmitReservationResourceAdapter resourceAdapter
-  __
-  +SubmitReservationResourceAdapter getResourceAdapter()
-  +void setResourceAdapter(SubmitReservationResourceAdapter)
   +String serve(String)
 }
 class "ReservationReq" as de.db.vendo.prototype.buchung.reservation.divers.web.submit.boundary.control.entity.ReservationReq {
