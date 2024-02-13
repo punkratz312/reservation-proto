@@ -6,11 +6,11 @@ import jakarta.enterprise.inject.Default
 import jakarta.inject.Inject
 import java.util.*
 
-class ReservationRepositoryAdapter : ReservationRepositoryUseCaseBridge {
+class ReservationRepositoryAdapter : ReservationRepositoryAdapterBridge {
 
   @Inject
   @field: Default
-  lateinit var bridge: ReservationRepositoryAdapterBridge
+  lateinit var bridge: ReservationRepositoryUseCaseBridge
 
   override fun findBy(input: UUID): Optional<String> {
     return bridge.findBy(input)
