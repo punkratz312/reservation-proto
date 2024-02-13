@@ -1,12 +1,13 @@
 package de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.persistence.boundary.bridge
 
+import de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.confirm.boundary.dto.ReservationDTO
 import java.util.*
 
 interface ReservationRepositoryUseCaseBridge {
 
-  fun findBy(input: UUID): Optional<String>
+  fun findBy(input: UUID): Optional<ReservationDTO>
 
-  fun save(reservation: String): String
+  fun save(reservation: ReservationDTO): ReservationDTO
 
   fun submit(input: UUID)
 

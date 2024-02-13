@@ -1,6 +1,8 @@
 package de.db.vendo.prototype.buchung.reservation.divers.adapters.confirm.boundary
 
 import de.db.vendo.prototype.buchung.reservation.common.bce.boundary.Service
+import de.db.vendo.prototype.buchung.reservation.divers.adapters.confirm.boundary.dto.AdapterToUseCaseMapper
+import de.db.vendo.prototype.buchung.reservation.divers.adapters.confirm.boundary.dto.ConfirmReservationResourceAdapterDTO
 import de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.confirm.boundary.ConfirmUseCase
 import jakarta.enterprise.context.ApplicationScoped
 import jakarta.inject.Inject
@@ -9,9 +11,9 @@ import jakarta.inject.Inject
 class ConfirmReservationResourceAdapter @Inject constructor(
   private val confirm: ConfirmUseCase,
   private val mapper: AdapterToUseCaseMapper
-) : Service<ConfirmReservationResourceAdapterDto> {
+) : Service<ConfirmReservationResourceAdapterDTO> {
 
-  override fun serve(input: ConfirmReservationResourceAdapterDto) {
-    confirm.action(mapper.toDto(input))
+  override fun serve(input: ConfirmReservationResourceAdapterDTO) {
+    confirm.action(mapper.toDTO(input))
   }
 }

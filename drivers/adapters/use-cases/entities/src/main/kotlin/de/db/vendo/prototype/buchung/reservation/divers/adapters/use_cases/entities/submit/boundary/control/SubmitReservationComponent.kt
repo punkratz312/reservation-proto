@@ -4,7 +4,6 @@ import de.db.vendo.prototype.buchung.reservation.common.bce.boundary.control.Fun
 import de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.boundary.control.ReservationRepository
 import jakarta.enterprise.context.ApplicationScoped
 import jakarta.inject.Inject
-import java.util.UUID.randomUUID
 
 @ApplicationScoped
 class SubmitReservationComponent @Inject constructor(
@@ -12,6 +11,7 @@ class SubmitReservationComponent @Inject constructor(
 ) : FunctionalComponent<String, String> {
 
   override fun execute(input: String): String {
-    return reservation.save(randomUUID().toString())
+//    return reservation.save(randomUUID().toString())
+    return TODO("Provide the return value")
   }
 }

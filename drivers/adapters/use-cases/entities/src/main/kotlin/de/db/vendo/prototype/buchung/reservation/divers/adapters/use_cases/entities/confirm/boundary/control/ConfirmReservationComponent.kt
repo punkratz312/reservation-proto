@@ -2,19 +2,19 @@ package de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.enti
 
 import de.db.vendo.prototype.buchung.reservation.common.bce.boundary.control.Component
 import de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.boundary.control.ReservationRepository
+import de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.boundary.control.entity.Reservation
+import de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.boundary.control.entity.ReservationStatus.CONFIRM
 import jakarta.enterprise.context.ApplicationScoped
 import jakarta.inject.Inject
-import java.util.*
 
 @ApplicationScoped
 class ConfirmReservationComponent @Inject constructor(
   private val reservation: ReservationRepository
-) : Component<String> {
+) : Component<Reservation> {
 
-  override fun execute(input: String) {
-    reservation.findBy(UUID.randomUUID()).orElseThrow().let {
-      reservation.save(it)
-//      reservation.save(it.copy(status = CONFIRM))
+  override fun execute(input: Reservation) {
+    reservation.findBy(input.id).orElseThrow().let {
+      reservation.save(input.copy(status = CONFIRM))
     }
   }
 }
