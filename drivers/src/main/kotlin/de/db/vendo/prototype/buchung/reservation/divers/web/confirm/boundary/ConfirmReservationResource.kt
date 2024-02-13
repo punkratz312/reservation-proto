@@ -9,17 +9,17 @@ import jakarta.ws.rs.Path
 import jakarta.ws.rs.PathParam
 import org.jboss.resteasy.reactive.ResponseStatus
 import org.jboss.resteasy.reactive.RestResponse.StatusCode.NO_CONTENT
-import java.util.*
 
 @ApplicationScoped
 @Path("confirm/{id}")
 class ConfirmReservationResource @Inject constructor(
-  private val resourceAdapter: ConfirmReservationResourceAdapter
-) : Service<UUID> {
+  private val resourceAdapter: ConfirmReservationResourceAdapter,
+  private val mapper: UserMapper
+) : Service<ConfirmReservationResourceDto> {
 
   @PUT
   @ResponseStatus(NO_CONTENT)
-  override fun serve(@PathParam("id") input: UUID) {
-    resourceAdapter.serve(input)
+  override fun serve(@PathParam("id") input: ConfirmReservationResourceDto) {
+    resourceAdapter.serve(mapper.to(input))
   }
 }
