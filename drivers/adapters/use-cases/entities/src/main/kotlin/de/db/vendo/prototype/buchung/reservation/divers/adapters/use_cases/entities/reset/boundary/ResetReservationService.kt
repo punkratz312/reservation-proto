@@ -4,12 +4,11 @@ import de.db.vendo.prototype.buchung.reservation.common.bce.boundary.Service
 import de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.boundary.control.entity.ReservationId
 import de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reset.boundary.control.ResetReservationComponent
 import jakarta.enterprise.context.ApplicationScoped
-import jakarta.enterprise.inject.Default
 import jakarta.inject.Inject
 
 @ApplicationScoped
 class ResetReservationService @Inject constructor(
-  @field:Default private val resetReservation: ResetReservationComponent
+  private val resetReservation: ResetReservationComponent
 ) : Service<ReservationId> {
 
   override fun serve(input: ReservationId) {

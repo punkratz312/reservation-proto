@@ -5,12 +5,13 @@ import de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entit
 import de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.boundary.control.entity.ReservationId
 import de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.boundary.control.entity.ReservationStatus.SUBMIT
 import de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.persistence.boundary.bridge.ReservationRepositoryUseCaseBridge
-import jakarta.enterprise.inject.Default
+import jakarta.enterprise.context.ApplicationScoped
 import jakarta.inject.Inject
 import java.util.*
 
+@ApplicationScoped
 class ReservationRepositoryUseCase @Inject constructor(
-  @field:Default private val bridge: ReservationRepositoryUseCaseBridge
+  private val bridge: ReservationRepositoryUseCaseBridge
 ) : ReservationRepository {
 
   override fun findBy(input: ReservationId): Optional<Reservation> {

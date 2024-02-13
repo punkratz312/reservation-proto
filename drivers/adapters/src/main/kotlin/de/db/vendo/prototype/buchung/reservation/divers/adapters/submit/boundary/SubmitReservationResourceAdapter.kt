@@ -9,7 +9,7 @@ import java.util.*
 
 @ApplicationScoped
 class SubmitReservationResourceAdapter @Inject constructor(
-  @field:Default private val submit: SubmitUseCase
+  private val submit: SubmitUseCase
 ) : FunctionalService<String, UUID> {
 
   override fun serve(input: String): UUID {

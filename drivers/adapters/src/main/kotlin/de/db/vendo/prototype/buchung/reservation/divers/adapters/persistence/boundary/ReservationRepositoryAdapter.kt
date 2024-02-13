@@ -9,7 +9,7 @@ import java.util.*
 
 @ApplicationScoped
 class ReservationRepositoryAdapter @Inject constructor(
-  @field:Default private val bridge: ReservationRepositoryAdapterBridge
+  private val bridge: ReservationRepositoryAdapterBridge
 ) : ReservationRepositoryUseCaseBridge {
 
   override fun findBy(input: UUID): Optional<String> {

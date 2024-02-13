@@ -9,7 +9,7 @@ import java.util.*
 
 @ApplicationScoped
 class ConfirmReservationResourceAdapter @Inject constructor(
-  @field:Default private val confirm: ConfirmUseCase
+  private val confirm: ConfirmUseCase
 ) : Service<UUID> {
 
   override fun serve(input: UUID) {

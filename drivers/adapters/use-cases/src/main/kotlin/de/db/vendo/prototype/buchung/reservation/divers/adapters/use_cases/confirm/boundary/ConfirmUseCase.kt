@@ -10,7 +10,7 @@ import java.util.*
 
 @ApplicationScoped
 class ConfirmUseCase @Inject constructor(
-  @field:Default private val confirmReservation: ConfirmReservationService
+  private val confirmReservation: ConfirmReservationService
 ) : UseCase<UUID> {
 
   override fun action(input: UUID) {

@@ -12,7 +12,7 @@ import java.util.UUID.randomUUID
 
 @ApplicationScoped
 class SubmitReservationComponent @Inject constructor(
-  @field:Default private val reservation: ReservationRepository
+  private val reservation: ReservationRepository
 ) : FunctionalComponent<String, ReservationId> {
 
   override fun execute(input: String): ReservationId {
