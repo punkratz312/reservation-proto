@@ -11,10 +11,6 @@ class "ConfirmReservationResourceAdapter" as de.db.vendo.prototype.buchung.reser
   +void serve(UUID)
 }
 class "ReservationRepositoryAdapter" as de.db.vendo.prototype.buchung.reservation.divers.adapters.persistence.boundary.ReservationRepositoryAdapter {
-  +ReservationRepositoryAdapterBridge bridge
-  __
-  +ReservationRepositoryAdapterBridge getBridge()
-  +void setBridge(ReservationRepositoryAdapterBridge)
   +Optional<String> findBy(UUID)
   +String save(String)
   +void submit(UUID)

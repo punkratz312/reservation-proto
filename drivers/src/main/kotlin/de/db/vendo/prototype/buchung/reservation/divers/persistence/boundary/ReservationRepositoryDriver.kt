@@ -8,10 +8,11 @@ import java.util.*
 
 @ApplicationScoped
 class ReservationRepositoryDriver @Inject constructor(
-  panacheRepository: PanacheRepository<String>
+  private val panacheRepository: PanacheRepository<String>
 ) : ReservationRepositoryAdapterBridge {
 
   override fun findBy(input: UUID): Optional<String> {
+    panacheRepository.findById(1L)
     TODO("Not yet implemented")
   }
 

@@ -29,10 +29,6 @@ class "ConfirmReservationResourceAdapter" as de.db.vendo.prototype.buchung.reser
   +void serve(UUID)
 }
 class "ReservationRepositoryAdapter" as de.db.vendo.prototype.buchung.reservation.divers.adapters.persistence.boundary.ReservationRepositoryAdapter {
-  +ReservationRepositoryAdapterBridge bridge
-  __
-  +ReservationRepositoryAdapterBridge getBridge()
-  +void setBridge(ReservationRepositoryAdapterBridge)
   +Optional<String> findBy(UUID)
   +String save(String)
   +void submit(UUID)
@@ -205,10 +201,6 @@ class "SubmitUseCase" as de.db.vendo.prototype.buchung.reservation.divers.adapte
   +UUID action(String)
 }
 class "ReservationRepositoryDriver" as de.db.vendo.prototype.buchung.reservation.divers.persistence.boundary.ReservationRepositoryDriver {
-  +PanacheRepository<String> panacheRepository
-  __
-  +PanacheRepository<String> getPanacheRepository()
-  +void setPanacheRepository(PanacheRepository<String>)
   +Optional<String> findBy(UUID)
   +String save(String)
   +void submit(UUID)

@@ -3,16 +3,13 @@ package de.db.vendo.prototype.buchung.reservation.divers.adapters.persistence.bo
 import de.db.vendo.prototype.buchung.reservation.divers.adapters.persistence.boundary.bridge.ReservationRepositoryAdapterBridge
 import de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.persistence.boundary.bridge.ReservationRepositoryUseCaseBridge
 import jakarta.enterprise.context.ApplicationScoped
-import jakarta.enterprise.inject.Default
 import jakarta.inject.Inject
 import java.util.*
 
 @ApplicationScoped
-class ReservationRepositoryAdapter : ReservationRepositoryUseCaseBridge {
-
-  @Inject
-  @field: Default
-  lateinit var bridge: ReservationRepositoryAdapterBridge
+class ReservationRepositoryAdapter @Inject constructor(
+  private val bridge: ReservationRepositoryAdapterBridge
+) : ReservationRepositoryUseCaseBridge {
 
   override fun findBy(input: UUID): Optional<String> {
     return bridge.findBy(input)
