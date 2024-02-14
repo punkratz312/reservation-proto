@@ -33,7 +33,6 @@ hide stereotype
 !define _control #orange
 !define _modul #limegreen
 !define _domain #goldenrod
-!define _drivers #82ffb4
 !define _drivers #skyblue
 !define _entity #fcfdb0
 !define _use_cases #ff9a99

@@ -27,7 +27,7 @@ classDiagrams {
       addStyle("#blue").to(packages().withNameLike('*web*'))
       addStyle("#fcfdb0").to(packages().withNameLike('*entity*'))
       addStyle("#goldenrod").to(packages().withNameLike('*domain*'))
-      addStyle("#gray").to(packages().withNameLike('*boundary*'))
+      addStyle("#lime").to(packages().withNameLike('*boundary*'))
       addStyle("#82ffb4").to(packages().withNameLike('*adapters*'))
       addStyle("#green").to(packages().withNameLike('*entities*'))
       addStyle("#lightblue").to(packages().withNameLike('*api*'))
