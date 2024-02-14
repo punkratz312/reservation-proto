@@ -24,9 +24,10 @@ classDiagrams {
       skinparam 'linetype', 'ortho'
       show 'stereotype'
       addStyle("#azure").to(packages().withNameLike('*test*'))
-      addStyle("#blue").to(packages().withNameLike('*web*'))
+//      addStyle("#blue").to(packages().withNameLike('*web*'))
       addStyle("#fcfdb0").to(packages().withNameLike('*entity*'))
       addStyle("#goldenrod").to(packages().withNameLike('*domain*'))
+      addStyle("#ff9a99").to(packages().withNameLike('*use_cases*'))
       addStyle("#lime").to(packages().withNameLike('*boundary*'))
       addStyle("#82ffb4").to(packages().withNameLike('*adapters*'))
       addStyle("#green").to(packages().withNameLike('*entities*'))
@@ -36,7 +37,6 @@ classDiagrams {
       addStyle("#orange").to(packages().withNameLike('*control*'))
       addStyle("#red").to(packages().withNameLike('*control*'))
       addStyle("#skyblue").to(packages().withNameLike('*drivers*'))
-      addStyle("#yellow").to(packages().withNameLike('*entity*'))
     }
   }
   diagram {
