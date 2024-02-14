@@ -2,20 +2,42 @@
 !pragma useIntermediatePackages false
 skinparam linetype ortho
 show stereotype
+package divers as de.db.vendo.prototype.buchung.reservation.divers #blue {}
+package adapters as de.db.vendo.prototype.buchung.reservation.divers.adapters #blue {}
+package use_cases as de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases #blue {}
+package entities as de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities #blue {}
+package confirm as de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.confirm #blue {}
+package boundary as de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.confirm.boundary #gray {}
 package control as de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.confirm.boundary.control #red {}
+package reservation as de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation #blue {}
+package boundary as de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.boundary #gray {}
 package control as de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.boundary.control #red {}
 package entity as de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.boundary.control.entity #yellow {}
+package trip as de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.trip #blue {}
+package boundary as de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.trip.boundary #gray {}
 package control as de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.trip.boundary.control #red {}
 package entity as de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.trip.boundary.control.entity #yellow {}
+package station as de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.trip.station #blue {}
+package boundary as de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.trip.station.boundary #gray {}
 package control as de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.trip.station.boundary.control #red {}
 package entity as de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.trip.station.boundary.control.entity #yellow {}
+package train as de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.trip.train #blue {}
+package boundary as de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.trip.train.boundary #gray {}
 package control as de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.trip.train.boundary.control #red {}
 package entity as de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.trip.train.boundary.control.entity #yellow {}
+package wagon as de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.trip.train.wagon #blue {}
+package boundary as de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.trip.train.wagon.boundary #gray {}
 package control as de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.trip.train.wagon.boundary.control #red {}
 package entity as de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.trip.train.wagon.boundary.control.entity #yellow {}
+package seat as de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.trip.train.wagon.seat #blue {}
+package boundary as de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.trip.train.wagon.seat.boundary #gray {}
 package control as de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.trip.train.wagon.seat.boundary.control #red {}
 package entity as de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.trip.train.wagon.seat.boundary.control.entity #yellow {}
+package reset as de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reset #blue {}
+package boundary as de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reset.boundary #gray {}
 package control as de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reset.boundary.control #red {}
+package submit as de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.submit #blue {}
+package boundary as de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.submit.boundary #gray {}
 package control as de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.submit.boundary.control #red {}
 
 class "ConfirmReservationService" as de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.confirm.boundary.ConfirmReservationService {

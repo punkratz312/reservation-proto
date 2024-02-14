@@ -30,6 +30,8 @@ classDiagrams {
       addStyle("#blue").to(packages().withNameLike('adapters'))
       addStyle("#yellow").to(packages().withNameLike('*entity*'))
       addStyle("#red").to(packages().withNameLike('*control*'))
+      addStyle("#gray").to(packages().withNameLike('*boundary*'))
+      addStyle("#blue").to(packages().withNameLike('*divers*'))
     }
   }
   diagram {
