@@ -23,20 +23,20 @@ classDiagrams {
     style {
       skinparam 'linetype', 'ortho'
       show 'stereotype'
-      addStyle("#skyblue").to(packages().withNameLike('*drivers*'))
-      addStyle("#fcfdb0").to(packages().withNameLike('*entity*'))
-      addStyle("#gray").to(packages().withNameLike('*boundary*'))
-      addStyle("#green").to(packages().withNameLike('*entities*'))
-      addStyle("#lightblue").to(packages().withNameLike('*divers*'))
-      addStyle("#green").to(packages().withNameLike('*adapters*'))
-      addStyle("#blue").to(packages().withNameLike('*web*'))
-      addStyle("#red").to(packages().withNameLike('*control*'))
-      addStyle("#yellow").to(packages().withNameLike('*entity*'))
-      addStyle("#lightblue").to(packages().withNameLike('*api*'))
       addStyle("#azure").to(packages().withNameLike('*test*'))
-      addStyle("#orange").to(packages().withNameLike('*control*'))
-      addStyle("#limegreen").to(packages().withNameLike('*modul*'))
+      addStyle("#blue").to(packages().withNameLike('*web*'))
+      addStyle("#fcfdb0").to(packages().withNameLike('*entity*'))
       addStyle("#goldenrod").to(packages().withNameLike('*domain*'))
+      addStyle("#gray").to(packages().withNameLike('*boundary*'))
+      addStyle("#82ffb4").to(packages().withNameLike('*adapters*'))
+      addStyle("#green").to(packages().withNameLike('*entities*'))
+      addStyle("#lightblue").to(packages().withNameLike('*api*'))
+      addStyle("#lightblue").to(packages().withNameLike('*divers*'))
+      addStyle("#limegreen").to(packages().withNameLike('*modul*'))
+      addStyle("#orange").to(packages().withNameLike('*control*'))
+      addStyle("#red").to(packages().withNameLike('*control*'))
+      addStyle("#skyblue").to(packages().withNameLike('*drivers*'))
+      addStyle("#yellow").to(packages().withNameLike('*entity*'))
     }
   }
   diagram {
