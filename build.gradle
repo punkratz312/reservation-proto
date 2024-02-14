@@ -23,10 +23,13 @@ classDiagrams {
     style {
       skinparam 'linetype', 'ortho'
       show 'stereotype'
-      addStyle("#lightblue").to(packages().withNameLike('*boundary*'))
-      addStyle("#red").to(packages().withNameLike('*control*'))
-      addStyle("#red").to(packages().withNameLike('*boundary.control*'))
+      addStyle("#lightblue").to(packages().withName('web'))
+      addStyle("#red").to(packages().withName('entities'))
+      addStyle("#green").to(packages().withNameLike('entities'))
+      addStyle("#green").to(packages().withName('adapters'))
+      addStyle("#blue").to(packages().withNameLike('adapters'))
       addStyle("#yellow").to(packages().withNameLike('*entity*'))
+      addStyle("#red").to(packages().withNameLike('*control*'))
     }
   }
   diagram {
