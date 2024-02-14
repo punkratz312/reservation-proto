@@ -25,9 +25,8 @@ classDiagrams {
       show 'stereotype'
       addStyle("#skyblue").to(packages().withNameLike('*drivers*'))
       addStyle("#fcfdb0").to(packages().withNameLike('*entity*'))
-      addStyle("#ff9a99").to(packages().withNameLike('*use_cases*'))
       addStyle("#gray").to(packages().withNameLike('*boundary*'))
-      addStyle("#green").to(packages().withNameLike('entities'))
+      addStyle("#green").to(packages().withNameLike('*entities*'))
       addStyle("#lightblue").to(packages().withNameLike('*divers*'))
       addStyle("#green").to(packages().withNameLike('*adapters*'))
       addStyle("#blue").to(packages().withNameLike('*web*'))

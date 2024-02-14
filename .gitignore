@@ -2,7 +2,7 @@
 .gradle/
 build/**
 
-
+doc/uml
 # Eclipse
 .project
 .classpath
