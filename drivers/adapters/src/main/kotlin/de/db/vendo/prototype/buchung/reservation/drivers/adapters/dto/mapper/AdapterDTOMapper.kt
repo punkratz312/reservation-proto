@@ -5,6 +5,6 @@ import de.db.vendo.prototype.buchung.reservation.drivers.adapters.use_cases.dto.
 import org.mapstruct.Mapper
 
 @Mapper
-interface Mapper {
+interface AdapterDTOMapper {
   fun toDTO(adapterDTO: AdapterDTO): UseCaseDTO
 }
