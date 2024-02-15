@@ -23,22 +23,17 @@ classDiagrams {
     style {
       skinparam 'linetype', 'ortho'
       show 'stereotype'
-//      addStyle("#skyblue").to(packages().withNameLike('*drivers*'))
-//      addStyle("#82ffb4").to(packages().withNameLike('*adapters*'))
-      //     fix
-      addStyle("#fcfdb0").to(packages().withNameLike('*entities*'))
-      addStyle("#ff9a99").to(packages().withNameLike('*use_cases*'))
-      //     error
-//      addStyle("#ff9a99").to(packages().withNameLike('*use_cases*'))
-//      addStyle("#fcfdb0").to(packages().withNameLike('*entities*'))
-//           error
-      addStyle("#lime").to(packages().withNameLike('*boundary*'))
-      addStyle("#orange").to(packages().withNameLike('*control*'))
-      addStyle("#white").to(packages().withNameLike('*entity*'))
-      addStyle("#red").to(packages().withNameLike('*dto*'))
-//      addStyle("#goldenrod").to(packages().withNameLike('*domain*'))
-//      addStyle("#lightblue").to(packages().withNameLike('*api*'))
-//      addStyle("#limegreen").to(packages().withNameLike('*modul*'))
+      addStyle("#82ffb4").to(packages().withNameLike('*adapters'))
+      addStyle("#fcfdb0").to(packages().withNameLike('*entities'))
+      addStyle("#ff9a99").to(packages().withNameLike('*use_cases'))
+      addStyle("#lime").to(packages().withNameLike('*boundary'))
+      addStyle("#orange").to(packages().withNameLike('*control'))
+      addStyle("#red").to(packages().withNameLike('*dto'))
+      addStyle("#skyblue").to(packages().withNameLike('*drivers'))
+      addStyle("#white").to(packages().withNameLike('*entity'))
+//      addStyle("#goldenrod").to(packages().withNameLike('*domain'))
+//      addStyle("#lightblue").to(packages().withNameLike('*api'))
+//      addStyle("#limegreen").to(packages().withNameLike('*modul'))
     }
   }
   diagram {
