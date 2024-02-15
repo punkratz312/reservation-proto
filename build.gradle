@@ -29,7 +29,7 @@ classDiagrams {
       addStyle("#fcfdb0").to(packages().withNameLike('*entities'))
       addStyle("#lime").to(packages().withNameLike('*boundary'))
       addStyle("#orange").to(packages().withNameLike('*control'))
-      addStyle("#white").to(packages().withNameLike('*entity'))
+      addStyle("#fcfdb0").to(packages().withNameLike('*entity'))
       addStyle("#goldenrod").to(packages().withNameLike('*dto'))
     }
   }
