@@ -23,20 +23,16 @@ classDiagrams {
     style {
       skinparam 'linetype', 'ortho'
       show 'stereotype'
-      addStyle("#azure").to(packages().withNameLike('*test*'))
-//      addStyle("#blue").to(packages().withNameLike('*web*'))
-      addStyle("#fcfdb0").to(packages().withNameLike('*entity*'))
-      addStyle("#goldenrod").to(packages().withNameLike('*domain*'))
-      addStyle("#ff9a99").to(packages().withNameLike('*use_cases*'))
-      addStyle("#lime").to(packages().withNameLike('*boundary*'))
       addStyle("#82ffb4").to(packages().withNameLike('*adapters*'))
-      addStyle("#green").to(packages().withNameLike('*entities*'))
-      addStyle("#lightblue").to(packages().withNameLike('*api*'))
-      addStyle("#lightblue").to(packages().withNameLike('*divers*'))
-      addStyle("#limegreen").to(packages().withNameLike('*modul*'))
-      addStyle("#orange").to(packages().withNameLike('*control*'))
-      addStyle("#red").to(packages().withNameLike('*control*'))
+      addStyle("#fcfdb0").to(packages().withNameLike('*entities*'))
       addStyle("#skyblue").to(packages().withNameLike('*drivers*'))
+      addStyle("#ff9a99").to(packages().withNameLike('*use_cases*'))
+//      addStyle("#goldenrod").to(packages().withNameLike('*domain*'))
+//      addStyle("#lightblue").to(packages().withNameLike('*api*'))
+//      addStyle("#limegreen").to(packages().withNameLike('*modul*'))
+//      addStyle("#lime").to(packages().withNameLike('*boundary*'))
+//      addStyle("#orange").to(packages().withNameLike('*control*'))
+//      addStyle("#white").to(packages().withNameLike('*entity*'))
     }
   }
   diagram {
