@@ -30,7 +30,11 @@ classDiagrams {
       addStyle("#lime").to(packages().withNameLike('*boundary'))
       addStyle("#orange").to(packages().withNameLike('*control'))
       addStyle("#fcfdb0").to(packages().withNameLike('*entity'))
-      addStyle("#goldenrod").to(packages().withNameLike('*dto'))
+      addStyle("#gold").to(packages().withNameLike('*dto'))
+      addStyle("#goldenrod").to(packages().withNameLike('*bridge'))
+      addStyle("#aqua").to(packages().withNameLike('*mapper'))
+      addStyle("#goldenrod").to(packages().withNameLike('*web'))
+      addStyle("#goldenrod").to(packages().withNameLike('*persistence'))
     }
   }
   diagram {
