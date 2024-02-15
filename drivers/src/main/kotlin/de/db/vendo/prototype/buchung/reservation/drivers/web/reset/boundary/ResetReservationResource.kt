@@ -14,7 +14,7 @@ import java.util.*
 @ApplicationScoped
 @Path("reset/{id}")
 class ResetReservationResource @Inject constructor(
-  private val resourceAdapter: ResetReservationResourceAdapter
+  val resourceAdapter: ResetReservationResourceAdapter
 ) : Service<UUID> {
 
   @PUT

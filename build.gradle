@@ -54,6 +54,12 @@ classDiagrams {
     renderTo file('doc/uml/svg/drivers.svg')
   }
   diagram {
+    name 'bridge'
+    include packages().withNameLike('*boundary.bridge')
+    writeTo file('doc/uml/puml/bridge.puml')
+    renderTo file('doc/uml/svg/bridge.svg')
+  }
+  diagram {
     name 'adapters'
     include packages().withName('de.db.vendo.prototype.buchung.reservation.drivers.adapters')
     writeTo file('doc/uml/puml/adapters.puml')

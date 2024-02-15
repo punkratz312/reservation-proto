@@ -11,7 +11,7 @@ import org.eclipse.microprofile.openapi.annotations.parameters.RequestBody
 @ApplicationScoped
 @Path("submit")
 class SubmitReservationResource @Inject constructor(
-  private val resourceAdapter: SubmitReservationResourceAdapter
+  val resourceAdapter: SubmitReservationResourceAdapter
 ) : FunctionalService<String, String> {
 
   @PUT

@@ -3,13 +3,12 @@ package de.db.vendo.prototype.buchung.reservation.drivers.adapters.reset.boundar
 import de.db.vendo.prototype.buchung.reservation.common.bce.boundary.Service
 import de.db.vendo.prototype.buchung.reservation.drivers.adapters.use_cases.reset.boundary.ResetUseCase
 import jakarta.enterprise.context.ApplicationScoped
-import jakarta.enterprise.inject.Default
 import jakarta.inject.Inject
 import java.util.*
 
 @ApplicationScoped
 class ResetReservationResourceAdapter @Inject constructor(
-  private val reset: ResetUseCase
+  val reset: ResetUseCase
 ) : Service<UUID> {
 
   override fun serve(input: UUID) {
