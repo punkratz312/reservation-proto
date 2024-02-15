@@ -25,8 +25,13 @@ classDiagrams {
       show 'stereotype'
 //      addStyle("#skyblue").to(packages().withNameLike('*drivers*'))
 //      addStyle("#82ffb4").to(packages().withNameLike('*adapters*'))
+      //     fix
       addStyle("#fcfdb0").to(packages().withNameLike('*entities*'))
       addStyle("#ff9a99").to(packages().withNameLike('*use_cases*'))
+      //     error
+//      addStyle("#ff9a99").to(packages().withNameLike('*use_cases*'))
+//      addStyle("#fcfdb0").to(packages().withNameLike('*entities*'))
+//           error
       addStyle("#lime").to(packages().withNameLike('*boundary*'))
       addStyle("#orange").to(packages().withNameLike('*control*'))
       addStyle("#white").to(packages().withNameLike('*entity*'))
