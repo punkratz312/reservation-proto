@@ -1,6 +1,6 @@
-package de.db.vendo.prototype.buchung.reservation.divers.web.confirm.boundary.dto
+package de.db.vendo.prototype.buchung.reservation.drivers.web.confirm.boundary.dto
 
-import de.db.vendo.prototype.buchung.reservation.divers.adapters.confirm.boundary.dto.ConfirmReservationResourceAdapterDTO
+import de.db.vendo.prototype.buchung.reservation.drivers.adapters.confirm.boundary.dto.ConfirmReservationResourceAdapterDTO
 import org.mapstruct.Mapper
 
 @Mapper

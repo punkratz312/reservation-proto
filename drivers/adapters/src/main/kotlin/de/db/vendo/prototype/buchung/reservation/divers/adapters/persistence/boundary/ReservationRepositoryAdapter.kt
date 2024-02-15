@@ -1,8 +1,8 @@
-package de.db.vendo.prototype.buchung.reservation.divers.adapters.persistence.boundary
+package de.db.vendo.prototype.buchung.reservation.drivers.adapters.persistence.boundary
 
-import de.db.vendo.prototype.buchung.reservation.divers.adapters.persistence.boundary.bridge.ReservationRepositoryAdapterBridge
-import de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.confirm.boundary.dto.ReservationDTO
-import de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.persistence.boundary.bridge.ReservationRepositoryUseCaseBridge
+import de.db.vendo.prototype.buchung.reservation.drivers.adapters.persistence.boundary.bridge.ReservationRepositoryAdapterBridge
+import de.db.vendo.prototype.buchung.reservation.drivers.adapters.use_cases.confirm.boundary.dto.ReservationDTO
+import de.db.vendo.prototype.buchung.reservation.drivers.adapters.use_cases.persistence.boundary.bridge.ReservationRepositoryUseCaseBridge
 import jakarta.enterprise.context.ApplicationScoped
 import jakarta.inject.Inject
 import java.util.*

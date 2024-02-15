@@ -1,4 +1,4 @@
-package de.db.vendo.prototype.buchung.reservation.divers.test.e2e.resource.confirm.failure
+package de.db.vendo.prototype.buchung.reservation.drivers.test.e2e.resource.confirm.failure
 
 import de.db.vendo.prototype.buchung.BDD
 import io.quarkus.test.junit.QuarkusTest

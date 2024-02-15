@@ -1,6 +1,6 @@
-package de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.persistence.boundary.bridge
+package de.db.vendo.prototype.buchung.reservation.drivers.adapters.use_cases.persistence.boundary.bridge
 
-import de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.confirm.boundary.dto.ReservationDTO
+import de.db.vendo.prototype.buchung.reservation.drivers.adapters.use_cases.confirm.boundary.dto.ReservationDTO
 import java.util.*
 
 interface ReservationRepositoryUseCaseBridge {

@@ -1,9 +1,9 @@
-package de.db.vendo.prototype.buchung.reservation.divers.web.confirm.boundary
+package de.db.vendo.prototype.buchung.reservation.drivers.web.confirm.boundary
 
 import de.db.vendo.prototype.buchung.reservation.common.bce.boundary.Service
-import de.db.vendo.prototype.buchung.reservation.divers.adapters.confirm.boundary.ConfirmReservationResourceAdapter
-import de.db.vendo.prototype.buchung.reservation.divers.web.confirm.boundary.dto.ConfirmReservationResourceDTO
-import de.db.vendo.prototype.buchung.reservation.divers.web.confirm.boundary.dto.ConfirmReservationResourceDTOMapper
+import de.db.vendo.prototype.buchung.reservation.drivers.adapters.confirm.boundary.ConfirmReservationResourceAdapter
+import de.db.vendo.prototype.buchung.reservation.drivers.web.confirm.boundary.dto.ConfirmReservationResourceDTO
+import de.db.vendo.prototype.buchung.reservation.drivers.web.confirm.boundary.dto.ConfirmReservationResourceDTOMapper
 import jakarta.enterprise.context.ApplicationScoped
 import jakarta.inject.Inject
 import jakarta.ws.rs.PUT

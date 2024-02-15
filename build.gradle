@@ -23,10 +23,10 @@ classDiagrams {
     style {
       skinparam 'linetype', 'ortho'
       show 'stereotype'
-      addStyle("#82ffb4").to(packages().withNameLike('*adapters*'))
-      addStyle("#fcfdb0").to(packages().withNameLike('*entities*'))
       addStyle("#skyblue").to(packages().withNameLike('*drivers*'))
+      addStyle("#82ffb4").to(packages().withNameLike('*adapters*'))
       addStyle("#ff9a99").to(packages().withNameLike('*use_cases*'))
+      addStyle("#fcfdb0").to(packages().withNameLike('*entities*'))
 //      addStyle("#goldenrod").to(packages().withNameLike('*domain*'))
 //      addStyle("#lightblue").to(packages().withNameLike('*api*'))
 //      addStyle("#limegreen").to(packages().withNameLike('*modul*'))
@@ -43,32 +43,32 @@ classDiagrams {
     renderTo file('doc/uml/svg/buchung.svg')
   }
   diagram {
-    name 'divers'
-    include packages().withName('de.db.vendo.prototype.buchung.reservation.divers')
-    writeTo file('doc/uml/puml/divers.puml')
-    renderTo file('doc/uml/svg/divers.svg')
+    name 'drivers'
+    include packages().withName('de.db.vendo.prototype.buchung.reservation.drivers')
+    writeTo file('doc/uml/puml/drivers.puml')
+    renderTo file('doc/uml/svg/drivers.svg')
   }
   diagram {
     name 'adapters'
-    include packages().withName('de.db.vendo.prototype.buchung.reservation.divers.adapters')
+    include packages().withName('de.db.vendo.prototype.buchung.reservation.drivers.adapters')
     writeTo file('doc/uml/puml/adapters.puml')
     renderTo file('doc/uml/svg/adapters.svg')
   }
   diagram {
     name 'use_cases'
-    include packages().withName('de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases')
+    include packages().withName('de.db.vendo.prototype.buchung.reservation.drivers.adapters.use_cases')
     writeTo file('doc/uml/puml/use_cases.puml')
     renderTo file('doc/uml/svg/use_cases.svg')
   }
   diagram {
     name 'entities'
-    include packages().withName('de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities')
+    include packages().withName('de.db.vendo.prototype.buchung.reservation.drivers.adapters.use_cases.entities')
     writeTo file('doc/uml/puml/entities.puml')
     renderTo file('doc/uml/svg/entities.svg')
   }
   diagram {
     name 'er-model'
-    include packages().withName('de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation')
+    include packages().withName('de.db.vendo.prototype.buchung.reservation.drivers.adapters.use_cases.entities.reservation')
     writeTo file('doc/uml/puml/er-model.puml')
     renderTo file('doc/uml/svg/er-model.svg')
   }

@@ -1,7 +1,7 @@
-package de.db.vendo.prototype.buchung.reservation.divers.web.submit.boundary
+package de.db.vendo.prototype.buchung.reservation.drivers.web.submit.boundary
 
 import de.db.vendo.prototype.buchung.reservation.common.bce.boundary.FunctionalService
-import de.db.vendo.prototype.buchung.reservation.divers.adapters.submit.boundary.SubmitReservationResourceAdapter
+import de.db.vendo.prototype.buchung.reservation.drivers.adapters.submit.boundary.SubmitReservationResourceAdapter
 import jakarta.enterprise.context.ApplicationScoped
 import jakarta.inject.Inject
 import jakarta.ws.rs.PUT

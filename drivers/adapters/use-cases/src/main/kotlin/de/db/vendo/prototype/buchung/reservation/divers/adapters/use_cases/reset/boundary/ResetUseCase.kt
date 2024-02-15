@@ -1,8 +1,8 @@
-package de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.reset.boundary
+package de.db.vendo.prototype.buchung.reservation.drivers.adapters.use_cases.reset.boundary
 
 import de.db.vendo.prototype.buchung.reservation.common.usecase.UseCase
-import de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reservation.boundary.control.entity.ReservationId
-import de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.reset.boundary.ResetReservationService
+import de.db.vendo.prototype.buchung.reservation.drivers.adapters.use_cases.entities.reservation.boundary.control.entity.ReservationId
+import de.db.vendo.prototype.buchung.reservation.drivers.adapters.use_cases.entities.reset.boundary.ResetReservationService
 import jakarta.enterprise.context.ApplicationScoped
 import jakarta.enterprise.inject.Default
 import jakarta.inject.Inject

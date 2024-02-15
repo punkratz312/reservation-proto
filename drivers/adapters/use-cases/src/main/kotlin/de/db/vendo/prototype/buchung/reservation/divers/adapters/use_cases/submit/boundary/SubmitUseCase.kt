@@ -1,7 +1,7 @@
-package de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.submit.boundary
+package de.db.vendo.prototype.buchung.reservation.drivers.adapters.use_cases.submit.boundary
 
 import de.db.vendo.prototype.buchung.reservation.common.usecase.FunctionalUseCase
-import de.db.vendo.prototype.buchung.reservation.divers.adapters.use_cases.entities.submit.boundary.SubmitReservationService
+import de.db.vendo.prototype.buchung.reservation.drivers.adapters.use_cases.entities.submit.boundary.SubmitReservationService
 import jakarta.enterprise.context.ApplicationScoped
 import jakarta.enterprise.inject.Default
 import jakarta.inject.Inject

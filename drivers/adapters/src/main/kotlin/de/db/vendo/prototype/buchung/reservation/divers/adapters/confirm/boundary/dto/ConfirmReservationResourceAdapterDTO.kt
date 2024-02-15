@@ -1,4 +1,4 @@
-package de.db.vendo.prototype.buchung.reservation.divers.adapters.confirm.boundary.dto
+package de.db.vendo.prototype.buchung.reservation.drivers.adapters.confirm.boundary.dto
 
 import java.util.*
 
