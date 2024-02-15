@@ -1,17 +1,19 @@
 package de.db.vendo.prototype.buchung.reservation.drivers.persistence.boundary
 
 import de.db.vendo.prototype.buchung.reservation.drivers.adapters.persistence.boundary.bridge.ReservationRepositoryAdapterBridge
+import de.db.vendo.prototype.buchung.reservation.drivers.persistence.boundary.dto.DriverDTO
+import io.quarkus.hibernate.orm.panache.kotlin.PanacheRepository
 import jakarta.enterprise.context.ApplicationScoped
 import jakarta.inject.Inject
 import java.util.*
 
 @ApplicationScoped
 class ReservationRepositoryDriver @Inject constructor(
-//private val panacheRepository: PanacheRepository<String>
+  private val panacheRepository: PanacheRepository<DriverDTO>
 ) : ReservationRepositoryAdapterBridge {
 
   override fun findBy(input: UUID): Optional<String> {
-//    panacheRepository.findById(1L)
+    //    panacheRepository.findById(1L)
     TODO("Not yet implemented")
   }
 
