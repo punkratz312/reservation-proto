@@ -18,6 +18,7 @@ classDiagrams {
   defaults {
     exclude methods().withNameLike('*component*')
     exclude methods().withNameLike('*copy*')
+    exclude methods().withNameLike('*getEntries*')
     exclude classes().withNameLike('*DefaultImpls*')
     exclude classes().withNameLike('*$1*')
     style {
