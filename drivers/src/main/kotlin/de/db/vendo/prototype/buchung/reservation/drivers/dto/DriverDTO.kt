@@ -1,4 +1,4 @@
-package de.db.vendo.prototype.buchung.reservation.drivers.persistence.boundary.dto
+package de.db.vendo.prototype.buchung.reservation.drivers.dto
 
 import io.quarkus.hibernate.orm.panache.PanacheEntity
 import java.util.*

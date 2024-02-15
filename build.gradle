@@ -36,12 +36,14 @@ classDiagrams {
       addStyle("#aqua").to(packages().withNameLike('*mapper'))
       addStyle("#wheat").to(packages().withNameLike('*web'))
       addStyle("#cadetblue").to(packages().withNameLike('*persistence'))
+      addStyle("#4695EB").to(packages().withNameLike('*panache'))
     }
   }
   diagram {
     name 'buchung'
     include packages().withName('de.db.vendo.prototype.buchung.reservation')
-    //    include classes().withName('io.quarkus.hibernate.orm.panache.PanacheRepository').outsideOfProject()
+    include classes().withName('io.quarkus.hibernate.orm.panache.PanacheRepository').outsideOfProject()
+    include classes().withName('io.quarkus.hibernate.orm.panache.PanacheEntity').outsideOfProject()
     writeTo file('doc/uml/puml/buchung.puml')
     renderTo file('doc/uml/svg/buchung.svg')
   }

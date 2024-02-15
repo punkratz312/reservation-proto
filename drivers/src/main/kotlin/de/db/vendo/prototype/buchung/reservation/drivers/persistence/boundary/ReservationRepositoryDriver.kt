@@ -1,7 +1,7 @@
 package de.db.vendo.prototype.buchung.reservation.drivers.persistence.boundary
 
 import de.db.vendo.prototype.buchung.reservation.drivers.adapters.persistence.boundary.bridge.ReservationRepositoryAdapterBridge
-import de.db.vendo.prototype.buchung.reservation.drivers.persistence.boundary.dto.DriverDTO
+import de.db.vendo.prototype.buchung.reservation.drivers.dto.DriverDTO
 import io.quarkus.hibernate.orm.panache.kotlin.PanacheRepository
 import jakarta.enterprise.context.ApplicationScoped
 import jakarta.inject.Inject
