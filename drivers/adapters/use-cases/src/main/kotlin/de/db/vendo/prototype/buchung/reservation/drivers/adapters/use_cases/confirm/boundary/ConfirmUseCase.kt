@@ -9,8 +9,8 @@ import jakarta.inject.Inject
 
 @ApplicationScoped
 class ConfirmUseCase @Inject constructor(
-  val confirmReservation: ConfirmReservationService,
-  val mapper: UseCaseDTOMapper
+  private val confirmReservation: ConfirmReservationService,
+  private val mapper: UseCaseDTOMapper
 ) : UseCase<UseCaseDTO> {
 
   override fun action(input: UseCaseDTO) {

@@ -7,7 +7,7 @@ import jakarta.inject.Inject
 
 @ApplicationScoped
 class SubmitReservationResourceAdapter @Inject constructor(
-  val submit: SubmitUseCase
+  private val submit: SubmitUseCase
 ) : FunctionalService<String, String> {
 
   override fun serve(input: String): String {

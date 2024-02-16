@@ -8,7 +8,7 @@ import jakarta.inject.Inject
 
 @ApplicationScoped
 class ResetReservationComponent @Inject constructor(
-  val reservation: ReservationRepository
+  private val reservation: ReservationRepository
 ) : Component<ReservationId> {
 
   override fun execute(input: ReservationId) {

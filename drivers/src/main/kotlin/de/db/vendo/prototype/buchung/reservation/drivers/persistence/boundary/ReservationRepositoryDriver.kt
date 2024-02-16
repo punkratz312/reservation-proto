@@ -9,7 +9,7 @@ import java.util.*
 
 @ApplicationScoped
 class ReservationRepositoryDriver @Inject constructor(
-  val panacheRepository: PanacheRepository<DriverDTO>
+  private val panacheRepository: PanacheRepository<DriverDTO>
 ) : ReservationRepositoryAdapterBridge {
 
   override fun findBy(input: UUID): Optional<String> {

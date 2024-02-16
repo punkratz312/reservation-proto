@@ -9,7 +9,7 @@ import jakarta.inject.Inject
 
 @ApplicationScoped
 class ConfirmReservationComponent @Inject constructor(
-  val reservation: ReservationRepository
+  private val reservation: ReservationRepository
 ) : Component<Reservation> {
 
   override fun execute(input: Reservation) {

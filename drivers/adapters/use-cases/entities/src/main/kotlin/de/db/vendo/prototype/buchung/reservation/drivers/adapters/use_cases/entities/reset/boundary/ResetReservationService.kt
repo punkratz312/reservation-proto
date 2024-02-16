@@ -8,7 +8,7 @@ import jakarta.inject.Inject
 
 @ApplicationScoped
 class ResetReservationService @Inject constructor(
-  val resetReservation: ResetReservationComponent
+  private val resetReservation: ResetReservationComponent
 ) : Service<ReservationId> {
 
   override fun serve(input: ReservationId) {

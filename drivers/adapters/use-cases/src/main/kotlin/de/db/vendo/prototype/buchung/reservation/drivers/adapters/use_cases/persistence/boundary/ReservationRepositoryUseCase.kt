@@ -10,7 +10,7 @@ import java.util.*
 
 @ApplicationScoped
 class ReservationRepositoryUseCase @Inject constructor(
-  val bridge: ReservationRepositoryUseCaseBridge
+  private val bridge: ReservationRepositoryUseCaseBridge
 ) : ReservationRepository {
 
   override fun findBy(input: ReservationId): Optional<Reservation> {
