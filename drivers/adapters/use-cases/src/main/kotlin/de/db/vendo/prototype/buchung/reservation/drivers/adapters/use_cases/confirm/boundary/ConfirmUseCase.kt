@@ -2,7 +2,6 @@ package de.db.vendo.prototype.buchung.reservation.drivers.adapters.use_cases.con
 
 import de.db.vendo.prototype.buchung.reservation.common.usecase.UseCase
 import de.db.vendo.prototype.buchung.reservation.drivers.adapters.use_cases.dto.UseCaseDTO
-import de.db.vendo.prototype.buchung.reservation.drivers.adapters.use_cases.dto.mapper.UseCaseDTOMapper
 import de.db.vendo.prototype.buchung.reservation.drivers.adapters.use_cases.entities.confirm.boundary.ConfirmReservationService
 import jakarta.enterprise.context.ApplicationScoped
 import jakarta.inject.Inject
@@ -10,10 +9,10 @@ import jakarta.inject.Inject
 @ApplicationScoped
 class ConfirmUseCase @Inject constructor(
   private val confirmReservation: ConfirmReservationService,
-  private val mapper: UseCaseDTOMapper
+//  private val mapper: UseCaseDTOMapper
 ) : UseCase<UseCaseDTO> {
 
   override fun action(input: UseCaseDTO) {
-    confirmReservation.serve(mapper.toReservation(input))
+//    confirmReservation.serve(mapper.toReservation(input))
   }
 }

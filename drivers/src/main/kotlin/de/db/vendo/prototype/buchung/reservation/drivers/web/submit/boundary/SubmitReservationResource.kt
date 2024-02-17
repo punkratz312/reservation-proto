@@ -16,6 +16,7 @@ class SubmitReservationResource @Inject constructor(
 
   @PUT
   override fun serve(@RequestBody input: String): String {
-    return resourceAdapter.serve(input).toString()
+    TODO("Provide the return value")
+//    return resourceAdapter.serve(input).toString()
   }
 }

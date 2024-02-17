@@ -3,8 +3,9 @@ package de.db.vendo.prototype.buchung.reservation.drivers.dto.mapper
 import de.db.vendo.prototype.buchung.reservation.drivers.adapters.dto.AdapterDTO
 import de.db.vendo.prototype.buchung.reservation.drivers.dto.DriverDTO
 import org.mapstruct.Mapper
+import org.mapstruct.MappingConstants.ComponentModel.JAKARTA_CDI
 
-@Mapper
+@Mapper(componentModel = JAKARTA_CDI)
 interface DriverDTOMapper {
   fun toDTO(address: DriverDTO): AdapterDTO
 }
