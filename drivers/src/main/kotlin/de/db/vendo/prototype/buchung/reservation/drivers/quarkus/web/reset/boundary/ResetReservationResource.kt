@@ -1,4 +1,4 @@
-package de.db.vendo.prototype.buchung.reservation.drivers.web.reset.boundary
+package de.db.vendo.prototype.buchung.reservation.drivers.quarkus.web.reset.boundary
 
 import de.db.vendo.prototype.buchung.reservation.common.bce.boundary.Service
 import de.db.vendo.prototype.buchung.reservation.drivers.adapters.reset.boundary.ResetReservationResourceAdapter

@@ -37,6 +37,7 @@ classDiagrams {
       addStyle("#wheat").to(packages().withNameLike('*web'))
       addStyle("#cadetblue").to(packages().withNameLike('*persistence'))
       addStyle("#4695EB").to(packages().withNameLike('*panache'))
+      addStyle("#4695EB").to(packages().withNameLike('*quarkus'))
     }
   }
   diagram {

@@ -1,4 +1,4 @@
-package de.db.vendo.prototype.buchung.reservation.drivers.persistence.boundary
+package de.db.vendo.prototype.buchung.reservation.drivers.quarkus.persistence.aws.dynamo.boundary
 
 import de.db.vendo.prototype.buchung.reservation.drivers.adapters.persistence.boundary.bridge.ReservationRepositoryAdapterBridge
 import jakarta.enterprise.context.ApplicationScoped
@@ -6,8 +6,7 @@ import jakarta.inject.Inject
 import java.util.*
 
 @ApplicationScoped
-class ReservationRepositoryDriver @Inject constructor(
-//  private val panacheRepository: PanacheRepository<DriverDTO>
+class DynamoReservationRepositoryDriver @Inject constructor(
 ) : ReservationRepositoryAdapterBridge {
 
   override fun findBy(input: UUID): Optional<String> {

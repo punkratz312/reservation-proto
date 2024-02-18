@@ -1,4 +1,4 @@
-package de.db.vendo.prototype.buchung.reservation.drivers.web.confirm.boundary
+package de.db.vendo.prototype.buchung.reservation.drivers.quarkus.web.confirm.boundary
 
 import de.db.vendo.prototype.buchung.reservation.common.bce.boundary.Service
 import de.db.vendo.prototype.buchung.reservation.drivers.adapters.confirm.boundary.ConfirmReservationResourceAdapter

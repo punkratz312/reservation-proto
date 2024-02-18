@@ -1,7 +1,7 @@
-package de.db.vendo.prototype.buchung.reservation.drivers.dto.mapper
+package de.db.vendo.prototype.buchung.reservation.drivers.quarkus.dto.mapper
 
 import de.db.vendo.prototype.buchung.reservation.drivers.adapters.dto.AdapterDTO
-import de.db.vendo.prototype.buchung.reservation.drivers.dto.DriverDTO
+import de.db.vendo.prototype.buchung.reservation.drivers.quarkus.dto.DriverDTO
 import org.mapstruct.Mapper
 import org.mapstruct.MappingConstants.ComponentModel.JAKARTA_CDI
 

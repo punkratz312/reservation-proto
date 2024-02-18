@@ -1,4 +1,4 @@
-package de.db.vendo.prototype.buchung.reservation.drivers.web.submit.boundary
+package de.db.vendo.prototype.buchung.reservation.drivers.quarkus.web.boundary
 
 import de.db.vendo.prototype.buchung.reservation.common.bce.boundary.FunctionalService
 import de.db.vendo.prototype.buchung.reservation.drivers.adapters.submit.boundary.SubmitReservationResourceAdapter

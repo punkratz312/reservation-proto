@@ -1,4 +1,4 @@
-package de.db.vendo.prototype.buchung.reservation.drivers.dto
+package de.db.vendo.prototype.buchung.reservation.drivers.quarkus.dto
 
 import java.util.*
 
