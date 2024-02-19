@@ -2,7 +2,7 @@ plugins {
   id 'org.jetbrains.kotlin.jvm' version '1.9.21'
   id 'org.jetbrains.kotlin.plugin.allopen' version '1.9.21'
   id 'org.jlleitschuh.gradle.ktlint' version '12.0.3'
-  id 'io.gitlab.plunts.plantuml' version '2.1.4'
+  id 'io.gitlab.plunts.plantuml' version '2.1.5'
   id 'org.openrewrite.rewrite' version '6.8.1'
 }
 group = 'de.db.vendo.prototype.buchung.reservation'
@@ -21,6 +21,21 @@ classDiagrams {
     exclude methods().withNameLike('*getEntries*')
     exclude classes().withNameLike('*DefaultImpls*')
     exclude classes().withNameLike('*$1*')
+    note("This note is above of the class foo.Bar").topOf(packages().withNameLike('*adapters'))
+    note("This note is above of the class foo.Bar").topOf(packages().withNameLike('*drivers'))
+    note("This note is above of the class foo.Bar").topOf(packages().withNameLike('*adapters'))
+    note("This note is above of the class foo.Bar").topOf(packages().withNameLike('*use_cases'))
+    note("This note is above of the class foo.Bar").topOf(packages().withNameLike('*entities'))
+    note("This note is above of the class foo.Bar").topOf(packages().withNameLike('*boundary'))
+//    note("This note is above of the class foo.Bar").topOf(packages().withNameLike('*control'))
+//    note("This note is above of the class foo.Bar").topOf(packages().withNameLike('*entity'))
+//    note("This note is above of the class foo.Bar").topOf(packages().withNameLike('*bridge'))
+//    note("This note is above of the class foo.Bar").topOf(packages().withNameLike('*web'))
+//    note("This note is above of the class foo.Bar").topOf(packages().withNameLike('*persistence'))
+    note("This note is above of the class foo.Bar").topOf(packages().withNameLike('*panache'))
+    note("This note is above of the class foo.Bar").topOf(packages().withNameLike('*quarkus'))
+//    note("This note is above of the class foo.Bar").topOf(packages().withNameLike('*dto'))
+//    note("This note is above of the class foo.Bar").topOf(packages().withNameLike('*mapper'))
     style {
       skinparam 'linetype', 'ortho'
       show 'stereotype'
