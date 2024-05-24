@@ -1,4 +1,4 @@
-package de.company.prototype.woodpecker.drivers.quarkus.web.boundary
+package de.company.prototype.woodpecker.drivers.adapters.submit.boundary
 
 class FindAllHawksResourceAdapter {
   fun serve(): String {

@@ -1,6 +1,7 @@
 package de.company.prototype.woodpecker.drivers.quarkus.web.boundary
 
 import de.company.prototype.woodpecker.common.bce.boundary.FunctionalService
+import de.company.prototype.woodpecker.drivers.adapters.submit.boundary.FindAllHawksResourceAdapter
 import jakarta.enterprise.context.ApplicationScoped
 import jakarta.inject.Inject
 import jakarta.ws.rs.GET

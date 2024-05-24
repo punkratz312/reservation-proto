@@ -7,10 +7,11 @@ import jakarta.inject.Inject
 
 @ApplicationScoped
 class WoodpeckersUseCase @Inject constructor(
-  private val bridge: WoodpeckersUseCaseBridge
+//  private val bridge: WoodpeckersUseCaseBridge
 ) : Woodpeckers {
   override fun findAllHawks(): Set<Woodpecker> {
-    return bridge.findAllHawks()
+//    return bridge.findAllHawks()
+    TODO()
   }
 
 }
