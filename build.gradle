@@ -5,7 +5,7 @@ plugins {
   id 'io.gitlab.plunts.plantuml' version '2.1.5'
   id 'org.openrewrite.rewrite' version '6.8.1'
 }
-group = 'de.db.vendo.prototype.buchung.reservation'
+group = 'de.company.prototype.buchung.reservation'
 version = '1.0.0-SNAPSHOT'
 repositories {
   mavenCentral()
@@ -46,7 +46,7 @@ classDiagrams {
   }
   diagram {
     name 'buchung'
-    include packages().withName('de.db.vendo.prototype.buchung.reservation')
+    include packages().withName('de.company.prototype.buchung.reservation')
     include classes().withName('io.quarkus.hibernate.orm.panache.PanacheRepository').outsideOfProject()
     include classes().withName('io.quarkus.hibernate.orm.panache.PanacheEntity').outsideOfProject()
     writeTo file('doc/uml/puml/buchung.puml')
@@ -54,7 +54,7 @@ classDiagrams {
   }
   diagram {
     name 'drivers'
-    include packages().withName('de.db.vendo.prototype.buchung.woodpecker.drivers')
+    include packages().withName('de.company.prototype.woodpecker.drivers')
     writeTo file('doc/uml/puml/drivers.puml')
     renderTo file('doc/uml/svg/drivers.svg')
   }
@@ -66,25 +66,25 @@ classDiagrams {
   }
   diagram {
     name 'adapters'
-    include packages().withName('de.db.vendo.prototype.buchung.woodpecker.drivers.adapters')
+    include packages().withName('de.company.prototype.woodpecker.drivers.adapters')
     writeTo file('doc/uml/puml/adapters.puml')
     renderTo file('doc/uml/svg/adapters.svg')
   }
   diagram {
     name 'use_cases'
-    include packages().withName('de.db.vendo.prototype.buchung.woodpecker.drivers.adapters.use_cases')
+    include packages().withName('de.company.prototype.woodpecker.drivers.adapters.use_cases')
     writeTo file('doc/uml/puml/use_cases.puml')
     renderTo file('doc/uml/svg/use_cases.svg')
   }
   diagram {
     name 'entities'
-    include packages().withName('de.db.vendo.prototype.buchung.woodpecker.drivers.adapters.use_cases.entities')
+    include packages().withName('de.company.prototype.woodpecker.drivers.adapters.use_cases.entities')
     writeTo file('doc/uml/puml/entities.puml')
     renderTo file('doc/uml/svg/entities.svg')
   }
   diagram {
     name 'er-model'
-    include packages().withName('de.db.vendo.prototype.buchung.woodpecker.drivers.adapters.use_cases.entities.reservation')
+    include packages().withName('de.company.prototype.woodpecker.drivers.adapters.use_cases.entities.reservation')
     writeTo file('doc/uml/puml/er-model.puml')
     renderTo file('doc/uml/svg/er-model.svg')
   }

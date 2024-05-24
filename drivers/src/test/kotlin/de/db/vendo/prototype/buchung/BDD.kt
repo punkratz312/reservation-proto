@@ -1,4 +1,4 @@
-package de.db.vendo.prototype.buchung
+package de.company.prototype.buchung
 
 import org.junit.jupiter.api.Test
 

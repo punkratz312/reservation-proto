@@ -1,4 +1,4 @@
-package de.db.vendo.prototype.buchung
+package de.company.prototype.buchung
 
 import io.restassured.RestAssured.enableLoggingOfRequestAndResponseIfValidationFails
 import io.restassured.RestAssured.given
