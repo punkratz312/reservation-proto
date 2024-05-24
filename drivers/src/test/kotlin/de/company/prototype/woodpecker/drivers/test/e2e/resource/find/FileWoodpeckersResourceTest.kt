@@ -6,7 +6,7 @@ import org.hamcrest.CoreMatchers.hasItems
 import org.jboss.resteasy.reactive.RestResponse.StatusCode.OK
 
 @QuarkusTest
-class FindAllHawksResourceTest : BDD() {
+class FileWoodpeckersResourceTest : BDD() {
   override fun then_() {
     findAllHawks()
       .statusCode(OK)
