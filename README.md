@@ -1,102 +1,35 @@
-# reservierung-prototype
 
-This project uses Quarkus, the Supersonic Subatomic Java Framework.
+# BIRDS
 
-If you want to learn more about Quarkus, please visit its website: https://quarkus.io/ .
+Birdlife International regularly publishes the Red List of endangered birds. An example of this list is in the resources folder (a csv file called "birds.csv").
+It contains a single line for each bird species in the world. Each line has 4 fields separated by ";" (semicolon).
 
-![target-architecture.svg](doc%2Ftarget-architecture.svg)
-
-## Running the application in dev mode
-
-You can run your application in dev mode that enables live coding using:
-
-```shell script
-./gradlew quarkusDev
+The structure is:
+```
+Bird Family;English Bird Name;Scientific Bird Name;IUCN Category
 ```
 
-> **_NOTE:_**  Quarkus now ships with a Dev UI, which is available in dev mode only
-> at http://localhost:8080/q/dev/.
+The IUCN Category defines if a species is endangered and how endangered it is.
 
-## Packaging and running the application
-
-The application can be packaged using:
-
-```shell script
-./gradlew build
+These are the possible values (sorted from least to most endangered).
+```
+LC (Least Concern)
+NT (NearThreatened)
+VU (Vulnerable)
+EN (Endangered)
+CR (Critically Endangered)
+EW (Extinct in the Wild)
+EX (Extinct)
+DD (Data Deficient)
 ```
 
-It produces the `quarkus-run.jar` file in the `build/quarkus-app/` directory.
-Be aware that it’s not an _über-jar_ as the dependencies are copied into
-the `build/quarkus-app/lib/` directory.
+_Note_: Only the short two-character form is used in the file, the value is parentheses is just for explanation
 
-The application is now runnable using `java -jar build/quarkus-app/quarkus-run.jar`.
+## Your task:
 
-If you want to build an _über-jar_, execute the following command:
+Find all hawks (eagles, buzzards, vultures, kites, etc), sort them according to their IUCN Category and print them (System.out.println). For each species you should print at least the English name, the scientific name and the IUCN category.
 
-```shell script
-./gradlew build -Dquarkus.package.type=uber-jar
-```
+Sorting should be according to the list above with birds in the "LC" category printed first and birds in the "DD" category printed last.
 
-The application, packaged as an _über-jar_, is now runnable using `java -jar build/*-runner.jar`.
+You can find all hawks using the family name "Hawks, eagles"
 
-## Creating a native executable
-
-You can create a native executable using:
-
-```shell script
-./gradlew build -Dquarkus.package.type=native
-```
-
-Or, if you don't have GraalVM installed, you can run the native executable build in a container
-using:
-
-```shell script
-./gradlew build -Dquarkus.package.type=native -Dquarkus.native.container-build=true
-```
-
-You can then execute your native executable
-with: `./build/reservierung-prototype-1.0.0-SNAPSHOT-runner`
-
-If you want to learn more about building native executables, please
-consult https://quarkus.io/guides/gradle-tooling.
-
-## Related Guides
-
-- REST resources for Hibernate ORM with
-  Panache ([guide](https://quarkus.io/guides/rest-data-panache)): Generate Jakarta
-  REST resources for your Hibernate Panache entities and repositories
-- Hibernate ORM ([guide](https://quarkus.io/guides/hibernate-orm)): Define your persistent model
-  with Hibernate ORM and
-  Jakarta Persistence
-- JDBC Driver - H2 ([guide](https://quarkus.io/guides/datasource)): Connect to the H2 database via
-  JDBC
-- Hibernate ORM with Panache and
-  Kotlin ([guide](https://quarkus.io/guides/hibernate-orm-panache-kotlin)): Define your
-  persistent model in Hibernate ORM with Panache
-- RESTEasy Reactive ([guide](https://quarkus.io/guides/resteasy-reactive)): A Jakarta REST
-  implementation utilizing
-  build time processing and Vert.x. This extension is not compatible with the quarkus-resteasy
-  extension, or any of the
-  extensions that depend on it.
-- Kotlin ([guide](https://quarkus.io/guides/kotlin)): Write your services in Kotlin
-- Hibernate ORM with Panache ([guide](https://quarkus.io/guides/hibernate-orm-panache)): Simplify
-  your persistence code
-  for Hibernate ORM via the active record or the repository pattern
-
-## Provided Code
-
-### Hibernate ORM
-
-Create your first JPA entity
-
-[Related guide section...](https://quarkus.io/guides/hibernate-orm)
-
-[Related Hibernate with Panache section...](https://quarkus.io/guides/hibernate-orm-panache)
-
-[Related Hibernate with Panache in Kotlin section...](https://quarkus.io/guides/hibernate-orm-panache-kotlin)
-
-### RESTEasy Reactive
-
-Easily start your Reactive RESTful Web Services
-
-[Related guide section...](https://quarkus.io/guides/getting-started-reactive#reactive-jax-rs-resources)
