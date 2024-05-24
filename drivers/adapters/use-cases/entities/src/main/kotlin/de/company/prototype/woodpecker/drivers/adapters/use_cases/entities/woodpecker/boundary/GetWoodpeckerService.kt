@@ -1,6 +1,6 @@
 package de.company.prototype.woodpecker.drivers.adapters.use_cases.entities.woodpecker.boundary
 
-import de.company.prototype.buchung.reservation.common.bce.boundary.FunctionalService
+import de.company.prototype.woodpecker.common.bce.boundary.FunctionalService
 import de.company.prototype.woodpecker.drivers.adapters.use_cases.entities.woodpecker.boundary.control.GetWoodpeckerComponent
 import de.company.prototype.woodpecker.drivers.adapters.use_cases.entities.woodpecker.boundary.control.entity.Woodpecker
 import de.company.prototype.woodpecker.drivers.adapters.use_cases.entities.woodpecker.boundary.control.entity.WoodpeckerId

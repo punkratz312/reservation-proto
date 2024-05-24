@@ -1,6 +1,6 @@
 //package de.company.prototype.woodpecker.drivers.quarkus.web.boundary
 //
-//import de.company.prototype.buchung.reservation.common.bce.boundary.FunctionalService
+//import de.company.prototype.woodpecker.common.bce.boundary.FunctionalService
 //import de.company.prototype.woodpecker.drivers.adapters.submit.boundary.SubmitReservationResourceAdapter
 //import jakarta.enterprise.context.ApplicationScoped
 //import jakarta.inject.Inject

@@ -1,6 +1,6 @@
 package de.company.prototype.woodpecker.drivers.adapters.submit.boundary
 
-import de.company.prototype.buchung.reservation.common.bce.boundary.FunctionalService
+import de.company.prototype.woodpecker.common.bce.boundary.FunctionalService
 import de.company.prototype.woodpecker.drivers.adapters.dto.AdapterDTO
 import de.company.prototype.woodpecker.drivers.adapters.use_cases.persistence.boundary.WoodpeckersUseCase
 import jakarta.enterprise.context.ApplicationScoped

@@ -1,4 +1,4 @@
-package de.company.prototype.buchung.reservation.common.bce.boundary
+package de.company.prototype.woodpecker.common.bce.boundary
 
 interface Service<Input> {
   fun serve(input: Input)

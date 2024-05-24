@@ -1,4 +1,4 @@
-package de.company.prototype.buchung
+package de.company.prototype.woodpecker
 
 import org.junit.jupiter.api.Test
 
