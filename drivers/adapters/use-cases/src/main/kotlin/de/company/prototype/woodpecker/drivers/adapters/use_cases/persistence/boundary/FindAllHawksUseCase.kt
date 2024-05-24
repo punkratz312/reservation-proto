@@ -8,15 +8,14 @@ import jakarta.inject.Inject
 @ApplicationScoped
 class FindAllHawksUseCase @Inject constructor(
   private val findAllHawks: FindAllHawksService
-) : OutputService<Set<String>> {
+) : OutputService<Any> {
 
-  override fun serve(): Set<String> {
-    val map = findAllHawks.serve().map {
+  override fun serve(): Any {
+    return findAllHawks.serve().map {
       {
         it.toString()
       }
-    }.toSet()
-    return emptySet()
+    }
   }
 
 }

@@ -9,8 +9,9 @@ import jakarta.inject.Inject
 class FindAllHawksResourceAdapter @Inject constructor(
   private val woodpeckers: FindAllHawksUseCase
 ) {
-  fun serve(): String {
-    return woodpeckers.toString()
+
+  fun serve(): Any {
+    return woodpeckers.serve()
   }
 
 }

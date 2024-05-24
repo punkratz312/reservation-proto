@@ -12,10 +12,10 @@ import org.eclipse.microprofile.openapi.annotations.parameters.RequestBody
 @Path("woodpeckers/findAllHawks")
 class FindAllHawksResource @Inject constructor(
   private val resourceAdapter: FindAllHawksResourceAdapter
-) : FunctionalService<Unit, String> {
+) : FunctionalService<Unit, Any> {
 
   @GET
-  override fun serve(@RequestBody input: Unit): String {
+  override fun serve(@RequestBody input: Unit): Any {
     return resourceAdapter.serve()
   }
 }
