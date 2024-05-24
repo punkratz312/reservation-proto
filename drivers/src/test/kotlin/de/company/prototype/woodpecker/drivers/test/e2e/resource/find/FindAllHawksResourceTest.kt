@@ -3,12 +3,13 @@ package de.company.prototype.woodpecker.drivers.test.e2e.resource.find
 import de.company.prototype.woodpecker.BDD
 import io.quarkus.test.junit.QuarkusTest
 import org.hamcrest.CoreMatchers.hasItems
-import org.jboss.resteasy.reactive.RestResponse.StatusCode.NOT_FOUND
+import org.jboss.resteasy.reactive.RestResponse.StatusCode.OK
 
 @QuarkusTest
-class ConfirmWithoutSubmitUseCaseResourceTest : BDD() {
+class FindAllHawksResourceTest : BDD() {
   override fun then_() {
-    findReq("").statusCode(NOT_FOUND)
+    findAllHawks()
+      .statusCode(OK)
       .body("$", hasItems(1, 2, 3))
   }
 }

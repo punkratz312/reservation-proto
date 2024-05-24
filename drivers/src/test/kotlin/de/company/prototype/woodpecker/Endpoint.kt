@@ -34,9 +34,8 @@ open class Endpoint {
       .asString()
   }
 
-  fun findReq(id: String): ValidatableResponse {
+  fun findAllHawks(): ValidatableResponse {
     return given_()
-      .pathParam("id", id)
       .`when`()
       .put("confirm/{id}")
       .then()
