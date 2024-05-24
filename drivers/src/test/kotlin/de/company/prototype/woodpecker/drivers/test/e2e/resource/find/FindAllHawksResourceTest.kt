@@ -10,6 +10,6 @@ class FindAllHawksResourceTest : BDD() {
   override fun then_() {
     findAllHawks()
       .statusCode(OK)
-      .body("$", hasItems(1, 2, 3))
+      .body("$.data", hasItems(1, 2, 3))
   }
 }
