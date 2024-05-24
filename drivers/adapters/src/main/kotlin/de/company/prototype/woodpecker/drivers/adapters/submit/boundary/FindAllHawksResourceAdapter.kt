@@ -10,7 +10,7 @@ class FindAllHawksResourceAdapter @Inject constructor(
   private val woodpeckers: FindAllHawksUseCase
 ) {
   fun serve(): String {
-    return woodpeckers.serve("").toString()
+    return woodpeckers.toString()
   }
 
 }
