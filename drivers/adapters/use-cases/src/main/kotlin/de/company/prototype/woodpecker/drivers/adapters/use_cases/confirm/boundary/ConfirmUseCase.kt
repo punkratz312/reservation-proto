@@ -7,7 +7,7 @@ import jakarta.inject.Inject
 
 @ApplicationScoped
 class ConfirmUseCase @Inject constructor(
-  private val confirmReservation: ConfirmReservationService,
+//  private val confirmReservation: ConfirmReservationService,
 //  private val mapper: UseCaseDTOMapper
 ) : UseCase<UseCaseDTO> {
 
