@@ -1,8 +1,7 @@
-package de.db.vendo.prototype.buchung.reservation.drivers.adapters.use_cases.confirm.boundary
+package de.db.vendo.prototype.buchung.woodpecker.drivers.adapters.use_cases.confirm.boundary
 
 import de.db.vendo.prototype.buchung.reservation.common.usecase.UseCase
-import de.db.vendo.prototype.buchung.reservation.drivers.adapters.use_cases.dto.UseCaseDTO
-import de.db.vendo.prototype.buchung.reservation.drivers.adapters.use_cases.entities.confirm.boundary.ConfirmReservationService
+import de.db.vendo.prototype.buchung.woodpecker.drivers.adapters.use_cases.dto.UseCaseDTO
 import jakarta.enterprise.context.ApplicationScoped
 import jakarta.inject.Inject
 

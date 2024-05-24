@@ -1,4 +1,4 @@
-package de.db.vendo.prototype.buchung.reservation.drivers.quarkus.web.boundary.control.entity
+package de.db.vendo.prototype.buchung.woodpecker.drivers.quarkus.web.boundary.control.entity
 
 import io.smallrye.common.constraint.NotNull
 import jakarta.validation.constraints.Size

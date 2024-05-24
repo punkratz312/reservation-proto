@@ -1,6 +1,6 @@
-//package de.db.vendo.prototype.buchung.reservation.drivers.quarkus.persistence.aws.dynamo.boundary
+//package de.db.vendo.prototype.buchung.woodpecker.drivers.quarkus.persistence.aws.dynamo.boundary
 //
-//import de.db.vendo.prototype.buchung.reservation.drivers.adapters.persistence.boundary.bridge.ReservationRepositoryAdapterBridge
+//import de.db.vendo.prototype.buchung.woodpecker.drivers.adapters.persistence.boundary.bridge.ReservationRepositoryAdapterBridge
 //import jakarta.enterprise.context.ApplicationScoped
 //import jakarta.inject.Inject
 //import java.util.*
