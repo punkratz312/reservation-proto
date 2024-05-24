@@ -12,21 +12,16 @@ class FindAllHawksComponent @Inject constructor(
 ) : OutputComponent<Set<Woodpecker>> {
 
   override fun execute(): Set<Woodpecker> {
-    val lineList = mutableListOf<String>()
     val result = mutableListOf<Woodpecker>()
-    File("birds.csv").useLines { lines -> lines.forEach { lineList.add(it) } }
-    lineList.forEach { line ->
-      println(">  $line")
-      val parts = line.split(";")
-      if (parts.size == 4) {
-        val woodpeckerData = WoodpeckerData(
-          birdFamily = parts[0],
-          englishBirdName = parts[1],
-          scientificBirdName = parts[2],
-          iucnCategory = parts[3]
-        )
-        val woodpecker = Woodpecker(woodpeckerData)
-        result.add(woodpecker)
+    File("birds.csv").useLines { lines ->
+      lines.forEach {
+        val woodpecker = it.split(";")
+        result.add(Woodpecker(WoodpeckerData(
+          birdFamily = woodpecker[0],
+          englishBirdName = woodpecker[1],
+          scientificBirdName = woodpecker[2],
+          iucnCategory = woodpecker[3]
+        )))
       }
     }
     return result.toSet()
