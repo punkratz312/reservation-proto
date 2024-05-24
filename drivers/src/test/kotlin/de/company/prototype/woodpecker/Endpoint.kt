@@ -37,7 +37,7 @@ open class Endpoint {
   fun findAllHawks(): ValidatableResponse {
     return given_()
       .`when`()
-      .put("confirm/{id}")
+      .get("woodpeckers/findAllHawks")
       .then()
   }
 
