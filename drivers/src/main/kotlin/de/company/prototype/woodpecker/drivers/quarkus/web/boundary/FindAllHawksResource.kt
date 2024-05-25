@@ -17,6 +17,11 @@ class FindAllHawksResource @Inject constructor(
 
   @GET
   override fun serve(): String {
-    return objectMapper.writeValueAsString(resourceAdapter.serve())
+    return objectMapper.writeValueAsString(map(resourceAdapter.serve()))
   }
+
+  private fun map(serve: Set<Any>) =
+    mapOf(
+      Pair("size", serve.size),
+      Pair("data", serve))
 }

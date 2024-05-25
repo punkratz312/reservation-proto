@@ -11,6 +11,7 @@ class FindAllHawksResourceTest : BDD() {
     findAllHawks()
       .statusCode(OK)
       .body(notNullValue())
+    // size = 249
 //      .body(hasItems(1, 2, 3))
 //      .body("$.data", hasItems(1, 2, 3))
   }
