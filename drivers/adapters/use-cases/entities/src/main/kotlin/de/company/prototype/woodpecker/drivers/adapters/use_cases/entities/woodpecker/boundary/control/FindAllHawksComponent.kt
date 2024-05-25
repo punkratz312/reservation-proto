@@ -26,9 +26,6 @@ class FindAllHawksComponent @Inject constructor(
   @PostConstruct
   fun init() {
     hawks = parseHawks().sortedWith(comparator).toSet()
-//    hawks.forEach {
-//      println(it)
-//    }
   }
 
   private fun parseHawks(): MutableList<Woodpecker> {
@@ -53,6 +50,21 @@ class FindAllHawksComponent @Inject constructor(
     }
     return hawks
   }
+
+  private fun parseHawk2(lines: Sequence<String>): MutableList<Woodpecker> =
+    lines.mapNotNull {
+      it.split(";")
+        .takeIf { woodpecker -> woodpecker[0] == "Hawks, eagles" }
+        ?.let { woodpecker ->
+          Woodpecker(WoodpeckerData(
+            birdFamily = woodpecker[0],
+            englishBirdName = woodpecker[1],
+            scientificBirdName = woodpecker[2],
+            iucnCategory = woodpecker[3]
+          ))
+        }
+    }.toMutableList()
+
 
   private fun iucnCategoryToIndex(): Map<String, Int> {
     return iucnOrder.withIndex().associate { it.value to it.index }
