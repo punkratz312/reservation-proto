@@ -19,29 +19,25 @@ class FindAllHawksComponent @Inject constructor(
     "LC", "NT", "VU", "EN", "CR", "EW", "EX", "DD" // order effects sort evaluation
   )
   private val iucnCategoryToIndex = iucnCategoryToIndex()
-  private val comparator = compareBy<Woodpecker> {
+  private val iucn = compareBy<Woodpecker> {
     iucnCategoryToIndex[it.data.iucnCategory] ?: ZERO
   }
 
   @PostConstruct
   fun init() {
-    hawks = parseHawks().sortedWith(comparator).toSet()
-  }
-
-  private fun parseHawks(): MutableList<Woodpecker> {
-    File(javaClass.classLoader.getResource("birds.csv")!!.file).useLines { lines ->
-      return parseHawk(lines)
+    File(javaClass.classLoader.getResource("birds.csv")!!.file).useLines { birds ->
+      hawks = parseHawk(birds).sortedWith(iucn).toSet()
     }
   }
 
-  private fun parseHawk(lines: Sequence<String>): MutableList<Woodpecker> =
-    lines.mapNotNull { line ->
-      line.split(";")
+  private fun parseHawk(birds: Sequence<String>): MutableList<Woodpecker> =
+    birds.mapNotNull { bird ->
+      bird.split(";")
         .takeIf { isEagleBuzzardVultureKiteEtc(it[0]) }
-        ?.let { woodpecker(it) }
+        ?.let { pickWoodpecker(it) }
     }.toMutableList()
 
-  private fun woodpecker(woodpecker: List<String>) =
+  private fun pickWoodpecker(woodpecker: List<String>) =
     Woodpecker(WoodpeckerData(
       birdFamily = woodpecker[0],
       englishBirdName = woodpecker[1],
