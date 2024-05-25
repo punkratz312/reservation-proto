@@ -8,11 +8,13 @@ import jakarta.enterprise.context.ApplicationScoped
 import jakarta.inject.Inject
 import java.io.File
 
+
 @ApplicationScoped
 class FindAllHawksComponent @Inject constructor(
 ) : OutputComponent<Set<Woodpecker>> {
 
   private val hawks: MutableList<Woodpecker> = mutableListOf()
+  private var hawks2: Set<Woodpecker> = mutableSetOf()
   private val iucnOrder = setOf(
     "LC", "NT", "VU", "EN", "CR", "EW", "EX", "DD" // order effects sort evaluation
   )
@@ -24,14 +26,14 @@ class FindAllHawksComponent @Inject constructor(
   @PostConstruct
   fun init() {
     parseHawks()
-    val hawks = hawks.sortedWith(comparator).toSet()
-    hawks.forEach { hawk ->
-      println("${hawk.data.englishBirdName}, ${hawk.data.scientificBirdName}, ${hawk.data.iucnCategory}")
+    hawks2 = this.hawks.sortedWith(comparator).toSet()
+    hawks2.forEach {
+      println(it)
     }
   }
 
   private fun parseHawks() {
-    File("birds.csv").useLines { lines ->
+    File(javaClass.classLoader.getResource("/birds.csv")!!.file).useLines { lines ->
       lines.forEach {
         parseHawk(it)
       }
@@ -57,5 +59,6 @@ class FindAllHawksComponent @Inject constructor(
 
   override fun execute(): Set<Woodpecker> {
     return hawks.toSet()
+//    return hawks2.toSet()
   }
 }
