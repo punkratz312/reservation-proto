@@ -13,11 +13,12 @@ class FindAllHawksComponent @Inject constructor(
 ) : OutputComponent<Set<Woodpecker>> {
 
   private val hawks: MutableList<Woodpecker> = mutableListOf()
-  private val iucn = setOf(
-    "LC", "NT", "VU", "EN", "CR", "EW", "EX", "DD"
+  private val iucnOrder = setOf(
+    "LC", "NT", "VU", "EN", "CR", "EW", "EX", "DD" // order effects sort evaluation
   )
+  private val iucnCategoryToIndex = iucnCategoryToIndex()
   private val comparator = compareBy<Woodpecker> {
-    iucn.indexOf(it.data.iucnCategory)
+    iucnCategoryToIndex[it.data.iucnCategory] ?: Int.MAX_VALUE
   }
 
   @PostConstruct
@@ -45,6 +46,10 @@ class FindAllHawksComponent @Inject constructor(
         iucnCategory = woodpecker[3]
       )))
     }
+  }
+
+  private fun iucnCategoryToIndex(): Map<String, Int> {
+    return iucnOrder.withIndex().associate { it.value to it.index }
   }
 
   override fun execute(): Set<Woodpecker> {
