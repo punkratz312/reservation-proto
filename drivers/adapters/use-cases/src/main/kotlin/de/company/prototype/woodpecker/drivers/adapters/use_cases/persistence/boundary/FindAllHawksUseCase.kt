@@ -2,22 +2,17 @@ package de.company.prototype.woodpecker.drivers.adapters.use_cases.persistence.b
 
 import de.company.prototype.woodpecker.common.bce.boundary.OutputService
 import de.company.prototype.woodpecker.drivers.adapters.use_cases.entities.woodpecker.boundary.FindAllHawksService
+import de.company.prototype.woodpecker.drivers.adapters.use_cases.entities.woodpecker.boundary.control.entity.Woodpecker
 import jakarta.enterprise.context.ApplicationScoped
 import jakarta.inject.Inject
 
 @ApplicationScoped
 class FindAllHawksUseCase @Inject constructor(
   private val findAllHawks: FindAllHawksService
-) : OutputService<String> {
+) : OutputService<Set<Woodpecker>> {
 
-  override fun serve(): String {
-    val map = findAllHawks.serve().map {
-      {
-//        it
-        it.toString()
-      }
-    }
-    return map.toString()
+  override fun serve(): Set<Woodpecker> {
+    return findAllHawks.serve()
   }
 
 }

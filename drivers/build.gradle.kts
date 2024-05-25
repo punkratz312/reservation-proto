@@ -1,4 +1,5 @@
 version = "1.0.0-SNAPSHOT"
+val serialization = "1.9.22"
 plugins {
   id("io.quarkus")
   id("org.jetbrains.kotlin.plugin.serialization") version "1.9.22"
@@ -24,7 +25,7 @@ dependencies {
   implementation("io.quarkus:quarkus-smallrye-openapi")
   implementation("io.quarkus:quarkus-swagger-ui")
   implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
-  implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.2")
+  implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:$serialization")
   implementation(enforcedPlatform("$quarkusPlatformGroupId:$quarkusPlatformArtifactId:$quarkusPlatformVersion"))
   implementation(project(":common"))
   implementation(project(":drivers:adapters:"))

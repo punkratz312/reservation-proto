@@ -9,9 +9,9 @@ import jakarta.inject.Inject
 @ApplicationScoped
 class FindAllHawksResourceAdapter @Inject constructor(
   private val woodpeckers: FindAllHawksUseCase
-) : OutputService<String> {
+) : OutputService<Set<Any>> {
 
-  override fun serve(): String {
+  override fun serve(): Set<Any> {
     return woodpeckers.serve()
   }
 

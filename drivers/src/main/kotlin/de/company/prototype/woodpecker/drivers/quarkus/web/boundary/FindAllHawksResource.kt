@@ -11,10 +11,11 @@ import jakarta.ws.rs.Path
 @Path("woodpeckers/findAllHawks")
 class FindAllHawksResource @Inject constructor(
   private val resourceAdapter: FindAllHawksResourceAdapter
-) : OutputService<String> {
+) : OutputService<Set<Any>> {
 
   @GET
-  override fun serve(): String {
-    return resourceAdapter.serve()
+  override fun serve(): Set<Any> {
+    val serve = resourceAdapter.serve()
+    return serve
   }
 }

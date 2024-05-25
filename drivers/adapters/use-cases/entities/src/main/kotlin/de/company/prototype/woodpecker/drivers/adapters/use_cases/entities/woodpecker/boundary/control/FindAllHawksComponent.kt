@@ -26,9 +26,9 @@ class FindAllHawksComponent @Inject constructor(
   @PostConstruct
   fun init() {
     hawks = parseHawks().sortedWith(comparator).toSet()
-    hawks.forEach {
-      println(it)
-    }
+//    hawks.forEach {
+//      println(it)
+//    }
   }
 
   private fun parseHawks(): MutableList<Woodpecker> {
@@ -59,7 +59,6 @@ class FindAllHawksComponent @Inject constructor(
   }
 
   override fun execute(): Set<Woodpecker> {
-    return hawks.toSet()
-//    return hawks2.toSet()
+    return hawks
   }
 }
