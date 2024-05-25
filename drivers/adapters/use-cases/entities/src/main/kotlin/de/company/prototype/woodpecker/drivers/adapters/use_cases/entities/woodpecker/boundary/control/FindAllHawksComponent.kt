@@ -34,27 +34,10 @@ class FindAllHawksComponent @Inject constructor(
     }
   }
 
-  private fun parseHawk(lines: Sequence<String>): MutableList<Woodpecker> {
-    val hawks: MutableList<Woodpecker> = mutableListOf()
-    lines.forEach {
-      val woodpecker = it.split(";")
-      val birdFamily = woodpecker[0]
-      if (birdFamily == "Hawks, eagles") {
-        hawks.add(Woodpecker(WoodpeckerData(
-          birdFamily = birdFamily,
-          englishBirdName = woodpecker[1],
-          scientificBirdName = woodpecker[2],
-          iucnCategory = woodpecker[3]
-        )))
-      }
-    }
-    return hawks
-  }
-
-  private fun parseHawk2(lines: Sequence<String>): MutableList<Woodpecker> =
+  private fun parseHawk(lines: Sequence<String>): MutableList<Woodpecker> =
     lines.mapNotNull {
       it.split(";")
-        .takeIf { woodpecker -> woodpecker[0] == "Hawks, eagles" }
+        .takeIf { woodpecker -> isEagleBuzzardVultureKiteEtc(woodpecker[0]) }
         ?.let { woodpecker ->
           Woodpecker(WoodpeckerData(
             birdFamily = woodpecker[0],
@@ -65,6 +48,7 @@ class FindAllHawksComponent @Inject constructor(
         }
     }.toMutableList()
 
+  private fun isEagleBuzzardVultureKiteEtc(woodpecker: String) = woodpecker == "Hawks, eagles"
 
   private fun iucnCategoryToIndex(): Map<String, Int> {
     return iucnOrder.withIndex().associate { it.value to it.index }
