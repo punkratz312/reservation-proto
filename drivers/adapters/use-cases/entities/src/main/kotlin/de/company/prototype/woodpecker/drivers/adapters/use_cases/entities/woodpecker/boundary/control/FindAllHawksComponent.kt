@@ -9,7 +9,6 @@ import jakarta.inject.Inject
 import java.io.File
 import java.math.BigInteger.ZERO
 
-
 @ApplicationScoped
 class FindAllHawksComponent @Inject constructor(
 ) : OutputComponent<Set<Woodpecker>> {
@@ -26,16 +25,16 @@ class FindAllHawksComponent @Inject constructor(
   @PostConstruct
   fun init() {
     File(javaClass.classLoader.getResource("birds.csv")!!.file).useLines { birds ->
-      hawks = parseHawk(birds).sortedWith(iucn).toSet()
+      hawks = parseHawks(birds).sortedWith(iucn).toSet()
     }
   }
 
-  private fun parseHawk(birds: Sequence<String>): MutableList<Woodpecker> =
+  private fun parseHawks(birds: Sequence<String>): Set<Woodpecker> =
     birds.mapNotNull { bird ->
       bird.split(";")
         .takeIf { isEagleBuzzardVultureKiteEtc(it[0]) }
         ?.let { pickWoodpecker(it) }
-    }.toMutableList()
+    }.toSet()
 
   private fun pickWoodpecker(woodpecker: List<String>) =
     Woodpecker(WoodpeckerData(
