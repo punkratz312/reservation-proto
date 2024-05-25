@@ -12,32 +12,38 @@ import java.io.File
 class FindAllHawksComponent @Inject constructor(
 ) : OutputComponent<Set<Woodpecker>> {
 
-  private val result: MutableList<Woodpecker> = mutableListOf()
+  private val hawks: MutableList<Woodpecker> = mutableListOf()
+  private val iucn = setOf(
+    "LC", "NT", "VU", "EN", "CR", "EW", "EX", "DD"
+  )
+  private val comparator = compareBy<Woodpecker> {
+    iucn.indexOf(it.data.iucnCategory)
+  }
 
   @PostConstruct
-  fun init(): Set<Woodpecker> {
+  fun parseHawks(): Set<Woodpecker> {
     File("birds.csv").useLines { lines ->
-      lines.forEach { line ->
-        val woodpecker = line.split(";")
-        val birdFamily = woodpecker[0]
-        if (birdFamily == "Hawks") {
-          result.add(Woodpecker(WoodpeckerData(
-            birdFamily = birdFamily,
-            englishBirdName = woodpecker[1],
-            scientificBirdName = woodpecker[2],
-            iucnCategory = woodpecker[3]
-          )))
-        }
+      lines.forEach {
+        parseHawk(it)
       }
     }
-    return result.sortedWith(compareBy {
-      listOf(
-        "LC", "NT", "VU", "EN", "CR", "EW", "EX", "DD"
-      ).indexOf(it.data.iucnCategory)
-    }).toSet();
+    return hawks.sortedWith(comparator).toSet();
+  }
+
+  private fun parseHawk(line: String) {
+    val woodpecker = line.split(";")
+    val birdFamily = woodpecker[0]
+    if (birdFamily == "Hawks") {
+      hawks.add(Woodpecker(WoodpeckerData(
+        birdFamily = birdFamily,
+        englishBirdName = woodpecker[1],
+        scientificBirdName = woodpecker[2],
+        iucnCategory = woodpecker[3]
+      )))
+    }
   }
 
   override fun execute(): Set<Woodpecker> {
-    return result.toSet()
+    return hawks.toSet()
   }
 }
