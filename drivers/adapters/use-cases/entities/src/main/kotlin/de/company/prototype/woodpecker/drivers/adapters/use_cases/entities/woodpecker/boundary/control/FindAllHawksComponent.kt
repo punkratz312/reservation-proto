@@ -27,7 +27,11 @@ class FindAllHawksComponent @Inject constructor(
         parseHawk(it)
       }
     }
-    return hawks.sortedWith(comparator).toSet();
+    val hawks = hawks.sortedWith(comparator).toSet()
+    hawks.forEach { hawk ->
+      println("${hawk.data.englishBirdName}, ${hawk.data.scientificBirdName}, ${hawk.data.iucnCategory}")
+    }
+    return hawks
   }
 
   private fun parseHawk(line: String) {
