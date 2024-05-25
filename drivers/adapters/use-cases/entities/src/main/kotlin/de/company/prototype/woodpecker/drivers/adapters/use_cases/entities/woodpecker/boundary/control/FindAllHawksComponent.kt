@@ -22,17 +22,20 @@ class FindAllHawksComponent @Inject constructor(
   }
 
   @PostConstruct
-  fun parseHawks(): Set<Woodpecker> {
+  fun init() {
+    parseHawks()
+    val hawks = hawks.sortedWith(comparator).toSet()
+    hawks.forEach { hawk ->
+      println("${hawk.data.englishBirdName}, ${hawk.data.scientificBirdName}, ${hawk.data.iucnCategory}")
+    }
+  }
+
+  private fun parseHawks() {
     File("birds.csv").useLines { lines ->
       lines.forEach {
         parseHawk(it)
       }
     }
-    val hawks = hawks.sortedWith(comparator).toSet()
-    hawks.forEach { hawk ->
-      println("${hawk.data.englishBirdName}, ${hawk.data.scientificBirdName}, ${hawk.data.iucnCategory}")
-    }
-    return hawks
   }
 
   private fun parseHawk(line: String) {
