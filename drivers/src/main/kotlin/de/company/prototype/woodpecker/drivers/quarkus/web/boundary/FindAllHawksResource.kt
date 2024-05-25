@@ -17,8 +17,6 @@ class FindAllHawksResource @Inject constructor(
 
   @GET
   override fun serve(): String {
-    val serve = resourceAdapter.serve()
-    val writeValueAsString = objectMapper.writeValueAsString(serve)
-    return writeValueAsString
+    return objectMapper.writeValueAsString(resourceAdapter.serve())
   }
 }
