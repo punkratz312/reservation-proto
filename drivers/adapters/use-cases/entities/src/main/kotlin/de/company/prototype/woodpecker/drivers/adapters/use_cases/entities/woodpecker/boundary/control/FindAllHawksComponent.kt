@@ -38,10 +38,10 @@ class FindAllHawksComponent @Inject constructor(
     lines.mapNotNull { line ->
       line.split(";")
         .takeIf { isEagleBuzzardVultureKiteEtc(it[0]) }
-        ?.let { pickWoodpecker(it) }
+        ?.let { woodpecker(it) }
     }.toMutableList()
 
-  private fun pickWoodpecker(woodpecker: List<String>) =
+  private fun woodpecker(woodpecker: List<String>) =
     Woodpecker(WoodpeckerData(
       birdFamily = woodpecker[0],
       englishBirdName = woodpecker[1],
