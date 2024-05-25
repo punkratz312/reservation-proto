@@ -35,18 +35,19 @@ class FindAllHawksComponent @Inject constructor(
   }
 
   private fun parseHawk(lines: Sequence<String>): MutableList<Woodpecker> =
-    lines.mapNotNull {
-      it.split(";")
-        .takeIf { woodpecker -> isEagleBuzzardVultureKiteEtc(woodpecker[0]) }
-        ?.let { woodpecker ->
-          Woodpecker(WoodpeckerData(
-            birdFamily = woodpecker[0],
-            englishBirdName = woodpecker[1],
-            scientificBirdName = woodpecker[2],
-            iucnCategory = woodpecker[3]
-          ))
-        }
+    lines.mapNotNull { line ->
+      line.split(";")
+        .takeIf { isEagleBuzzardVultureKiteEtc(it[0]) }
+        ?.let { pickWoodpecker(it) }
     }.toMutableList()
+
+  private fun pickWoodpecker(woodpecker: List<String>) =
+    Woodpecker(WoodpeckerData(
+      birdFamily = woodpecker[0],
+      englishBirdName = woodpecker[1],
+      scientificBirdName = woodpecker[2],
+      iucnCategory = woodpecker[3]
+    ))
 
   private fun isEagleBuzzardVultureKiteEtc(woodpecker: String) = woodpecker == "Hawks, eagles"
 
