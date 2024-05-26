@@ -5,7 +5,7 @@ plugins {
   id 'io.gitlab.plunts.plantuml' version '2.1.5'
   id 'org.openrewrite.rewrite' version '6.8.1'
 }
-group = 'de.company.prototype.buchung.reservation'
+group = 'de.company.prototype.woodpecker'
 version = '1.0.0-SNAPSHOT'
 repositories {
   mavenCentral()
@@ -46,7 +46,7 @@ classDiagrams {
   }
   diagram {
     name 'buchung'
-    include packages().withName('de.company.prototype.buchung.reservation')
+    include packages().withName('de.company.prototype.woodpecker')
     include classes().withName('io.quarkus.hibernate.orm.panache.PanacheRepository').outsideOfProject()
     include classes().withName('io.quarkus.hibernate.orm.panache.PanacheEntity').outsideOfProject()
     writeTo file('doc/uml/puml/buchung.puml')
