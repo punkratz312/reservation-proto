@@ -45,12 +45,12 @@ classDiagrams {
     }
   }
   diagram {
-    name 'buchung'
+    name 'woodpecker'
     include packages().withName('de.company.prototype.woodpecker')
     include classes().withName('io.quarkus.hibernate.orm.panache.PanacheRepository').outsideOfProject()
     include classes().withName('io.quarkus.hibernate.orm.panache.PanacheEntity').outsideOfProject()
-    writeTo file('doc/uml/puml/buchung.puml')
-    renderTo file('doc/uml/svg/buchung.svg')
+    writeTo file('doc/uml/puml/woodpecker.puml')
+    renderTo file('doc/uml/svg/woodpecker.svg')
   }
   diagram {
     name 'drivers'
