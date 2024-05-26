@@ -18,8 +18,10 @@ class FindAllHawksResourceTest : BDD() {
   override fun then_() {
     response.statusCode(OK)
       .body("size", equalTo(249))
+      .body("hawks[0].iucnCategory", equalTo("LC"))
+      .body("hawks[0].englishBirdName", equalTo("Black-shouldered Kite"))
       .body("hawks[1].iucnCategory", equalTo("LC"))
-      .body("hawks[1].englishBirdName", equalTo("Black-shouldered Kite"))
+      .body("hawks[1].englishBirdName", equalTo("Black-winged Kite"))
       .body("hawks[248].iucnCategory", equalTo("DD"))
       .body("hawks[248].englishBirdName", equalTo("Chestnut-shouldered Goshawk"))
     println(response.extract().body().asPrettyString())
