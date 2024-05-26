@@ -6,7 +6,6 @@ import jakarta.annotation.PostConstruct
 import jakarta.enterprise.context.ApplicationScoped
 import jakarta.inject.Inject
 import java.io.File
-import java.lang.System.out
 import java.math.BigInteger.ZERO
 
 @ApplicationScoped
@@ -26,8 +25,8 @@ class FindAllHawksComponent @Inject constructor(
   fun init() {
     File(javaClass.classLoader.getResource("birds.csv")!!.file).useLines { birds ->
       hawks = parseHawks(birds).sortedWith(iucn).toSet()
-      println("hawks")
-      hawks.forEach(out::println)
+      //      println("hawks")
+      //      hawks.forEach(out::println)
     }
   }
 
