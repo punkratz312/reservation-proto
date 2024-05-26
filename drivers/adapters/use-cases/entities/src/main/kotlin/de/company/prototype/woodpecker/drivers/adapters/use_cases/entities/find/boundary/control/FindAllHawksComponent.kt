@@ -1,4 +1,4 @@
-package de.company.prototype.woodpecker.drivers.adapters.use_cases.entities.woodpecker.boundary.control
+package de.company.prototype.woodpecker.drivers.adapters.use_cases.entities.find.boundary.control
 
 import de.company.prototype.woodpecker.common.bce.boundary.control.OutputComponent
 import de.company.prototype.woodpecker.drivers.adapters.use_cases.entities.woodpecker.boundary.control.entity.Woodpecker

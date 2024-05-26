@@ -2,7 +2,7 @@ package de.company.prototype.woodpecker.drivers.quarkus.web.boundary
 
 import com.fasterxml.jackson.databind.ObjectMapper
 import de.company.prototype.woodpecker.common.bce.boundary.OutputService
-import de.company.prototype.woodpecker.drivers.adapters.submit.boundary.FindAllHawksResourceAdapter
+import de.company.prototype.woodpecker.drivers.adapters.find.boundary.FindAllHawksResourceAdapter
 import jakarta.enterprise.context.ApplicationScoped
 import jakarta.inject.Inject
 import jakarta.ws.rs.GET

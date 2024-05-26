@@ -1,7 +1,7 @@
-package de.company.prototype.woodpecker.drivers.adapters.submit.boundary
+package de.company.prototype.woodpecker.drivers.adapters.find.boundary
 
 import de.company.prototype.woodpecker.common.bce.boundary.OutputService
-import de.company.prototype.woodpecker.drivers.adapters.use_cases.persistence.boundary.FindAllHawksUseCase
+import de.company.prototype.woodpecker.drivers.adapters.use_cases.find.boundary.FindAllHawksUseCase
 import jakarta.enterprise.context.ApplicationScoped
 import jakarta.inject.Inject
 
