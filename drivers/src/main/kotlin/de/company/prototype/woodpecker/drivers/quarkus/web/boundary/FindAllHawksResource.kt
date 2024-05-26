@@ -26,5 +26,5 @@ class FindAllHawksResource @Inject constructor(
   private fun map(serve: Set<Any>) =
     mapOf(
       Pair("size", serve.size),
-      Pair("data", serve))
+      Pair("hawks", serve))
 }

@@ -2,11 +2,11 @@ package de.company.prototype.woodpecker.drivers.adapters.use_cases.entities.wood
 
 import de.company.prototype.woodpecker.common.bce.boundary.control.OutputComponent
 import de.company.prototype.woodpecker.drivers.adapters.use_cases.entities.woodpecker.boundary.control.entity.Woodpecker
-import de.company.prototype.woodpecker.drivers.adapters.use_cases.entities.woodpecker.boundary.control.entity.WoodpeckerData
 import jakarta.annotation.PostConstruct
 import jakarta.enterprise.context.ApplicationScoped
 import jakarta.inject.Inject
 import java.io.File
+import java.lang.System.out
 import java.math.BigInteger.ZERO
 
 @ApplicationScoped
@@ -19,13 +19,15 @@ class FindAllHawksComponent @Inject constructor(
   )
   private val iucnCategoryToIndex = iucnCategoryToIndex()
   private val iucn = compareBy<Woodpecker> {
-    iucnCategoryToIndex[it.data.iucnCategory] ?: ZERO
+    iucnCategoryToIndex[it.iucnCategory] ?: ZERO
   }
 
   @PostConstruct
   fun init() {
     File(javaClass.classLoader.getResource("birds.csv")!!.file).useLines { birds ->
       hawks = parseHawks(birds).sortedWith(iucn).toSet()
+      println("hawks")
+      hawks.forEach(out::println)
     }
   }
 
@@ -37,12 +39,12 @@ class FindAllHawksComponent @Inject constructor(
     }.toSet()
 
   private fun pickWoodpecker(woodpecker: List<String>) =
-    Woodpecker(WoodpeckerData(
+    Woodpecker(
       birdFamily = woodpecker[0],
       englishBirdName = woodpecker[1],
       scientificBirdName = woodpecker[2],
       iucnCategory = woodpecker[3]
-    ))
+    )
 
   private fun isEagleBuzzardVultureKiteEtc(woodpecker: String) = woodpecker == "Hawks, eagles"
 

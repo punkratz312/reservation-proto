@@ -11,8 +11,7 @@ class FindAllHawksResourceTest : BDD() {
   override fun then_() {
     findAllHawks()
       .statusCode(OK)
-      .body(notNullValue())
       .body("size", equalTo(249))
-      .body("data", notNullValue())
+      .body("hawks", notNullValue())
   }
 }
