@@ -1,4 +1,4 @@
-package de.company.prototype.woodpecker.drivers.quarkus.web.boundary
+package de.company.prototype.woodpecker.drivers.web.boundary
 
 import com.fasterxml.jackson.databind.ObjectMapper
 import de.company.prototype.woodpecker.common.bce.boundary.OutputService

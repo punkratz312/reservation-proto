@@ -1,4 +1,4 @@
-package de.company.prototype.woodpecker.drivers.quarkus.web.boundary
+package de.company.prototype.woodpecker.drivers.web.boundary
 
 import de.company.prototype.woodpecker.common.bce.boundary.FunctionalService
 import jakarta.enterprise.context.ApplicationScoped
